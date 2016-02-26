@@ -39,7 +39,7 @@ public class DBConnectionPool {
      * @throws ClassNotFoundException
      */
     private void initializeConnectionPool() throws IOException, SQLException, ClassNotFoundException {
-        if (!checkIfConnectionPoolIsFull()) {
+        while (!checkIfConnectionPoolIsFull()) {
             availableConnections.add(createNewConnectionForPool());
         }
     }

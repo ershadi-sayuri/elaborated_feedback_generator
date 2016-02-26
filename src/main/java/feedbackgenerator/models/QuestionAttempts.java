@@ -6,6 +6,7 @@ import feedbackgenerator.dbhandler.DBHandler;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
+import java.util.ArrayList;
 
 /**
  * Created by Ershadi Sayuri on 2/12/2016.
@@ -156,18 +157,66 @@ public class QuestionAttempts {
         this.timeModified = timeModified;
     }
 
-//    public QuestionAttempts getQuestionAttemptsData(QuestionAttempts questionAttempts) throws Exception {
-//        String query = "SELECT * FROM mdl_quiz_attempts WHERE userid = " + questionAttempts.getQuestionUsageId();
-//        Connection connection = DataSource.getConnection();
-//        ResultSet resultSet = DBHandler.getData(connection, query);
-//
-//
-//        if (resultSet.next()) {
-//            questionAttempts.setId(Integer.parseInt(resultSet.getString(1)));
-//            questionAttempts.setQui(resultSet.getString(3));
-//            questionAttempts.setAddress(resultSet.getString(4));
-//            questionAttempts.setContactNumber(resultSet.getString(5));
-//        }
-////        return customer;
-//    }
+    public ArrayList<Integer> getQuestionIdsOfAUser(int userId) throws Exception {
+        String query = "SELECT questionid FROM mdl_question_attempts WHERE id IN (SELECT questionattemptid FROM " +
+                "mdl_question_attempt_steps WHERE userid = " + userId + " && state = 'complete') GROUP BY questionid";
+        Connection connection = DataSource.getConnection();
+        ResultSet resultSet = DBHandler.getData(connection, query);
+
+        ArrayList<Integer> questionIds = new ArrayList<Integer>();
+
+        while (resultSet.next()) {
+            questionIds.add(Integer.parseInt(resultSet.getString(1)));
+        }
+
+        return questionIds;
+    }
+
+    public ArrayList<Integer> getQuestionIdsOfAQuizOfAUser(int userId, int quizId) throws Exception {
+        String query = "SELECT id FROM mdl_question_attempts WHERE id IN (SELECT questionattemptid FROM " +
+                "mdl_question_attempt_steps WHERE userid = " + userId + " && state = 'complete') && questionid IN " +
+                "(SELECT questionid FROM mdl_quiz_slots WHERE quizid = " + quizId + ") ";
+
+        Connection connection = DataSource.getConnection();
+        ResultSet resultSet = DBHandler.getData(connection, query);
+
+        ArrayList<Integer> questionIds = new ArrayList<Integer>();
+
+        while (resultSet.next()) {
+            questionIds.add(Integer.parseInt(resultSet.getString(1)));
+        }
+
+        return questionIds;
+    }
+
+    public ArrayList<QuestionAttempts> getQuestionAttemptsData(int questionId) throws Exception {
+        String query = "SELECT * FROM mdl_question_attempts WHERE questionid = " + questionId;
+        Connection connection = DataSource.getConnection();
+        ResultSet resultSet = DBHandler.getData(connection, query);
+
+        ArrayList<QuestionAttempts> questionAttempts = new ArrayList<QuestionAttempts>();
+
+        while (resultSet.next()) {
+            QuestionAttempts questionAttempt = new QuestionAttempts();
+
+            questionAttempt.setId(Integer.parseInt(resultSet.getString(1)));
+            questionAttempt.setQuestionUsageId(Integer.parseInt(resultSet.getString(2)));
+            questionAttempt.setSlot(Integer.parseInt(resultSet.getString(3)));
+            questionAttempt.setBehaviour(resultSet.getString(4));
+            questionAttempt.setQuestionId(Integer.parseInt(resultSet.getString(5)));
+            questionAttempt.setVariant(Integer.parseInt(resultSet.getString(6)));
+            questionAttempt.setMaxMark(Double.parseDouble(resultSet.getString(7)));
+            questionAttempt.setMinFraction(Double.parseDouble(resultSet.getString(8)));
+            questionAttempt.setMaxFraction(Double.parseDouble(resultSet.getString(9)));
+            questionAttempt.setFlagged(Integer.parseInt(resultSet.getString(10)));
+            questionAttempt.setQuestionSummary(resultSet.getString(11));
+            questionAttempt.setRightAnswer(resultSet.getString(12));
+            questionAttempt.setResponseSummary(resultSet.getString(13));
+            questionAttempt.setTimeModified(Long.parseLong(resultSet.getString(5)));
+
+            questionAttempts.add(questionAttempt);
+        }
+
+        return questionAttempts;
+    }
 }

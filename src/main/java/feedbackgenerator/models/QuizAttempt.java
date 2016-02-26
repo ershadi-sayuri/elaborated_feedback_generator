@@ -138,8 +138,15 @@ public class QuizAttempt {
         this.sumGrades = sumGrades;
     }
 
-    public ArrayList<QuizAttempt> getQuizAttemptsData(int userId, int quizId) throws Exception {
-        String query = "SELECT * FROM mdl_quiz_attempts WHERE userid = " + userId + "& quiz=" + quizId;
+    /**
+     * gets the attempt data of a particular quiz of a user
+     * @param userId
+     * @param quizId
+     * @return quizAttempts
+     * @throws Exception
+     */
+    public ArrayList<QuizAttempt> getAttemptDataOfAQuiz(int userId, int quizId) throws Exception {
+        String query = "SELECT * FROM mdl_quiz_attempts WHERE userid = " + userId + " && quiz=" + quizId;
         Connection connection = DataSource.getConnection();
         ResultSet resultSet = DBHandler.getData(connection, query);
 

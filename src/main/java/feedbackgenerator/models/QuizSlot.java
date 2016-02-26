@@ -76,24 +76,25 @@ public class QuizSlot {
     }
 
     /**
+     * get the maximum of a particular quiz
      *
      * @param quizId
      * @return
      * @throws Exception
      */
-    public double getQuizMaxTotal(int quizId) throws Exception {
-        String query = "SELECT SUM(maxmark) FROM mdl_quiz_slots WHERE quizid = " + quizId;
-        Connection connection = DataSource.getConnection();
-        ResultSet resultSet = DBHandler.getData(connection, query);
-
-        ArrayList<QuizAttempt> quizAttempts = new ArrayList<QuizAttempt>();
-
-        double maxMark = 0;
-
-        if (resultSet.next()) {
-            maxMark = Double.parseDouble(resultSet.getString(1));
-        }
-
-        return maxMark;
-    }
+//    public double getQuizMaxTotal(int quizId) throws Exception {
+//        String query = "SELECT SUM(maxmark) FROM mdl_quiz_slots WHERE quizid = " + quizId;
+//        Connection connection = DataSource.getConnection();
+//        ResultSet resultSet = DBHandler.getData(connection, query);
+//
+//        ArrayList<QuizAttempt> quizAttempts = new ArrayList<QuizAttempt>();
+//
+//        double maxMark = 0;
+//
+//        if (resultSet.next()) {
+//            maxMark = Double.parseDouble(resultSet.getString(1));
+//        }
+//
+//        return maxMark;
+//    }
 }
