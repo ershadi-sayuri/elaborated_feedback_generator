@@ -157,40 +157,17 @@ public class QuestionAttempts {
         this.timeModified = timeModified;
     }
 
-    public ArrayList<Integer> getQuestionIdsOfAUser(int userId) throws Exception {
-        String query = "SELECT questionid FROM mdl_question_attempts WHERE id IN (SELECT questionattemptid FROM " +
-                "mdl_question_attempt_steps WHERE userid = " + userId + " && state = 'complete') GROUP BY questionid";
-        Connection connection = DataSource.getConnection();
-        ResultSet resultSet = DBHandler.getData(connection, query);
+    /**
+     * get question attempt data of questions belonging to a particular quiz of a user
+     *
+     * @param userId
+     * @param quizId
+     * @return
+     * @throws Exception
+     */
+    public ArrayList<QuestionAttempts> getQuestionAttemptDataOfAQuiz(int userId, int quizId) throws Exception {
+        String query = "SELECT * FROM mdl_question_attempts WHERE id IN (SELECT questionattemptid FROM mdl_question_attempt_steps WHERE userid = "+userId+" && state = 'complete') && questionid IN (SELECT questionid FROM mdl_quiz_slots WHERE quizid = "+quizId+")";
 
-        ArrayList<Integer> questionIds = new ArrayList<Integer>();
-
-        while (resultSet.next()) {
-            questionIds.add(Integer.parseInt(resultSet.getString(1)));
-        }
-
-        return questionIds;
-    }
-
-    public ArrayList<Integer> getQuestionIdsOfAQuizOfAUser(int userId, int quizId) throws Exception {
-        String query = "SELECT id FROM mdl_question_attempts WHERE id IN (SELECT questionattemptid FROM " +
-                "mdl_question_attempt_steps WHERE userid = " + userId + " && state = 'complete') && questionid IN " +
-                "(SELECT questionid FROM mdl_quiz_slots WHERE quizid = " + quizId + ") ";
-
-        Connection connection = DataSource.getConnection();
-        ResultSet resultSet = DBHandler.getData(connection, query);
-
-        ArrayList<Integer> questionIds = new ArrayList<Integer>();
-
-        while (resultSet.next()) {
-            questionIds.add(Integer.parseInt(resultSet.getString(1)));
-        }
-
-        return questionIds;
-    }
-
-    public ArrayList<QuestionAttempts> getQuestionAttemptsData(int questionId) throws Exception {
-        String query = "SELECT * FROM mdl_question_attempts WHERE questionid = " + questionId;
         Connection connection = DataSource.getConnection();
         ResultSet resultSet = DBHandler.getData(connection, query);
 
@@ -218,5 +195,30 @@ public class QuestionAttempts {
         }
 
         return questionAttempts;
+    }
+
+    /**
+     * get the question ids of questions belonging to a particular quiz of a user
+     *
+     * @param userId
+     * @param quizId
+     * @return
+     * @throws Exception
+     */
+    public ArrayList<Integer> getQuestionIdsOfAQuiz(int userId, int quizId) throws Exception {
+        String query = "SELECT questionid FROM mdl_question_attempts WHERE id IN (SELECT questionattemptid FROM " +
+                "mdl_question_attempt_steps WHERE userid = " + userId + " && state = 'complete') && questionid IN " +
+                "(SELECT questionid FROM mdl_quiz_slots WHERE quizid = " + quizId + ") GROUP BY questionid";
+
+        Connection connection = DataSource.getConnection();
+        ResultSet resultSet = DBHandler.getData(connection, query);
+
+        ArrayList<Integer> questionIds = new ArrayList<Integer>();
+
+        while (resultSet.next()) {
+            questionIds.add(Integer.parseInt(resultSet.getString(1)));
+        }
+
+        return questionIds;
     }
 }

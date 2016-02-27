@@ -11,7 +11,7 @@ import static org.junit.Assert.*;
 /**
  * Created by Ershadi Sayuri on 2/13/2016.
  */
-public class QWQuizKnowledge {
+public class QWOverallQuizKnowledge {
 
     /**
      * find the grading progress of a particular quiz
@@ -21,7 +21,7 @@ public class QWQuizKnowledge {
      * @return
      * @throws Exception
      */
-    public double findQWQuizGradingProgress(int userId, int quizId) throws Exception {
+    public double findQuizGradingProgress(int userId, int quizId) throws Exception {
         QuizAttempt quizAttempt = new QuizAttempt();
         ArrayList<QuizAttempt> quizAttempts = quizAttempt.getAttemptDataOfAQuiz(userId, quizId);
 
@@ -90,7 +90,7 @@ public class QWQuizKnowledge {
      * @param quizId
      * @return
      */
-    public double findQWAverageGrade(int userId, int quizId) throws Exception {
+    public double findAverageGrade(int userId, int quizId) throws Exception {
         QuizGrades quizGrade = new QuizGrades();
         quizGrade = quizGrade.getQuizGradesData(userId, quizId);
 

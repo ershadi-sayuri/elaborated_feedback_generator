@@ -1,7 +1,6 @@
 package feedbackgenerator.controllers.algorithms.knowledge.quizwise;
 
 import feedbackgenerator.models.QuestionAttempts;
-import feedbackgenerator.models.QuizSlot;
 
 import java.util.ArrayList;
 
@@ -19,37 +18,94 @@ public class QWQuestionKnowledge {
      * @return
      * @throws Exception
      */
-    public double findQuestionGradingProgress(int userId, int quizId) throws Exception {
+    public double findQuestionAttemptProgress(int userId, int quizId) throws Exception {
         QuestionAttempts questionAttempt = new QuestionAttempts();
 
-        // gets the unique question ids of a user
-        ArrayList<Integer> questionIds = questionAttempt.getQuestionIdsOfAQuizOfAUser(userId, quizId);
+        // get question attempt data of questions belonging to a particular quiz of a user
+        ArrayList<QuestionAttempts> questionAttempts = questionAttempt.getQuestionAttemptDataOfAQuiz(userId, quizId);
+
+        // get the question ids of questions belonging to a particular quiz of a user
+        ArrayList<Integer> questionIds = questionAttempt.getQuestionIdsOfAQuiz(userId, quizId);
 
         double questionGradingProgress = 0;
 
         for (int i = 0; i < questionIds.size(); i++) {
-            // gets the question attempt data for each question id of a user
-            ArrayList<QuestionAttempts> questionAttempts = questionAttempt.getQuestionAttemptsData(questionIds.get(i));
+
+            // attempts of a question
+            ArrayList<Integer> attemptGrades = new ArrayList<Integer>();
+
+            for (QuestionAttempts attempt : questionAttempts) {
+                if (questionIds.get(i) == attempt.getQuestionId()) {
+                    if (attempt.getRightAnswer().equals(attempt.getResponseSummary())) {
+                        attemptGrades.add(1);
+                    } else {
+                        attemptGrades.add(0);
+                    }
+                }
+            }
 
             double attemptCorrectness = 0;
-            for (int j = 0; j < questionAttempts.size() - j; j++) {
-                if (questionAttempts.get(j).getRightAnswer().equals(questionAttempts.get(j).getResponseSummary())) {
+            for (int j = 0; j < attemptGrades.size() - 1; j++) {
+                if (attemptGrades.get(j + 1) >= attemptGrades.get(j)) {
                     attemptCorrectness += 1;
                 }
             }
 
-            double averageAttemptCorrectness;
+            double averageAttemptCorrectness = 0;
             if (attemptCorrectness != 0) {
-                averageAttemptCorrectness = attemptCorrectness / questionAttempts.size();
-            } else {
-                averageAttemptCorrectness = 0;
+                averageAttemptCorrectness = attemptCorrectness / attemptGrades.size();
             }
 
             questionGradingProgress += averageAttemptCorrectness;
         }
 
-        double averageQuestionGradingProgress = questionGradingProgress / questionIds.size();
+        double averageQuestionGradingProgress = 0;
+        if (questionGradingProgress != 0) {
+            averageQuestionGradingProgress = questionGradingProgress / questionIds.size();
+        }
 
         return averageQuestionGradingProgress;
+    }
+
+    public double findAverageQuestionAttemptGrade(int userId, int quizId) throws Exception {
+        QuestionAttempts questionAttempt = new QuestionAttempts();
+
+        // get question attempt data of questions belonging to a particular quiz of a user
+        ArrayList<QuestionAttempts> questionAttempts = questionAttempt.getQuestionAttemptDataOfAQuiz(userId, quizId);
+
+        // get the question ids of questions belonging to a particular quiz of a user
+        ArrayList<Integer> questionIds = questionAttempt.getQuestionIdsOfAQuiz(userId, quizId);
+
+        double questionAttemptGrade = 0;
+
+        for (int i = 0; i < questionIds.size(); i++) {
+
+            // attempts of a question
+            double attemptCorrectness = 0;
+            int numberOfAttempts = 0;
+
+            for (QuestionAttempts attempt : questionAttempts) {
+                if (questionIds.get(i) == attempt.getQuestionId()) {
+                    numberOfAttempts += 1;
+                    if (attempt.getRightAnswer().equals(attempt.getResponseSummary())) {
+                        attemptCorrectness += 1;
+                    }
+                }
+            }
+
+            double averageAttemptCorrectness = 0;
+            if (attemptCorrectness != 0) {
+                averageAttemptCorrectness = attemptCorrectness / numberOfAttempts;
+            }
+
+            questionAttemptGrade += averageAttemptCorrectness;
+        }
+
+        double averageQuestionAttemptGrade = 0;
+        if (questionAttemptGrade != 0) {
+            averageQuestionAttemptGrade = questionAttemptGrade / questionIds.size();
+        }
+
+        return averageQuestionAttemptGrade;
     }
 }

@@ -1,0 +1,24 @@
+package feedbackgeneratortest.controllerstest.algorithmstest.knowledgetest.quizwisetest;
+
+import feedbackgenerator.controllers.algorithms.knowledge.quizwise.QWOverallQuizKnowledge;
+import org.junit.Test;
+
+/**
+ * Created by Ershadi Sayuri on 2/25/2016.
+ */
+public class QWOverallQuizKnowledgeTest {
+
+    @Test
+    public void testFindQuizWiseQuizGradingProgress() throws Exception {
+        QWOverallQuizKnowledge qwOverallQuizKnowledge = new QWOverallQuizKnowledge();
+        double qwQuizGradingProgress = qwOverallQuizKnowledge.findQuizGradingProgress(4, 2);
+        System.out.println(qwQuizGradingProgress);
+    }
+
+    @Test
+    public void testFindQuizWiseAverageGrade() throws Exception {
+        QWOverallQuizKnowledge qwOverallQuizKnowledge = new QWOverallQuizKnowledge();
+        double qwAverageGrade = qwOverallQuizKnowledge.findAverageGrade(4, 2);
+        System.out.println(qwAverageGrade);
+    }
+}
