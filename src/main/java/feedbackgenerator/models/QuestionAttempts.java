@@ -158,15 +158,16 @@ public class QuestionAttempts {
     }
 
     /**
-     * get question attempt data of questions belonging to a particular quiz of a user
+     * get question attempt data of questions belonging to a particular question of a user
      *
      * @param userId
-     * @param quizId
+     * @param questionId
      * @return
      * @throws Exception
      */
-    public ArrayList<QuestionAttempts> getQuestionAttemptDataOfAQuiz(int userId, int quizId) throws Exception {
-        String query = "SELECT * FROM mdl_question_attempts WHERE id IN (SELECT questionattemptid FROM mdl_question_attempt_steps WHERE userid = "+userId+" && state = 'complete') && questionid IN (SELECT questionid FROM mdl_quiz_slots WHERE quizid = "+quizId+")";
+    public ArrayList<QuestionAttempts> getQuestionAttemptDataOfAQuiz(int userId, int questionId) throws Exception {
+        String query = "SELECT * FROM mdl_question_attempts WHERE questionid = " + questionId + " && id IN (SELECT " +
+                "questionattemptid FROM mdl_question_attempt_steps WHERE userid = " + userId + ")";
 
         Connection connection = DataSource.getConnection();
         ResultSet resultSet = DBHandler.getData(connection, query);
@@ -195,30 +196,5 @@ public class QuestionAttempts {
         }
 
         return questionAttempts;
-    }
-
-    /**
-     * get the question ids of questions belonging to a particular quiz of a user
-     *
-     * @param userId
-     * @param quizId
-     * @return
-     * @throws Exception
-     */
-    public ArrayList<Integer> getQuestionIdsOfAQuiz(int userId, int quizId) throws Exception {
-        String query = "SELECT questionid FROM mdl_question_attempts WHERE id IN (SELECT questionattemptid FROM " +
-                "mdl_question_attempt_steps WHERE userid = " + userId + " && state = 'complete') && questionid IN " +
-                "(SELECT questionid FROM mdl_quiz_slots WHERE quizid = " + quizId + ") GROUP BY questionid";
-
-        Connection connection = DataSource.getConnection();
-        ResultSet resultSet = DBHandler.getData(connection, query);
-
-        ArrayList<Integer> questionIds = new ArrayList<Integer>();
-
-        while (resultSet.next()) {
-            questionIds.add(Integer.parseInt(resultSet.getString(1)));
-        }
-
-        return questionIds;
     }
 }

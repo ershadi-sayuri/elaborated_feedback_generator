@@ -1,4 +1,4 @@
-package feedbackgenerator.controllers.algorithms.knowledge.quizwise;
+package feedbackgenerator.controllers.algorithms.knowledge.quizwise.total;
 
 import feedbackgenerator.models.Quiz;
 import feedbackgenerator.models.QuizAttempt;

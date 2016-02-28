@@ -74,18 +74,4 @@ public class QuestionAttemptSteps {
     public void setUserId(int userId) {
         this.userId = userId;
     }
-
-//    public ArrayList<Integer> getQuestionAttemptStepsData(int userId) throws Exception {
-//        String query = "SELECT questionattemptid FROM mdl_question_attempt_steps WHERE userid = " + userId;
-//        Connection connection = DataSource.getConnection();
-//        ResultSet resultSet = DBHandler.getData(connection, query);
-//
-//        ArrayList<Integer> quizAttempts = new ArrayList<Integer>();
-//
-//        while (resultSet.next()) {
-//            quizAttempts.add(Integer.parseInt(resultSet.getString(1)));
-//        }
-//
-//        return quizAttempts;
-//    }
 }

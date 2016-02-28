@@ -76,25 +76,47 @@ public class QuizSlot {
     }
 
     /**
-     * get the maximum of a particular quiz
+     * get the question ids of questions belonging to a particular quiz of a user
      *
      * @param quizId
      * @return
      * @throws Exception
      */
-//    public double getQuizMaxTotal(int quizId) throws Exception {
-//        String query = "SELECT SUM(maxmark) FROM mdl_quiz_slots WHERE quizid = " + quizId;
-//        Connection connection = DataSource.getConnection();
-//        ResultSet resultSet = DBHandler.getData(connection, query);
-//
-//        ArrayList<QuizAttempt> quizAttempts = new ArrayList<QuizAttempt>();
-//
-//        double maxMark = 0;
-//
-//        if (resultSet.next()) {
-//            maxMark = Double.parseDouble(resultSet.getString(1));
-//        }
-//
-//        return maxMark;
-//    }
+    public ArrayList<Integer> getQuestionIdsOfAQuiz(int quizId) throws Exception {
+        String query = "SELECT questionid FROM mdl_quiz_slots WHERE quizid = " + quizId;
+
+        Connection connection = DataSource.getConnection();
+        ResultSet resultSet = DBHandler.getData(connection, query);
+
+        ArrayList<Integer> questionIds = new ArrayList<Integer>();
+
+        while (resultSet.next()) {
+            questionIds.add(Integer.parseInt(resultSet.getString(1)));
+        }
+
+        return questionIds;
+    }
+
+    /**
+     * get the difficulty wise question ids of questions belonging to a particular quiz of a user
+     *
+     * @param quizId
+     * @return
+     * @throws Exception
+     */
+    public ArrayList<Integer> getDifficultyWiseQuestionIdsOfAQuiz(int quizId, String difficulty) throws Exception {
+        String query = "SELECT questionid FROM mdl_quiz_slots WHERE quizid = " + quizId + " && questionid IN (SELECT " +
+                "id from mdl_question WHERE name like '%" + difficulty + "%')";
+
+        Connection connection = DataSource.getConnection();
+        ResultSet resultSet = DBHandler.getData(connection, query);
+
+        ArrayList<Integer> questionIds = new ArrayList<Integer>();
+
+        while (resultSet.next()) {
+            questionIds.add(Integer.parseInt(resultSet.getString(1)));
+        }
+
+        return questionIds;
+    }
 }

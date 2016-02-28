@@ -1,6 +1,6 @@
-package feedbackgeneratortest.controllerstest.algorithmstest.knowledgetest.quizwisetest;
+package feedbackgeneratortest.controllerstest.algorithmstest.knowledgetest.quizwisetest.categoriestest;
 
-import feedbackgenerator.controllers.algorithms.knowledge.quizwise.QWOverallQuizKnowledge;
+import feedbackgenerator.controllers.algorithms.knowledge.quizwise.total.QWOverallQuizKnowledge;
 import org.junit.Test;
 
 /**
