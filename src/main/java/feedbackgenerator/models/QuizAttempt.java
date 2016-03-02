@@ -140,6 +140,7 @@ public class QuizAttempt {
 
     /**
      * gets the attempt data of a particular quiz of a user
+     *
      * @param userId
      * @param quizId
      * @return quizAttempts
@@ -147,6 +148,51 @@ public class QuizAttempt {
      */
     public ArrayList<QuizAttempt> getAttemptDataOfAQuiz(int userId, int quizId) throws Exception {
         String query = "SELECT * FROM mdl_quiz_attempts WHERE userid = " + userId + " && quiz=" + quizId;
+        Connection connection = DataSource.getConnection();
+        ResultSet resultSet = DBHandler.getData(connection, query);
+
+        ArrayList<QuizAttempt> quizAttempts = new ArrayList<QuizAttempt>();
+
+        while (resultSet.next()) {
+            QuizAttempt quizAttempt = new QuizAttempt();
+
+            quizAttempt.setId(Integer.parseInt(resultSet.getString(1)));
+            quizAttempt.setQuiz(Integer.parseInt(resultSet.getString(2)));
+            quizAttempt.setUserId(Integer.parseInt(resultSet.getString(3)));
+            quizAttempt.setAttempt(Integer.parseInt(resultSet.getString(4)));
+            quizAttempt.setUniqueId(Integer.parseInt(resultSet.getString(5)));
+            quizAttempt.setLayout(resultSet.getString(6));
+            quizAttempt.setCurrentPage(Integer.parseInt(resultSet.getString(7)));
+            quizAttempt.setPreview(Integer.parseInt(resultSet.getString(8)));
+            quizAttempt.setState(resultSet.getString(9));
+            quizAttempt.setTimeStart(Long.parseLong(resultSet.getString(10)));
+            quizAttempt.setTimeFinish(Long.parseLong(resultSet.getString(11)));
+            quizAttempt.setTimeModified(Long.parseLong(resultSet.getString(12)));
+            quizAttempt.setTimeCheckState(resultSet.getString(13));
+            quizAttempt.setSumGrades(Double.parseDouble(resultSet.getString(14)));
+
+            quizAttempts.add(quizAttempt);
+        }
+
+        return quizAttempts;
+    }
+
+    public ArrayList<Integer> getUserQuizIds(int userId) throws Exception {
+        String query = "SELECT quiz FROM mdl_quiz_attempts WHERE userid = " + userId + " GROUP BY quiz";
+        Connection connection = DataSource.getConnection();
+        ResultSet resultSet = DBHandler.getData(connection, query);
+
+        ArrayList<Integer> quizIds = new ArrayList<Integer>();
+
+        while (resultSet.next()) {
+            quizIds.add(Integer.parseInt(resultSet.getString(1)));
+        }
+
+        return quizIds;
+    }
+
+    public ArrayList<QuizAttempt> getUserQuizAttempts(int quizId) throws Exception {
+        String query = "SELECT * FROM mdl_quiz_attempts WHERE quiz=" + quizId;
         Connection connection = DataSource.getConnection();
         ResultSet resultSet = DBHandler.getData(connection, query);
 

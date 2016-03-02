@@ -6,24 +6,14 @@ import feedbackgenerator.models.QuizSlot;
 
 import java.util.ArrayList;
 
-
 /**
  * Created by Ershadi Sayuri on 2/13/2016.
  */
-public class QWQuestionKnowledge {
-
-    /**
-     * find the grading progress of a question based on its attempts by a particular user and a quiz
-     *
-     * @param userId
-     * @param quizId
-     * @return
-     * @throws Exception
-     */
-    public double findQuestionAttemptProgress(int userId, int quizId) throws Exception {
+public class QWDifficultyOrTopicKnowledge {
+    public double findDifficultyOrTopicProgress(int userId, int quizId, String topic) throws Exception {
         QuizSlot quizSlot = new QuizSlot();
         // get the question ids of questions belonging to a particular quiz
-        ArrayList<Integer> questionIds = quizSlot.getQuestionIdsOfAQuiz(quizId);
+        ArrayList<Integer> questionIds = quizSlot.getNameWiseQuestionIdsOfAQuiz(quizId, topic);
 
         Progress progress = new Progress();
         double quizGradingProgress = progress.findQuizProgress(questionIds, userId);
@@ -36,19 +26,19 @@ public class QWQuestionKnowledge {
         return averageQuizGradingProgress;
     }
 
-    public double findAverageQuestionAttemptGrade(int userId, int quizId) throws Exception {
+    public double findAverageDifficultyOrTopicGrade(int userId, int quizId, String topic) throws Exception {
         QuizSlot quizSlot = new QuizSlot();
         // get the question ids of questions belonging to a particular quiz
-        ArrayList<Integer> questionIds = quizSlot.getQuestionIdsOfAQuiz(quizId);
+        ArrayList<Integer> questionIds = quizSlot.getNameWiseQuestionIdsOfAQuiz(quizId, topic);
 
         Grade grade = new Grade();
-        double questionGrade = grade.findQuizGrade(questionIds, userId);
+        double quizGrade = grade.findQuizGrade(questionIds, userId);
 
-        double averageQuestionGrade = 0;
-        if (questionGrade != 0) {
-            averageQuestionGrade = questionGrade / questionIds.size();
+        double averageQuizGrade = 0;
+        if (quizGrade != 0) {
+            averageQuizGrade = quizGrade / questionIds.size();
         }
 
-        return averageQuestionGrade;
+        return averageQuizGrade;
     }
 }

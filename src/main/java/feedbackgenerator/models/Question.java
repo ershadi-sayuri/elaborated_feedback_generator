@@ -297,16 +297,4 @@ public class Question {
         this.modifiedBy = modifiedBy;
     }
 
-    public void getAllQuestionData(User user) throws SQLException, ClassNotFoundException {
-//        String query = "SELECT * FROM mdl_question";
-//        DBConnectionPool dbConnectionPool = new DBConnectionPool();
-//        ResultSet resultSet = DBHandler.getData(dbConnectionPool.getConnectionFromPool(), query);
-//        if (resultSet.next()) {
-//            .setNic(resultSet.getString(2));
-//            customer.setName(resultSet.getString(3));
-//            customer.setAddress(resultSet.getString(4));
-//            customer.setContactNumber(resultSet.getString(5));
-//        }
-//        return customer;
-    }
 }

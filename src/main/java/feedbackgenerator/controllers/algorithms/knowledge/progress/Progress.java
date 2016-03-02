@@ -1,4 +1,4 @@
-package feedbackgenerator.controllers.algorithms.knowledge.quizwise.progress;
+package feedbackgenerator.controllers.algorithms.knowledge.progress;
 
 import feedbackgenerator.models.QuestionAttempts;
 
@@ -7,9 +7,9 @@ import java.util.ArrayList;
 /**
  * Created by Ershadi Sayuri on 2/28/2016.
  */
-public class QWProgress {
+public class Progress {
     public double findQuizProgress(ArrayList<Integer> questionIds, int userId) throws Exception {
-        double questionGradingProgress = 0;
+        double quizGradingProgress = 0;
 
         for (int i = 0; i < questionIds.size(); i++) {
             // get attempt data of each question of the user
@@ -33,14 +33,14 @@ public class QWProgress {
                 }
             }
 
-            double averageAttemptProgress = 0;
+            double questionGradingProgress = 0;
             if (questionAttemptProgress != 0) {
-                averageAttemptProgress = questionAttemptProgress / (attemptGrades.size() - 1);
+                questionGradingProgress = questionAttemptProgress / (attemptGrades.size() - 1);
             }
 
-            questionGradingProgress += averageAttemptProgress;
+            quizGradingProgress += questionGradingProgress;
         }
 
-        return questionGradingProgress;
+        return quizGradingProgress;
     }
 }

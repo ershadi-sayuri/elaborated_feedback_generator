@@ -31,8 +31,4 @@ public class QuizFeedback {
     public void setMaxGrade(double maxGrade) {
         this.maxGrade = maxGrade;
     }
-
-    public void getQuizFeedbackData(){
-
-    }
 }

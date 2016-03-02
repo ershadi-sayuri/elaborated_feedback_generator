@@ -104,9 +104,9 @@ public class QuizSlot {
      * @return
      * @throws Exception
      */
-    public ArrayList<Integer> getDifficultyWiseQuestionIdsOfAQuiz(int quizId, String difficulty) throws Exception {
+    public ArrayList<Integer> getNameWiseQuestionIdsOfAQuiz(int quizId, String topic) throws Exception {
         String query = "SELECT questionid FROM mdl_quiz_slots WHERE quizid = " + quizId + " && questionid IN (SELECT " +
-                "id from mdl_question WHERE name like '%" + difficulty + "%')";
+                "id from mdl_question WHERE name like '%" + topic + "%')";
 
         Connection connection = DataSource.getConnection();
         ResultSet resultSet = DBHandler.getData(connection, query);
@@ -118,5 +118,52 @@ public class QuizSlot {
         }
 
         return questionIds;
+    }
+
+    public ArrayList<Integer> getDifficultyAndTopicWiseQuestionIdsOfAQuiz(int quizId, String topic, String difficulty) throws Exception {
+        String query = "SELECT questionid FROM mdl_quiz_slots WHERE quizid = " + quizId + " && questionid IN (SELECT " +
+                "id from mdl_question WHERE name like '%" + topic + "%' AND name like '%" + difficulty + "%')";
+
+        Connection connection = DataSource.getConnection();
+        ResultSet resultSet = DBHandler.getData(connection, query);
+
+        ArrayList<Integer> questionIds = new ArrayList<Integer>();
+
+        while (resultSet.next()) {
+            questionIds.add(Integer.parseInt(resultSet.getString(1)));
+        }
+
+        return questionIds;
+    }
+
+    public ArrayList<String> getDifferentNamesOfQuestionsByQuiz(int quizId) throws Exception {
+        String query = "SELECT name from mdl_question WHERE id IN (SELECT id from mdl_question GROUP BY name) && id " +
+                "IN (SELECT questionid FROM mdl_quiz_slots WHERE quizid = " + quizId + ")";
+
+        Connection connection = DataSource.getConnection();
+        ResultSet resultSet = DBHandler.getData(connection, query);
+
+        ArrayList<String> questionNames = new ArrayList<String>();
+
+        while (resultSet.next()) {
+            questionNames.add(resultSet.getString(1));
+        }
+
+        return questionNames;
+    }
+
+    public ArrayList<String> getDifferentNamesOfQuestions() throws Exception {
+        String query = "SELECT name from mdl_question WHERE id IN (SELECT id from mdl_question GROUP BY name)";
+
+        Connection connection = DataSource.getConnection();
+        ResultSet resultSet = DBHandler.getData(connection, query);
+
+        ArrayList<String> questionNames = new ArrayList<String>();
+
+        while (resultSet.next()) {
+            questionNames.add(resultSet.getString(1));
+        }
+
+        return questionNames;
     }
 }
