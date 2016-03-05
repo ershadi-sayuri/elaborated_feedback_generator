@@ -1,5 +1,6 @@
 package feedbackgenerator.models;
 
+import feedbackgenerator.dbconnection.DBConnectionPool;
 import feedbackgenerator.dbconnection.DataSource;
 import feedbackgenerator.dbhandler.DBHandler;
 
@@ -148,8 +149,7 @@ public class QuizAttempt {
      */
     public ArrayList<QuizAttempt> getAttemptDataOfAQuiz(int userId, int quizId) throws Exception {
         String query = "SELECT * FROM mdl_quiz_attempts WHERE userid = " + userId + " && quiz=" + quizId;
-        Connection connection = DataSource.getConnection();
-        ResultSet resultSet = DBHandler.getData(connection, query);
+        ResultSet resultSet = DBHandler.getData(DBConnectionPool.getConnectionToDB(), query);
 
         ArrayList<QuizAttempt> quizAttempts = new ArrayList<QuizAttempt>();
 
@@ -179,8 +179,7 @@ public class QuizAttempt {
 
     public ArrayList<Integer> getUserQuizIds(int userId) throws Exception {
         String query = "SELECT quiz FROM mdl_quiz_attempts WHERE userid = " + userId + " GROUP BY quiz";
-        Connection connection = DataSource.getConnection();
-        ResultSet resultSet = DBHandler.getData(connection, query);
+        ResultSet resultSet = DBHandler.getData(DBConnectionPool.getConnectionToDB(), query);
 
         ArrayList<Integer> quizIds = new ArrayList<Integer>();
 
@@ -193,8 +192,7 @@ public class QuizAttempt {
 
     public ArrayList<QuizAttempt> getUserQuizAttempts(int quizId) throws Exception {
         String query = "SELECT * FROM mdl_quiz_attempts WHERE quiz=" + quizId;
-        Connection connection = DataSource.getConnection();
-        ResultSet resultSet = DBHandler.getData(connection, query);
+        ResultSet resultSet = DBHandler.getData(DBConnectionPool.getConnectionToDB(), query);
 
         ArrayList<QuizAttempt> quizAttempts = new ArrayList<QuizAttempt>();
 

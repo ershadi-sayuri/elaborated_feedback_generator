@@ -1,5 +1,6 @@
 package feedbackgenerator.models;
 
+import feedbackgenerator.dbconnection.DBConnectionPool;
 import feedbackgenerator.dbconnection.DataSource;
 import feedbackgenerator.dbhandler.DBHandler;
 
@@ -60,8 +61,7 @@ public class QuizGrades {
 
     public QuizGrades getQuizGradesData(int userId, int quizId) throws Exception {
         String query = "SELECT * FROM mdl_quiz_grades WHERE userid = " + userId + " && quiz = " + quizId;
-        Connection connection = DataSource.getConnection();
-        ResultSet resultSet = DBHandler.getData(connection, query);
+        ResultSet resultSet = DBHandler.getData(DBConnectionPool.getConnectionToDB(), query);
 
         QuizGrades quizGrade = new QuizGrades();
 

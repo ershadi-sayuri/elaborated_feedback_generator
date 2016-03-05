@@ -1,5 +1,6 @@
 package feedbackgenerator.models;
 
+import feedbackgenerator.dbconnection.DBConnectionPool;
 import feedbackgenerator.dbconnection.DataSource;
 import feedbackgenerator.dbhandler.DBHandler;
 
@@ -85,8 +86,7 @@ public class QuizSlot {
     public ArrayList<Integer> getQuestionIdsOfAQuiz(int quizId) throws Exception {
         String query = "SELECT questionid FROM mdl_quiz_slots WHERE quizid = " + quizId;
 
-        Connection connection = DataSource.getConnection();
-        ResultSet resultSet = DBHandler.getData(connection, query);
+        ResultSet resultSet = DBHandler.getData(DBConnectionPool.getConnectionToDB(), query);
 
         ArrayList<Integer> questionIds = new ArrayList<Integer>();
 
@@ -108,8 +108,7 @@ public class QuizSlot {
         String query = "SELECT questionid FROM mdl_quiz_slots WHERE quizid = " + quizId + " && questionid IN (SELECT " +
                 "id from mdl_question WHERE name like '%" + topic + "%')";
 
-        Connection connection = DataSource.getConnection();
-        ResultSet resultSet = DBHandler.getData(connection, query);
+        ResultSet resultSet = DBHandler.getData(DBConnectionPool.getConnectionToDB(), query);
 
         ArrayList<Integer> questionIds = new ArrayList<Integer>();
 
@@ -124,8 +123,7 @@ public class QuizSlot {
         String query = "SELECT questionid FROM mdl_quiz_slots WHERE quizid = " + quizId + " && questionid IN (SELECT " +
                 "id from mdl_question WHERE name like '%" + topic + "%' AND name like '%" + difficulty + "%')";
 
-        Connection connection = DataSource.getConnection();
-        ResultSet resultSet = DBHandler.getData(connection, query);
+        ResultSet resultSet = DBHandler.getData(DBConnectionPool.getConnectionToDB(), query);
 
         ArrayList<Integer> questionIds = new ArrayList<Integer>();
 
@@ -140,8 +138,7 @@ public class QuizSlot {
         String query = "SELECT name from mdl_question WHERE id IN (SELECT id from mdl_question GROUP BY name) && id " +
                 "IN (SELECT questionid FROM mdl_quiz_slots WHERE quizid = " + quizId + ")";
 
-        Connection connection = DataSource.getConnection();
-        ResultSet resultSet = DBHandler.getData(connection, query);
+        ResultSet resultSet = DBHandler.getData(DBConnectionPool.getConnectionToDB(), query);
 
         ArrayList<String> questionNames = new ArrayList<String>();
 
@@ -152,16 +149,17 @@ public class QuizSlot {
         return questionNames;
     }
 
-    public ArrayList<String> getDifferentNamesOfQuestions() throws Exception {
+    public ArrayList<Title> getDifferentNamesOfQuestions() throws Exception {
         String query = "SELECT name from mdl_question WHERE id IN (SELECT id from mdl_question GROUP BY name)";
 
-        Connection connection = DataSource.getConnection();
-        ResultSet resultSet = DBHandler.getData(connection, query);
+        ResultSet resultSet = DBHandler.getData(DBConnectionPool.getConnectionToDB(), query);
 
-        ArrayList<String> questionNames = new ArrayList<String>();
+        ArrayList<Title> questionNames = new ArrayList<Title>();
 
         while (resultSet.next()) {
-            questionNames.add(resultSet.getString(1));
+            Title title = new Title();
+            title.setTitle(resultSet.getString(1));
+            questionNames.add(title);
         }
 
         return questionNames;

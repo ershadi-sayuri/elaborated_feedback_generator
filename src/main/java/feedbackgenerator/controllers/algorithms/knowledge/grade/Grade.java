@@ -25,7 +25,6 @@ public class Grade {
             ArrayList<QuestionAttempts> questionAttemptDataOfAQuiz = questionAttempt.getQuestionAttemptDataOfAQuiz(userId, questionIds.get(i));
 
             double questionAttemptGrade = 0;
-            ArrayList<Integer> attemptGrades = new ArrayList<Integer>();
 
             for (int j = 0; j < questionAttemptDataOfAQuiz.size(); j++) {
                 if (questionAttemptDataOfAQuiz.get(j).getRightAnswer().equals(questionAttemptDataOfAQuiz.get(j).getResponseSummary())) {
@@ -35,7 +34,7 @@ public class Grade {
 
             double questionGrade = 0;
             if (questionAttemptGrade != 0) {
-                questionGrade = questionAttemptGrade / attemptGrades.size();
+                questionGrade = questionAttemptGrade / questionAttemptDataOfAQuiz.size();
             }
 
             quizGrade += questionGrade;

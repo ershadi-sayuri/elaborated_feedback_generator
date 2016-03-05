@@ -10,7 +10,7 @@ import java.util.ArrayList;
  * Created by Ershadi Sayuri on 2/13/2016.
  */
 public class QWDifficultyOrTopicKnowledge {
-    public double findDifficultyOrTopicProgress(int userId, int quizId, String topic) throws Exception {
+    public double findTopicOrDifficultyProgress(int userId, int quizId, String topic) throws Exception {
         QuizSlot quizSlot = new QuizSlot();
         // get the question ids of questions belonging to a particular quiz
         ArrayList<Integer> questionIds = quizSlot.getNameWiseQuestionIdsOfAQuiz(quizId, topic);
@@ -26,7 +26,7 @@ public class QWDifficultyOrTopicKnowledge {
         return averageQuizGradingProgress;
     }
 
-    public double findAverageDifficultyOrTopicGrade(int userId, int quizId, String topic) throws Exception {
+    public double findTopicOrDifficultyGrade(int userId, int quizId, String topic) throws Exception {
         QuizSlot quizSlot = new QuizSlot();
         // get the question ids of questions belonging to a particular quiz
         ArrayList<Integer> questionIds = quizSlot.getNameWiseQuestionIdsOfAQuiz(quizId, topic);

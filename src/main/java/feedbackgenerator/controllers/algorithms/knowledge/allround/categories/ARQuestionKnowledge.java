@@ -4,6 +4,8 @@ import feedbackgenerator.models.QuizAttempt;
 
 import java.util.ArrayList;
 
+import static org.junit.Assert.*;
+
 /**
  * Created by Ershadi Sayuri on 2/27/2016.
  */
@@ -32,7 +34,10 @@ public class ARQuestionKnowledge {
             userProgress += quizProgress;
         }
 
-        double averageUserProgress = userProgress / userQuizIds.size();
+        double averageUserProgress = 0;
+        if (userProgress != 0) {
+            averageUserProgress = userProgress / userQuizIds.size();
+        }
 
         return averageUserProgress;
     }
@@ -60,7 +65,10 @@ public class ARQuestionKnowledge {
             userGrade += averageQuizGrade;
         }
 
-        double averageUserGrade = userGrade / userQuizIds.size();
+        double averageUserGrade = 0;
+        if (userGrade != 0) {
+            averageUserGrade = userGrade / userQuizIds.size();
+        }
 
         return averageUserGrade;
     }

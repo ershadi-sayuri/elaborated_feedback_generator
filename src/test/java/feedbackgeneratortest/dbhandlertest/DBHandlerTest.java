@@ -1,5 +1,6 @@
 package feedbackgeneratortest.dbhandlertest;
 
+import feedbackgenerator.dbconnection.DBConnectionPool;
 import feedbackgenerator.dbconnection.DataSource;
 import feedbackgenerator.dbhandler.DBHandler;
 import org.junit.Test;
@@ -22,7 +23,7 @@ public class DBHandlerTest {
     public void testGetData() throws Exception {
         DBHandler dbHandler = new DBHandler();
         DataSource dataSource = new DataSource();
-        ResultSet resultSet = dbHandler.getData(dataSource.getConnection(), "SELECT * FROM mdl_question");
+        ResultSet resultSet = dbHandler.getData(DBConnectionPool.getConnectionToDB(), "SELECT * FROM mdl_question");
         while (resultSet.next()){
             System.out.println(resultSet.getString(4));
         }

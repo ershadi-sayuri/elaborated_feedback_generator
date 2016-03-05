@@ -37,7 +37,7 @@ public class ARDifficultyOrTopicKnowledge {
         }
 
         double quizGradingProgress = 0;
-        if (quizProgress != 0) {
+        if (quizProgress != 0 && userQuizGrades.size() > 1) {
             quizGradingProgress = quizProgress / (userQuizGrades.size() - 1);
         }
 
@@ -63,7 +63,7 @@ public class ARDifficultyOrTopicKnowledge {
 
         double quizGrade = 0;
 
-        for (int i = 0; i < userQuizGrades.size() - 1; i++) {
+        for (int i = 0; i < userQuizGrades.size(); i++) {
             quizGrade += userQuizGrades.get(i);
         }
 

@@ -11,14 +11,14 @@ public class QWOverallQuizKnowledgeTest {
     @Test
     public void testFindQuizWiseQuizGradingProgress() throws Exception {
         QWOverallQuizKnowledge qwOverallQuizKnowledge = new QWOverallQuizKnowledge();
-        double qwQuizGradingProgress = qwOverallQuizKnowledge.findQuizGradingProgress(4, 2);
+        double qwQuizGradingProgress = qwOverallQuizKnowledge.findQuizKnowledge(4, 2);
         System.out.println(qwQuizGradingProgress);
     }
 
     @Test
     public void testFindQuizWiseAverageGrade() throws Exception {
         QWOverallQuizKnowledge qwOverallQuizKnowledge = new QWOverallQuizKnowledge();
-        double qwAverageGrade = qwOverallQuizKnowledge.findAverageGrade(4, 2);
+        double qwAverageGrade = qwOverallQuizKnowledge.findQuizKnowledge(4, 2);
         System.out.println(qwAverageGrade);
     }
 }

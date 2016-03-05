@@ -169,8 +169,7 @@ public class QuestionAttempts {
         String query = "SELECT * FROM mdl_question_attempts WHERE questionid = " + questionId + " && id IN (SELECT " +
                 "questionattemptid FROM mdl_question_attempt_steps WHERE userid = " + userId + ")";
 
-        Connection connection = DataSource.getConnection();
-        ResultSet resultSet = DBHandler.getData(connection, query);
+        ResultSet resultSet = DBHandler.getData(DBConnectionPool.getConnectionToDB(), query);
 
         ArrayList<QuestionAttempts> questionAttempts = new ArrayList<QuestionAttempts>();
 

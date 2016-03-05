@@ -8,7 +8,7 @@ import java.util.ArrayList;
 /**
  * Created by Ershadi Sayuri on 2/20/2016.
  */
-public class QuizInteraction {
+public class QWQuizInteractionData {
 
     public double findQuizTiming(int userId, int quizId) throws Exception {
         QuizAttempt quizAttempt = new QuizAttempt();
@@ -99,7 +99,10 @@ public class QuizInteraction {
             }
         }
 
-        double averageQuizTiming = quizTiming / quizTimes.size();
+        double averageQuizTiming = 0;
+        if (quizTiming != 0) {
+            averageQuizTiming = quizTiming / quizTimes.size();
+        }
         return averageQuizTiming;
     }
 
@@ -125,7 +128,10 @@ public class QuizInteraction {
             }
         }
 
-        double averageQuizTimingProgress = quizTimingProgress / (quizTimes.size() - 1);
+        double averageQuizTimingProgress = 0;
+        if (quizTimingProgress != 0) {
+            averageQuizTimingProgress = quizTimingProgress / (quizTimes.size() - 1);
+        }
         return averageQuizTimingProgress;
     }
 }
