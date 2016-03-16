@@ -4,6 +4,7 @@ import com.feedbackgenerator.controllers.algorithms.user.interactiondata.quizwis
 import com.feedbackgenerator.models.QuizAttempt;
 
 import java.util.ArrayList;
+import org.junit.Test;
 
 /**
  * Created by Ershadi Sayuri on 3/2/2016.

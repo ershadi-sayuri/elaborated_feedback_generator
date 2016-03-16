@@ -68,7 +68,7 @@ public class ARDifficultyOrTopicKnowledge {
         }
 
         double averageQuizGrade = 0;
-        if (quizGrade != 0) {
+        if (quizGrade != 0 && userQuizGrades.size() > 0) {
             averageQuizGrade = quizGrade / userQuizGrades.size();
         }
 

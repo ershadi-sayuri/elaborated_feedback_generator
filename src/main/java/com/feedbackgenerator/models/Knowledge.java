@@ -31,6 +31,7 @@ public class Knowledge {
     private FSLSModels sensoryOrIntuitive;
     private FSLSModels visualOrVerbal;
     private FSLSModels sequentialOrGlobal;
+    private String recommendation;
 
     public String getTopic() {
         return topic;
@@ -230,5 +231,13 @@ public class Knowledge {
 
     public void setSequentialOrGlobal(FSLSModels sequentialOrGlobal) {
         this.sequentialOrGlobal = sequentialOrGlobal;
+    }
+
+    public String getRecommendation() {
+        return recommendation;
+    }
+
+    public void setRecommendation(String recommendation) {
+        this.recommendation = recommendation;
     }
 }

@@ -1,5 +1,6 @@
 package com.feedbackgenerator.controllers.algorithms.user.total;
 
+import com.feedbackgenerator.controllers.algorithms.learningmaterial.LearningMaterialRecommender;
 import com.feedbackgenerator.controllers.algorithms.user.interactiondata.allround.ARInteractionData;
 import com.feedbackgenerator.controllers.algorithms.user.interactiondata.quizwise.QWInteractionData;
 import com.feedbackgenerator.controllers.algorithms.user.knowledge.allround.categories.ARDifficultyOrTopicKnowledge;
@@ -101,6 +102,8 @@ public class TotalKnowledge {
         double qwEasyTopicKnowledge = 0;
         double qwKnowledge = 0;
 
+        LearningMaterialRecommender learningMaterialRecommender = new LearningMaterialRecommender();
+
         ArrayList<Knowledge> knowledges = new ArrayList<Knowledge>();
 
         for (int i = 0; i < arDifferentNamesOfQuestions.size(); i++) {
@@ -193,28 +196,29 @@ public class TotalKnowledge {
             knowledge.setSensoryOrIntuitive(learningStyleModels.get(1));
             knowledge.setVisualOrVerbal(learningStyleModels.get(2));
             knowledge.setSequentialOrGlobal(learningStyleModels.get(3));
+            knowledge.setRecommendation(learningMaterialRecommender.filterRecommendationsByTopic(knowledge).getRecommendation());
 
             knowledges.add(knowledge);
 
-            System.out.println("Topic " + arDifferentNamesOfQuestions.get(i).getTitle());
-            System.out.println("Topic Knowledge " + (arTopicKnowledge + qwTopicKnowledge) / 2);
-            System.out.println("Overall Topic Knowledge " + arTopicKnowledge);
-            System.out.println("Quiz Topic Knowledge " + qwTopicKnowledge);
-            System.out.println("Advance Topic Knowledge " + (arAdvanceTopicKnowledge + qwAdvanceTopicKnowledge) / 2);
-            System.out.println("Overall Advance Topic Knowledge " + arAdvanceTopicKnowledge);
-            System.out.println("Quiz Advance Topic Knowledge " + qwAdvanceTopicKnowledge);
-            System.out.println("Easy Topic Knowledge " + (arEasyTopicKnowledge + qwEasyTopicKnowledge) / 2);
-            System.out.println("Overall Easy Topic Knowledge " + arEasyTopicKnowledge);
-            System.out.println("Quiz Easy Topic Knowledge " + qwEasyTopicKnowledge);
-            System.out.println("Knowledge " + (arKnowledge + qwKnowledge) / 2);
-            System.out.println("Overall knowledge " + arKnowledge);
-            System.out.println("Quiz knowledge " + qwKnowledge);
-            System.out.println("Advanced knowledge " + (arAdvancedGrade + qwAdvancedGrade) / 2);
-            System.out.println("Overall advanced knowledge " + arAdvancedGrade);
-            System.out.println("Quiz advanced knowledge " + qwAdvancedGrade);
-            System.out.println("Easy knowledge " + (arEasyGrade + qwEasyGrade) / 2);
-            System.out.println("Overall easy knowledge " + arEasyGrade);
-            System.out.println("Quiz easy knowledge " + qwEasyGrade);
+//            System.out.println("Topic " + arDifferentNamesOfQuestions.get(i).getTitle());
+//            System.out.println("Topic Knowledge " + (arTopicKnowledge + qwTopicKnowledge) / 2);
+//            System.out.println("Overall Topic Knowledge " + arTopicKnowledge);
+//            System.out.println("Quiz Topic Knowledge " + qwTopicKnowledge);
+//            System.out.println("Advance Topic Knowledge " + (arAdvanceTopicKnowledge + qwAdvanceTopicKnowledge) / 2);
+//            System.out.println("Overall Advance Topic Knowledge " + arAdvanceTopicKnowledge);
+//            System.out.println("Quiz Advance Topic Knowledge " + qwAdvanceTopicKnowledge);
+//            System.out.println("Easy Topic Knowledge " + (arEasyTopicKnowledge + qwEasyTopicKnowledge) / 2);
+//            System.out.println("Overall Easy Topic Knowledge " + arEasyTopicKnowledge);
+//            System.out.println("Quiz Easy Topic Knowledge " + qwEasyTopicKnowledge);
+//            System.out.println("Knowledge " + (arKnowledge + qwKnowledge) / 2);
+//            System.out.println("Overall knowledge " + arKnowledge);
+//            System.out.println("Quiz knowledge " + qwKnowledge);
+//            System.out.println("Advanced knowledge " + (arAdvancedGrade + qwAdvancedGrade) / 2);
+//            System.out.println("Overall advanced knowledge " + arAdvancedGrade);
+//            System.out.println("Quiz advanced knowledge " + qwAdvancedGrade);
+//            System.out.println("Easy knowledge " + (arEasyGrade + qwEasyGrade) / 2);
+//            System.out.println("Overall easy knowledge " + arEasyGrade);
+//            System.out.println("Quiz easy knowledge " + qwEasyGrade);
 
         }
 

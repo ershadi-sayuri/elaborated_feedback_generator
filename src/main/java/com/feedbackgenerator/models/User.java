@@ -82,7 +82,7 @@ public class User {
         this.language = language;
     }
 
-    public void getUserData(){
+    public void getUserData() {
 
     }
 }

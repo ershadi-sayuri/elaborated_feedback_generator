@@ -6,8 +6,6 @@ import com.feedbackgenerator.models.QuizSlot;
 
 import java.util.ArrayList;
 
-import static org.junit.Assert.*;
-
 /**
  * Created by Ershadi Sayuri on 3/9/2016.
  */

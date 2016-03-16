@@ -3,7 +3,7 @@ package comtest.feedbackgeneratortest.controllerstest.algorithmstest.usertest.kn
 import com.feedbackgenerator.controllers.algorithms.user.knowledge.allround.categories.ARDifficultyTopicKnowledge;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by Ershadi Sayuri on 3/4/2016.
@@ -22,7 +22,7 @@ public class ARDifficultyTopicKnowledgeTest {
     public void testFindTopicDifficultyGrade() throws Exception {
         ARDifficultyTopicKnowledge arDifficultyTopicKnowledge = new ARDifficultyTopicKnowledge();
 
-        double topicDifficultyGrade1 = arDifficultyTopicKnowledge.findTopicDifficultyGrade(4, "agfgfg", "agfgfg");
-        assertEquals(0, topicDifficultyGrade1, 0);
+        double topicDifficultyGrade1 = arDifficultyTopicKnowledge.findTopicDifficultyGrade(3, "flow control, easy", "advanced");
+        System.out.println(topicDifficultyGrade1);
     }
 }

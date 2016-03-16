@@ -55,10 +55,12 @@ public class ARDifficultyTopicKnowledge {
             // get the question ids of questions belonging to a particular quiz
             ArrayList<Integer> questionIds = quizSlot.getDifficultyAndTopicWiseQuestionIdsOfAQuiz(userQuizIds.get(i), topic, difficulty);
 
-            Grade grade = new Grade();
-            double quizGrade = grade.findQuizGrade(questionIds, userId);
+            if (questionIds.size() > 0) {
+                Grade grade = new Grade();
+                double quizGrade = grade.findQuizGrade(questionIds, userId);
 
-            userQuizGrades.add(quizGrade);
+                userQuizGrades.add(quizGrade);
+            }
         }
 
         double quizGrade = 0;

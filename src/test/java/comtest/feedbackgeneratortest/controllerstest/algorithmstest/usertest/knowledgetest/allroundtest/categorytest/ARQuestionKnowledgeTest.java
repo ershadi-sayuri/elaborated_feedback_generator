@@ -3,7 +3,7 @@ package comtest.feedbackgeneratortest.controllerstest.algorithmstest.usertest.kn
 import com.feedbackgenerator.controllers.algorithms.user.knowledge.allround.categories.ARQuestionKnowledge;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by Ershadi Sayuri on 3/4/2016.

@@ -40,6 +40,11 @@ public class Grade {
             quizGrade += questionGrade;
         }
 
-        return quizGrade;
+        double averageQuizGrade = 0;
+        if (questionIds.size() > 0) {
+            averageQuizGrade = quizGrade / questionIds.size();
+        }
+
+        return averageQuizGrade;
     }
 }

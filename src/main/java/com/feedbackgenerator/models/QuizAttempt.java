@@ -167,7 +167,13 @@ public class QuizAttempt {
             quizAttempt.setTimeFinish(Long.parseLong(resultSet.getString(11)));
             quizAttempt.setTimeModified(Long.parseLong(resultSet.getString(12)));
             quizAttempt.setTimeCheckState(resultSet.getString(13));
-            quizAttempt.setSumGrades(Double.parseDouble(resultSet.getString(14)));
+
+            if (resultSet.getString(14) != null) {
+                quizAttempt.setSumGrades(Double.parseDouble(resultSet.getString(14)));
+            } else {
+                quizAttempt.setSumGrades(0);
+            }
+
 
             quizAttempts.add(quizAttempt);
         }
@@ -176,7 +182,7 @@ public class QuizAttempt {
     }
 
     public ArrayList<Integer> getUserQuizIds(int userId) throws Exception {
-        String query = "SELECT quiz FROM mdl_quiz_attempts WHERE userid = " + userId + " GROUP BY quiz";
+        String query = "SELECT quiz FROM mdl_quiz_attempts WHERE userid = " + userId + " AND quiz !=" + 4 + " GROUP BY quiz";
         ResultSet resultSet = DBHandler.getData(DBConnectionPool.getConnectionToDB(), query);
 
         ArrayList<Integer> quizIds = new ArrayList<Integer>();
@@ -210,7 +216,13 @@ public class QuizAttempt {
             quizAttempt.setTimeFinish(Long.parseLong(resultSet.getString(11)));
             quizAttempt.setTimeModified(Long.parseLong(resultSet.getString(12)));
             quizAttempt.setTimeCheckState(resultSet.getString(13));
-            quizAttempt.setSumGrades(Double.parseDouble(resultSet.getString(14)));
+
+            if (resultSet.getString(14) != null) {
+                quizAttempt.setSumGrades(Double.parseDouble(resultSet.getString(14)));
+            } else {
+                quizAttempt.setSumGrades(0);
+            }
+
 
             quizAttempts.add(quizAttempt);
         }

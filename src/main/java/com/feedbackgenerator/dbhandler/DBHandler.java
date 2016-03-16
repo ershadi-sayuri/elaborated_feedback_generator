@@ -25,7 +25,6 @@ public class DBHandler {
     }
 
     /**
-     *
      * @param connection
      * @param query
      * @return resultSet

@@ -9,7 +9,7 @@ import java.util.ArrayList;
  */
 public class Progress {
     public double findQuizProgress(ArrayList<Integer> questionIds, int userId) throws Exception {
-        double quizGradingProgress = 0;
+        double questionGradingProgress = 0;
 
         for (int i = 0; i < questionIds.size(); i++) {
             // get attempt data of each question of the user
@@ -33,14 +33,16 @@ public class Progress {
                 }
             }
 
-            double questionGradingProgress = 0;
+            double averageAttemptGradingProgress = 0;
             if (questionAttemptProgress != 0 && attemptGrades.size() > 1) {
-                questionGradingProgress = questionAttemptProgress / (attemptGrades.size() - 1);
+                averageAttemptGradingProgress = questionAttemptProgress / (attemptGrades.size() - 1);
             }
 
-            quizGradingProgress += questionGradingProgress;
+            questionGradingProgress += averageAttemptGradingProgress;
         }
 
+        // progress out of 1
+        double quizGradingProgress = questionGradingProgress / questionIds.size();
         return quizGradingProgress;
     }
 }

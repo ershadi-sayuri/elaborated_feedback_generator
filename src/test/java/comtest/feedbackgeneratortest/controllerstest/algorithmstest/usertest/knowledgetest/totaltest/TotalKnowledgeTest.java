@@ -15,8 +15,7 @@ public class TotalKnowledgeTest {
     public void testCalculateUserTotalKnowledge() throws Exception {
         TotalKnowledge totalKnowledge = new TotalKnowledge();
         ArrayList<Knowledge> knowledges = totalKnowledge.calculateUserTotalKnowledge(3, 2);
-        for (Knowledge k :
-                knowledges) {
+        for (Knowledge k : knowledges) {
             System.out.println(k.getTopicKnowledge());
         }
     }

@@ -3,7 +3,8 @@ package comtest.feedbackgeneratortest.controllerstest.algorithmstest.usertest.in
 import com.feedbackgenerator.controllers.algorithms.user.interactiondata.quizwise.QWInteractionData;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 
 /**
  * Created by Ershadi Sayuri on 3/4/2016.
@@ -14,8 +15,8 @@ public class QWInteractionDataTest {
     public void testFindQuizTiming() throws Exception {
         QWInteractionData qwInteractionData = new QWInteractionData();
 
-        double quizTiming1 = qwInteractionData.findQuizTiming(4, 3);
-        assertNotEquals(0, quizTiming1, 0);
+        double quizTiming1 = qwInteractionData.findQuizTiming(22, 5);
+        assertNotEquals(0.9, quizTiming1, 0.9);
 
         double quizTiming2 = qwInteractionData.findQuizTiming(2, 2);
         assertEquals(0, quizTiming2, 0);
@@ -48,6 +49,7 @@ public class QWInteractionDataTest {
         assertEquals(0, quizTimingProgress4, 0);
 
         double quizTimingProgress5 = qwInteractionData.findQuizTimingProgress(3, 2);
+        System.out.println(quizTimingProgress5);
         assertNotEquals(0, quizTimingProgress5, 0);
     }
 }

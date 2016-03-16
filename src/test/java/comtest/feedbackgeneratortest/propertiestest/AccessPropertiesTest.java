@@ -3,7 +3,7 @@ package comtest.feedbackgeneratortest.propertiestest;
 import com.feedbackgenerator.properties.AccessProperties;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by Ershadi Sayuri on 2/10/2016.

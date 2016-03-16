@@ -110,9 +110,6 @@ public class QWInteractionData {
         QuizAttempt quizAttempt = new QuizAttempt();
         ArrayList<QuizAttempt> quizAttempts = quizAttempt.getAttemptDataOfAQuiz(userId, quizId);
 
-        Quiz quiz = new Quiz();
-        quiz = quiz.getQuizData(quizId);
-
         double quizTimingProgress = 0;
 
         ArrayList<Long> quizTimes = new ArrayList<Long>();

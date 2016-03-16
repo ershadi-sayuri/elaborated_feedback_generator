@@ -29,6 +29,10 @@ public class ARDifficultyOrTopicKnowledgeTest {
 
         double topicOrDifficultyProgress5 = arDifficultyOrTopicKnowledge.findTopicOrDifficultyProgress(900, "advanced");
         assertEquals(0, topicOrDifficultyProgress5, 0);
+
+        double topicOrDifficultyProgress6 = arDifficultyOrTopicKnowledge.findTopicOrDifficultyProgress(22, "advanced");
+        System.out.println(topicOrDifficultyProgress6);
+        assertEquals(0, topicOrDifficultyProgress6, 0);
     }
 
     @Test
@@ -58,8 +62,7 @@ public class ARDifficultyOrTopicKnowledgeTest {
         assertEquals(0, topicOrDifficultyGrade6, 0);
         System.out.println(topicOrDifficultyGrade6);
 
-        double topicOrDifficultyGrade7 = arDifficultyOrTopicKnowledge.findTopicOrDifficultyGrade(4, "dsd");
-        assertEquals(0, topicOrDifficultyGrade7, 0);
+        double topicOrDifficultyGrade7 = arDifficultyOrTopicKnowledge.findTopicOrDifficultyGrade(22, "easy");
         System.out.println(topicOrDifficultyGrade7);
     }
 }

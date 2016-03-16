@@ -22,7 +22,7 @@ public class DBHandlerTest {
         DBHandler dbHandler = new DBHandler();
         DataSource dataSource = new DataSource();
         ResultSet resultSet = dbHandler.getData(DBConnectionPool.getConnectionToDB(), "SELECT * FROM mdl_question");
-        while (resultSet.next()){
+        while (resultSet.next()) {
             System.out.println(resultSet.getString(4));
         }
     }
