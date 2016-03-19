@@ -1,7 +1,7 @@
 package com.feedbackgenerator.controllers.algorithms.learningmaterial;
 
 import com.feedbackgenerator.enums.FSLSModels;
-import com.feedbackgenerator.filehandling.CSVFileReader;
+import com.feedbackgenerator.filehandling.CSVFileRead;
 import com.feedbackgenerator.models.Knowledge;
 import com.feedbackgenerator.models.LearningMaterial;
 
@@ -12,7 +12,7 @@ import java.util.ArrayList;
  */
 public class LearningMaterialRecommender {
     public Knowledge filterRecommendationsByTopic(Knowledge knowledge) {
-        CSVFileReader obj = new CSVFileReader();
+        CSVFileRead obj = new CSVFileRead();
         ArrayList<LearningMaterial> learningMaterials = obj.readCSVFile();
 
         ArrayList<LearningMaterial> matchedLM = new ArrayList<LearningMaterial>();
@@ -20,7 +20,7 @@ public class LearningMaterialRecommender {
         for (LearningMaterial learningMaterial : learningMaterials) {
             // check whether the topic area of the knowledge is similar to learning material topic are
             if (knowledge.getTopic().contains(learningMaterial.getTopic())) {
-                System.out.println(knowledge.getTopic() + "  " + learningMaterial.getTopic() + "  " + learningMaterial.getTitle());
+//                System.out.println(knowledge.getTopic() + "  " + learningMaterial.getTopic() + "  " + learningMaterial.getTitle());
                 matchedLM.add(learningMaterial);
             }
         }
@@ -49,6 +49,8 @@ public class LearningMaterialRecommender {
             }
             if (knowledge.getSensoryOrIntuitive().equals(FSLSModels.INTUITIVE)) {
                 if (learningMaterial.isTheoriesAndMeaning()) {
+                    learningMaterials1.add(learningMaterial);
+                } else if (learningMaterial.isParagraph()) {
                     learningMaterials1.add(learningMaterial);
                 }
             }
@@ -85,6 +87,8 @@ public class LearningMaterialRecommender {
             if (knowledge.getActiveOrReflective().equals(FSLSModels.REFLECTIVE)) {
                 if (learningMaterial.isThinking()) {
                     learningMaterials1.add(learningMaterial);
+                } else if (learningMaterial.isExamples()) {
+                    learningMaterials1.add(learningMaterial);
                 }
             }
         }
@@ -97,11 +101,17 @@ public class LearningMaterialRecommender {
 
         for (LearningMaterial learningMaterial : learningMaterials) {
             if (knowledge.getTopicKnowledge() < 0.3) {
-                if (learningMaterial.isEasy()) {
+                if (learningMaterial.isEasy() && learningMaterial.isMedium() && learningMaterial.isAdvanced()) {
+                    learningMaterials2.add(learningMaterial);
+                } else if (learningMaterial.isEasy() && learningMaterial.isMedium()) {
+                    learningMaterials2.add(learningMaterial);
+                } else if (learningMaterial.isEasy()) {
                     learningMaterials2.add(learningMaterial);
                 }
             } else if (knowledge.getTopicKnowledge() < 0.6) {
-                if (learningMaterial.isMedium()) {
+                if (learningMaterial.isMedium() && learningMaterial.isAdvanced()) {
+                    learningMaterials2.add(learningMaterial);
+                } else if (learningMaterial.isMedium()) {
                     learningMaterials2.add(learningMaterial);
                 }
             } else {

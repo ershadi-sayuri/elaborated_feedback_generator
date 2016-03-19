@@ -171,7 +171,7 @@ public class TotalKnowledge {
             }
 
             Knowledge knowledge = new Knowledge();
-            knowledge.setTopic(arDifferentNamesOfQuestions.get(i).getTitle());
+            knowledge.setTopic(arDifferentNamesOfQuestions.get(i).getTitle().replace(",", ""));
             knowledge.setTopicKnowledge((arTopicKnowledge + qwTopicKnowledge) / 2);
             knowledge.setOverAllTopicKnowledge(arTopicKnowledge);
             knowledge.setQuizWiseTopicKnowledge(qwTopicKnowledge);

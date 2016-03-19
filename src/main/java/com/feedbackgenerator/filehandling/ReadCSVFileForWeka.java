@@ -4,18 +4,9 @@ import weka.classifiers.Classifier;
 import weka.classifiers.Evaluation;
 import weka.classifiers.evaluation.NominalPrediction;
 import weka.classifiers.lazy.IBk;
-import weka.classifiers.rules.DecisionTable;
-import weka.classifiers.rules.PART;
-import weka.classifiers.trees.DecisionStump;
-import weka.classifiers.trees.J48;
-import weka.clusterers.EM;
 import weka.core.FastVector;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils.DataSource;
-
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
 
 /**
  * Created by Ershadi Sayuri on 3/10/2016.
@@ -33,8 +24,7 @@ public class ReadCSVFileForWeka {
         return data;
     }
 
-    public static Evaluation classify(Classifier model,
-                                      Instances trainingSet, Instances testingSet) throws Exception {
+    public static Evaluation classify(Classifier model, Instances trainingSet, Instances testingSet) throws Exception {
         Evaluation evaluation = new Evaluation(trainingSet);
 
         model.buildClassifier(trainingSet);
@@ -68,48 +58,16 @@ public class ReadCSVFileForWeka {
     }
 
     public static void main(String[] args) throws Exception {
-        Instances data = readDataFile("test13.csv");
+        Instances data = readDataFile("test19.csv");
         data.setClassIndex(data.numAttributes() - 1);
 
-        // Do 10-split cross validation
-        Instances[][] split = crossValidationSplit(data, 10);
+        IBk classifier = new IBk();
+        classifier.buildClassifier(data);   // build classifier
 
-        // Separate split into training and testing arrays
-        Instances[] trainingSplits = split[0];
-        Instances[] testingSplits = split[1];
-
-        // Use a set of classifiers
-        Classifier[] models = {
-                new IBk() // a decision tree
-//                new PART(),
-//                new DecisionTable(),//decision table majority classifier
-//                new DecisionStump() //one-level decision tree
-        };
-
-        // Run for each model
-        for (int j = 0; j < models.length; j++) {
-
-            // Collect every group of predictions for current model in a FastVector
-            FastVector predictions = new FastVector();
-
-            // For each training-testing split pair, train and test the classifier
-            for (int i = 0; i < trainingSplits.length; i++) {
-                Evaluation validation = classify(models[j], trainingSplits[i], testingSplits[i]);
-
-                predictions.appendElements(validation.predictions());
-
-                System.out.println(models[j].toString());
-            }
-
-            // Calculate overall accuracy of current classifier on all splits
-            double accuracy = calculateAccuracy(predictions);
-
-            // Print current classifier's name and accuracy in a complicated,
-            // but nice-looking way.
-            System.out.println("Accuracy of " + models[j].getClass().getSimpleName() + ": "
-                    + String.format("%.2f%%", accuracy)
-                    + "\n---------------------------------");
-        }
-
+        Evaluation eval = new Evaluation(data);
+        eval.evaluateModel(classifier, data);
+        System.out.println(eval.toSummaryString("\nResults\n======\n", false));
+        System.out.println(eval.avgCost());
     }
+
 }
