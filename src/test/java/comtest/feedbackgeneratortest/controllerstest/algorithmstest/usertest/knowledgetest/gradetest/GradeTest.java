@@ -1,6 +1,6 @@
 package comtest.feedbackgeneratortest.controllerstest.algorithmstest.usertest.knowledgetest.gradetest;
 
-import com.feedbackgenerator.controllers.algorithms.user.knowledge.grade.Grade;
+import com.feedbackgenerator.algorithms.knowledge.grade.Grade;
 import com.feedbackgenerator.models.QuizSlot;
 import org.junit.Test;
 

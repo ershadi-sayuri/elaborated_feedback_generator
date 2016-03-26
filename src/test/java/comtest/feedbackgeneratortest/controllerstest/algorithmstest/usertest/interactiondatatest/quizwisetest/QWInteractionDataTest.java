@@ -1,6 +1,6 @@
 package comtest.feedbackgeneratortest.controllerstest.algorithmstest.usertest.interactiondatatest.quizwisetest;
 
-import com.feedbackgenerator.controllers.algorithms.user.interactiondata.quizwise.QWInteractionData;
+import com.feedbackgenerator.algorithms.interactiondata.quizwise.QWInteractionData;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

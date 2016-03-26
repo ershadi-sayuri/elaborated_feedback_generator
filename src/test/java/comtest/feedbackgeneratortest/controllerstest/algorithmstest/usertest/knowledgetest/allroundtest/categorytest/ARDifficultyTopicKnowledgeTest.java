@@ -1,6 +1,6 @@
 package comtest.feedbackgeneratortest.controllerstest.algorithmstest.usertest.knowledgetest.allroundtest.categorytest;
 
-import com.feedbackgenerator.controllers.algorithms.user.knowledge.allround.categories.ARDifficultyTopicKnowledge;
+import com.feedbackgenerator.algorithms.knowledge.allround.ARDifficultyTopicKnowledge;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

@@ -1,6 +1,6 @@
 package comtest.feedbackgeneratortest.controllerstest.algorithmstest.usertest.knowledgetest.quizwisetest.categoriestest;
 
-import com.feedbackgenerator.controllers.algorithms.user.knowledge.quizwise.categories.QWOverallQuizKnowledge;
+import com.feedbackgenerator.algorithms.knowledge.quizwise.QWOverallQuizKnowledge;
 import org.junit.Test;
 
 /**

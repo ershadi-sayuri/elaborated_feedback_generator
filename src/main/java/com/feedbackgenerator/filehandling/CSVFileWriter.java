@@ -1,7 +1,7 @@
 package com.feedbackgenerator.filehandling;
 
-import com.feedbackgenerator.controllers.algorithms.learningmaterial.LearningMaterialRecommender;
-import com.feedbackgenerator.controllers.algorithms.user.total.TotalKnowledge;
+import com.feedbackgenerator.learningmaterial.LearningMaterialRecommender;
+import com.feedbackgenerator.algorithms.total.TotalKnowledge;
 import com.feedbackgenerator.models.Knowledge;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;

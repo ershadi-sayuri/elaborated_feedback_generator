@@ -1,6 +1,6 @@
 package comtest.feedbackgeneratortest.controllerstest.algorithmstest.usertest.knowledgetest.totaltest;
 
-import com.feedbackgenerator.controllers.algorithms.user.total.TotalKnowledge;
+import com.feedbackgenerator.algorithms.total.TotalKnowledge;
 import com.feedbackgenerator.models.Knowledge;
 import org.junit.Test;
 

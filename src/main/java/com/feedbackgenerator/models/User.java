@@ -1,15 +1,16 @@
 package com.feedbackgenerator.models;
 
+import com.feedbackgenerator.dbconnection.DBConnectionPool;
+import com.feedbackgenerator.dbhandler.DBHandler;
+
+import java.sql.ResultSet;
+
 /**
  * Created by Ershadi Sayuri on 2/12/2016.
  */
 
-/**
- * Uses Felder Silverman Learning Style Model and more other user data which is used to classify users based on
- * knowledge, environment, personal data and interaction parameters
- */
 public class User {
-    private String userId;
+    private int userId;
     private String userName;
     private String password;
     private String firstName;
@@ -18,11 +19,11 @@ public class User {
     private String country;
     private String language;
 
-    public String getUserId() {
+    public int getUserId() {
         return userId;
     }
 
-    public void setUserId(String userId) {
+    public void setUserId(int userId) {
         this.userId = userId;
     }
 
@@ -82,7 +83,21 @@ public class User {
         this.language = language;
     }
 
-    public void getUserData() {
+    public User getUserData(int userId) throws Exception {
+        String query = "SELECT * FROM mdl_user WHERE id = " + userId;
+        ResultSet resultSet = DBHandler.getData(DBConnectionPool.getConnectionToDB(), query);
 
+        User user = new User();
+        if (resultSet.next()) {
+            user.setUserId(Integer.parseInt(resultSet.getString(1)));
+            user.setUserName(resultSet.getString(8));
+            user.setPassword(resultSet.getString(9));
+            user.setFirstName(resultSet.getString(11));
+            user.setLastName(resultSet.getString(12));
+            user.setEmailAddress(resultSet.getString(13));
+            user.setCountry(resultSet.getString(26));
+            user.setLanguage(resultSet.getString(27));
+        }
+        return user;
     }
 }

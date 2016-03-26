@@ -1,6 +1,6 @@
 package comtest.feedbackgeneratortest.controllerstest.algorithmstest.usertest.interactiondatatest.allroundtest;
 
-import com.feedbackgenerator.controllers.algorithms.user.interactiondata.allround.ARInteractionData;
+import com.feedbackgenerator.algorithms.interactiondata.allround.ARInteractionData;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

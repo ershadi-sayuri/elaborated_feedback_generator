@@ -1,6 +1,6 @@
 package comtest.feedbackgeneratortest.controllerstest.algorithmstest.usertest.learningstyletest;
 
-import com.feedbackgenerator.controllers.algorithms.user.learningstyle.LearningStyle;
+import com.feedbackgenerator.algorithms.learningstyle.LearningStyle;
 import com.feedbackgenerator.enums.FSLSModels;
 import org.junit.Test;
 
