@@ -147,18 +147,16 @@ public class QuizSlot {
         return questionNames;
     }
 
-    public ArrayList<Title> getDifferentNamesOfQuestions() throws Exception {
+    public ArrayList<String> getDifferentNamesOfQuestions() throws Exception {
         String query = "SELECT name from mdl_question WHERE id IN (SELECT id from mdl_question GROUP BY name) && id IN " +
                 "(SELECT questionid FROM mdl_quiz_slots WHERE quizid != 4)";
 
         ResultSet resultSet = DBHandler.getData(DBConnectionPool.getConnectionToDB(), query);
 
-        ArrayList<Title> questionNames = new ArrayList<Title>();
+        ArrayList<String> questionNames = new ArrayList<String>();
 
         while (resultSet.next()) {
-            Title title = new Title();
-            title.setTitle(resultSet.getString(1));
-            questionNames.add(title);
+            questionNames.add(resultSet.getString(1));
         }
 
         return questionNames;

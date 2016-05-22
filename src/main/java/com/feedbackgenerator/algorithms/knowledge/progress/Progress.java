@@ -8,7 +8,15 @@ import java.util.ArrayList;
  * Created by Ershadi Sayuri on 2/28/2016.
  */
 public class Progress {
-    public double findQuizProgress(ArrayList<Integer> questionIds, int userId) throws Exception {
+    /**
+     * find the progress (improvement) of different categories
+     *
+     * @param questionIds
+     * @param userId
+     * @return double quizGradingProgress
+     * @throws Exception
+     */
+    public static double findQuizProgress(ArrayList<Integer> questionIds, int userId) throws Exception {
         double questionGradingProgress = 0;
 
         for (int i = 0; i < questionIds.size(); i++) {

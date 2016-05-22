@@ -17,16 +17,15 @@ public class QWQuestionKnowledge {
      *
      * @param userId
      * @param quizId
-     * @return
+     * @return averageQuizGradingProgress
      * @throws Exception
      */
-    public double findQuestionAttemptProgress(int userId, int quizId) throws Exception {
+    public static double findQuestionAttemptProgress(int userId, int quizId) throws Exception {
         QuizSlot quizSlot = new QuizSlot();
         // get the question ids of questions belonging to a particular quiz
         ArrayList<Integer> questionIds = quizSlot.getQuestionIdsOfAQuiz(quizId);
 
-        Progress progress = new Progress();
-        double quizGradingProgress = progress.findQuizProgress(questionIds, userId);
+        double quizGradingProgress = Progress.findQuizProgress(questionIds, userId);
 
         double averageQuizGradingProgress = 0;
         if (quizGradingProgress != 0 && questionIds.size() > 1) {
@@ -36,13 +35,20 @@ public class QWQuestionKnowledge {
         return averageQuizGradingProgress;
     }
 
-    public double findAverageQuestionAttemptGrade(int userId, int quizId) throws Exception {
+    /**
+     * find average question attempt grade of a particular quiz
+     *
+     * @param userId
+     * @param quizId
+     * @return averageQuestionGrade
+     * @throws Exception
+     */
+    public static double findAverageQuestionAttemptGrade(int userId, int quizId) throws Exception {
         QuizSlot quizSlot = new QuizSlot();
         // get the question ids of questions belonging to a particular quiz
         ArrayList<Integer> questionIds = quizSlot.getQuestionIdsOfAQuiz(quizId);
 
-        Grade grade = new Grade();
-        double questionGrade = grade.findQuizGrade(questionIds, userId);
+        double questionGrade = Grade.findQuizGrade(questionIds, userId);
 
         double averageQuestionGrade = 0;
         if (questionGrade != 0) {

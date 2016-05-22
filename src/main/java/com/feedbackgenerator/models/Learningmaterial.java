@@ -22,6 +22,16 @@ public class LearningMaterial {
     private boolean practical;
     private boolean thinking;
 
+    public double getKeywordRelevance() {
+        return keywordRelevance;
+    }
+
+    public void setKeywordRelevance(double keywordRelevance) {
+        this.keywordRelevance = keywordRelevance;
+    }
+
+    private double keywordRelevance;
+
     public String getUrl() {
         return url;
     }

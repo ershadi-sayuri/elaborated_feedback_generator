@@ -13,10 +13,10 @@ public class Grade {
      *
      * @param questionIds
      * @param userId
-     * @return
+     * @return double averageQuizGrade
      * @throws Exception
      */
-    public double findQuizGrade(ArrayList<Integer> questionIds, int userId) throws Exception {
+    public static double findQuizGrade(ArrayList<Integer> questionIds, int userId) throws Exception {
         double quizGrade = 0;
 
         for (int i = 0; i < questionIds.size(); i++) {

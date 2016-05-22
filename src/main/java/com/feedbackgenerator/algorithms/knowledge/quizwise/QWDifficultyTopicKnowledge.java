@@ -10,13 +10,22 @@ import java.util.ArrayList;
  * Created by Ershadi Sayuri on 2/27/2016.
  */
 public class QWDifficultyTopicKnowledge {
-    public double findTopicDifficultyProgress(int userId, int quizId, String topic, String difficulty) throws Exception {
+    /**
+     * find quiz wise progress based on questions of a particular topic belonging to particular difficulty level
+     *
+     * @param userId
+     * @param quizId
+     * @param topic
+     * @param difficulty
+     * @return averageQuizGradingProgress
+     * @throws Exception
+     */
+    public static double findTopicDifficultyProgress(int userId, int quizId, String topic, String difficulty) throws Exception {
         QuizSlot quizSlot = new QuizSlot();
         // get the question ids of questions belonging to a particular quiz
         ArrayList<Integer> questionIds = quizSlot.getDifficultyAndTopicWiseQuestionIdsOfAQuiz(quizId, topic, difficulty);
 
-        Progress progress = new Progress();
-        double quizGradingProgress = progress.findQuizProgress(questionIds, userId);
+        double quizGradingProgress = Progress.findQuizProgress(questionIds, userId);
 
         double averageQuizGradingProgress = 0;
         if (quizGradingProgress != 0 && questionIds.size() > 1) {
@@ -26,13 +35,22 @@ public class QWDifficultyTopicKnowledge {
         return averageQuizGradingProgress;
     }
 
-    public double findTopicDifficultyGrade(int userId, int quizId, String topic, String difficulty) throws Exception {
+    /**
+     * find quiz wise grade based on questions of a particular topic belonging to particular difficulty level
+     *
+     * @param userId
+     * @param quizId
+     * @param topic
+     * @param difficulty
+     * @return averageQuizGrade
+     * @throws Exception
+     */
+    public static double findTopicDifficultyGrade(int userId, int quizId, String topic, String difficulty) throws Exception {
         QuizSlot quizSlot = new QuizSlot();
         // get the question ids of questions belonging to a particular quiz
         ArrayList<Integer> questionIds = quizSlot.getDifficultyAndTopicWiseQuestionIdsOfAQuiz(quizId, topic, difficulty);
 
-        Grade grade = new Grade();
-        double quizGrade = grade.findQuizGrade(questionIds, userId);
+        double quizGrade = Grade.findQuizGrade(questionIds, userId);
 
         double averageQuizGrade = 0;
         if (quizGrade != 0) {

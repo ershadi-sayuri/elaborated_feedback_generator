@@ -11,7 +11,15 @@ import java.util.ArrayList;
  * Created by Ershadi Sayuri on 2/27/2016.
  */
 public class ARDifficultyOrTopicKnowledge {
-    public double findTopicOrDifficultyProgress(int userId, String topic) throws Exception {
+    /**
+     * find the progress of a topic or certain difficulty
+     *
+     * @param userId
+     * @param topic
+     * @return quizGradingProgress
+     * @throws Exception
+     */
+    public static double findTopicOrDifficultyProgress(int userId, String topic) throws Exception {
         QuizAttempt quizAttempt = new QuizAttempt();
         ArrayList<Integer> userQuizIds = quizAttempt.getUserQuizIds(userId);
 
@@ -22,8 +30,7 @@ public class ARDifficultyOrTopicKnowledge {
             // get the question ids of questions belonging to a particular quiz
             ArrayList<Integer> questionIds = quizSlot.getNameWiseQuestionIdsOfAQuiz(userQuizIds.get(i), topic);
 
-            Progress progress = new Progress();
-            double quizGradingProgress = progress.findQuizProgress(questionIds, userId);
+            double quizGradingProgress = Progress.findQuizProgress(questionIds, userId);
 
             userQuizGrades.add(quizGradingProgress);
         }
@@ -44,7 +51,15 @@ public class ARDifficultyOrTopicKnowledge {
         return quizGradingProgress;
     }
 
-    public double findTopicOrDifficultyGrade(int userId, String topic) throws Exception {
+    /**
+     * find the grade obtained for a particular topic or difficulty level
+     *
+     * @param userId
+     * @param topic
+     * @return averageQuizGrade
+     * @throws Exception
+     */
+    public static double findTopicOrDifficultyGrade(int userId, String topic) throws Exception {
         QuizAttempt quizAttempt = new QuizAttempt();
         ArrayList<Integer> userQuizIds = quizAttempt.getUserQuizIds(userId);
 
@@ -55,8 +70,7 @@ public class ARDifficultyOrTopicKnowledge {
             // get the question ids of questions belonging to a particular quiz
             ArrayList<Integer> questionIds = quizSlot.getNameWiseQuestionIdsOfAQuiz(userQuizIds.get(i), topic);
 
-            Grade grade = new Grade();
-            double quizGrade = grade.findQuizGrade(questionIds, userId);
+            double quizGrade = Grade.findQuizGrade(questionIds, userId);
 
             userQuizGrades.add(quizGrade);
         }

@@ -1,7 +1,6 @@
 package comtest.feedbackgeneratortest.controllerstest.algorithmstest.usertest.learningstyletest;
 
 import com.feedbackgenerator.algorithms.learningstyle.LearningStyle;
-import com.feedbackgenerator.enums.FSLSModels;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -13,11 +12,6 @@ public class LearningStyleTest {
 
     @Test
     public void testFindLearningStyleModel() throws Exception {
-        LearningStyle learningStyle = new LearningStyle();
-        ArrayList<FSLSModels> learningStyleModels = learningStyle.findLearningStyleModel(3);
 
-        for (FSLSModels fslsModel : learningStyleModels) {
-            System.out.println(fslsModel);
-        }
     }
 }

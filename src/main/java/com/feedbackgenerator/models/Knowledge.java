@@ -1,7 +1,5 @@
 package com.feedbackgenerator.models;
 
-import com.feedbackgenerator.enums.FSLSModels;
-
 /**
  * Created by Ershadi Sayuri on 3/5/2016.
  */
@@ -25,12 +23,16 @@ public class Knowledge {
     private double easyKnowledge;
     private double overAllEasyKnowledge;
     private double quizWiseEasyKnowledge;
-    private double overallInteractionData;
-    private double quizWiseInteractionData;
-    private FSLSModels activeOrReflective;
-    private FSLSModels sensoryOrIntuitive;
-    private FSLSModels visualOrVerbal;
-    private FSLSModels sequentialOrGlobal;
+
+    private long timeSpentViewingMaterial;
+    private double overAllAttemptAverage;
+    private double quizWiseAttemptAverage;
+
+    private int activeOrReflective;
+    private int sensoryOrIntuitive;
+    private int visualOrVerbal;
+    private int sequentialOrGlobal;
+
     private String recommendation;
 
     public String getTopic() {
@@ -185,51 +187,59 @@ public class Knowledge {
         this.quizWiseEasyKnowledge = quizWiseEasyKnowledge;
     }
 
-    public double getOverallInteractionData() {
-        return overallInteractionData;
+    public long getTimeSpentViewingMaterial() {
+        return timeSpentViewingMaterial;
     }
 
-    public void setOverallInteractionData(double overallInteractionData) {
-        this.overallInteractionData = overallInteractionData;
+    public void setTimeSpentViewingMaterial(long timeSpentViewingMaterial) {
+        this.timeSpentViewingMaterial = timeSpentViewingMaterial;
     }
 
-    public double getQuizWiseInteractionData() {
-        return quizWiseInteractionData;
+    public double getOverAllAttemptAverage() {
+        return overAllAttemptAverage;
     }
 
-    public void setQuizWiseInteractionData(double quizWiseInteractionData) {
-        this.quizWiseInteractionData = quizWiseInteractionData;
+    public void setOverAllAttemptAverage(double overAllAttemptAvetage) {
+        this.overAllAttemptAverage = overAllAttemptAvetage;
     }
 
-    public FSLSModels getActiveOrReflective() {
+    public double getQuizWiseAttemptAverage() {
+        return quizWiseAttemptAverage;
+    }
+
+    public void setQuizWiseAttemptAverage(double quizWiseAttemptAverage) {
+        this.quizWiseAttemptAverage = quizWiseAttemptAverage;
+    }
+
+    public int getActiveOrReflective() {
         return activeOrReflective;
     }
 
-    public void setActiveOrReflective(FSLSModels activeOrReflective) {
+    public void setActiveOrReflective(int activeOrReflective) {
         this.activeOrReflective = activeOrReflective;
     }
 
-    public FSLSModels getSensoryOrIntuitive() {
+    public int getSensoryOrIntuitive() {
         return sensoryOrIntuitive;
     }
 
-    public void setSensoryOrIntuitive(FSLSModels sensoryOrIntuitive) {
+    public void setSensoryOrIntuitive(int sensoryOrIntuitive) {
         this.sensoryOrIntuitive = sensoryOrIntuitive;
     }
 
-    public FSLSModels getVisualOrVerbal() {
+    public int getVisualOrVerbal() {
         return visualOrVerbal;
     }
 
-    public void setVisualOrVerbal(FSLSModels visualOrVerbal) {
+    public void setVisualOrVerbal(int visualOrVerbal) {
         this.visualOrVerbal = visualOrVerbal;
     }
 
-    public FSLSModels getSequentialOrGlobal() {
+    public int getSequentialOrGlobal() {
         return sequentialOrGlobal;
     }
 
-    public void setSequentialOrGlobal(FSLSModels sequentialOrGlobal) {
+    public void setSequentialOrGlobal(int sequentialOrGlobal) {
         this.sequentialOrGlobal = sequentialOrGlobal;
     }
 

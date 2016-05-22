@@ -229,4 +229,17 @@ public class QuizAttempt {
 
         return quizAttempts;
     }
+
+    public int getNumberOfAttempts(int userId, int quizId) throws Exception {
+        String query = "SELECT COUNT(id) FROM mdl_quiz_attempts WHERE userid = " + userId + " && quiz=" + quizId;
+        ResultSet resultSet = DBHandler.getData(DBConnectionPool.getConnectionToDB(), query);
+
+        int numberOfAttempts = 0;
+
+        if (resultSet.next()) {
+            numberOfAttempts = Integer.parseInt(resultSet.getString(1));
+        }
+
+        return numberOfAttempts;
+    }
 }

@@ -1,6 +1,5 @@
 package com.feedbackgenerator.algorithms.learningstyle;
 
-import com.feedbackgenerator.enums.FSLSModels;
 import com.feedbackgenerator.models.QuestionAttempt;
 import com.feedbackgenerator.models.QuizSlot;
 
@@ -10,7 +9,14 @@ import java.util.ArrayList;
  * Created by Ershadi Sayuri on 3/9/2016.
  */
 public class LearningStyle {
-    public ArrayList<FSLSModels> findLearningStyleModel(int userId) throws Exception {
+    /**
+     * finding learning style model value of an user
+     *
+     * @param userId
+     * @return ArrayList<Integer> learningStyles
+     * @throws Exception
+     */
+    public static ArrayList<Integer> findLearningStyleModel(int userId) throws Exception {
         QuizSlot quizSlot = new QuizSlot();
         // get the question ids of questions belonging to a particular quiz
         ArrayList<Integer> activeOrReflectiveIds = quizSlot.getNameWiseQuestionIdsOfAQuiz(4, "Active / Reflective");
@@ -18,41 +24,33 @@ public class LearningStyle {
         ArrayList<Integer> visualOrVerbalIds = quizSlot.getNameWiseQuestionIdsOfAQuiz(4, "Visual / Verbal");
         ArrayList<Integer> sequentialOrGlobalIds = quizSlot.getNameWiseQuestionIdsOfAQuiz(4, "Sequential / Global");
 
-        ArrayList<FSLSModels> learningStyles = new ArrayList<FSLSModels>();
+        ArrayList<Integer> learningStyles = new ArrayList<Integer>();
 
-        double activeOrReflectiveGrade = calculateLearningStyle(activeOrReflectiveIds, userId);
-        if (activeOrReflectiveGrade > 0) {
-            learningStyles.add(FSLSModels.ACTIVE);
-        } else {
-            learningStyles.add(FSLSModels.REFLECTIVE);
-        }
+        int activeOrReflectiveGrade = calculateLearningStyle(activeOrReflectiveIds, userId);
+        learningStyles.add(activeOrReflectiveGrade);
 
-        double sensoryOrIntuitiveGrade = calculateLearningStyle(sensoryOrIntuitiveIds, userId);
-        if (sensoryOrIntuitiveGrade > 0) {
-            learningStyles.add(FSLSModels.SENSORY);
-        } else {
-            learningStyles.add(FSLSModels.INTUITIVE);
-        }
+        int sensoryOrIntuitiveGrade = calculateLearningStyle(sensoryOrIntuitiveIds, userId);
+        learningStyles.add(sensoryOrIntuitiveGrade);
 
-        double visualOrVerbalGrade = calculateLearningStyle(visualOrVerbalIds, userId);
-        if (visualOrVerbalGrade > 0) {
-            learningStyles.add(FSLSModels.VISUAL);
-        } else {
-            learningStyles.add(FSLSModels.VERBAL);
-        }
+        int visualOrVerbalGrade = calculateLearningStyle(visualOrVerbalIds, userId);
+        learningStyles.add(visualOrVerbalGrade);
 
-        double sequentialOrGlobalGrade = calculateLearningStyle(sequentialOrGlobalIds, userId);
-        if (sequentialOrGlobalGrade > 0) {
-            learningStyles.add(FSLSModels.SEQUENTIAL);
-        } else {
-            learningStyles.add(FSLSModels.GLOBAL);
-        }
+        int sequentialOrGlobalGrade = calculateLearningStyle(sequentialOrGlobalIds, userId);
+        learningStyles.add(sequentialOrGlobalGrade);
 
         return learningStyles;
     }
 
-    private double calculateLearningStyle(ArrayList<Integer> questionIds, int userId) throws Exception {
-        double grade = 0;
+    /**
+     * calculate value for the learning style based on FSLSM
+     *
+     * @param questionIds
+     * @param userId
+     * @return int grade
+     * @throws Exception
+     */
+    private static int calculateLearningStyle(ArrayList<Integer> questionIds, int userId) throws Exception {
+        int grade = 0;
         for (int questionId : questionIds) {
             QuestionAttempt questionAttempt = new QuestionAttempt();
             ArrayList<QuestionAttempt> questionAttemptDataOfAQuiz = questionAttempt.getQuestionAttemptDataOfAQuiz(userId, questionId);

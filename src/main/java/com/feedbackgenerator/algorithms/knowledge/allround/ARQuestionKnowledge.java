@@ -8,7 +8,14 @@ import java.util.ArrayList;
  * Created by Ershadi Sayuri on 2/27/2016.
  */
 public class ARQuestionKnowledge {
-    public double findQuizAttemptProgress(int userId) throws Exception {
+    /**
+     * find the progress of an attempt
+     *
+     * @param userId
+     * @return averageUserProgress
+     * @throws Exception
+     */
+    public static double findQuizAttemptProgress(int userId) throws Exception {
         QuizAttempt quizAttempt = new QuizAttempt();
         ArrayList<Integer> userQuizIds = quizAttempt.getUserQuizIds(userId);
 
@@ -40,7 +47,14 @@ public class ARQuestionKnowledge {
         return averageUserProgress;
     }
 
-    public double findQuizGrade(int userId) throws Exception {
+    /**
+     * find the grade of an attempt
+     *
+     * @param userId
+     * @return averageUserGrade
+     * @throws Exception
+     */
+    public static double findQuizGrade(int userId) throws Exception {
         QuizAttempt quizAttempt = new QuizAttempt();
         ArrayList<Integer> userQuizIds = quizAttempt.getUserQuizIds(userId);
 

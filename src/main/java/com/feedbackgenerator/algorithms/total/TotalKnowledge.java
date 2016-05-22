@@ -1,19 +1,16 @@
 package com.feedbackgenerator.algorithms.total;
 
-import com.feedbackgenerator.algorithms.interactiondata.allround.ARInteractionData;
+import com.feedbackgenerator.algorithms.interactiondata.Interaction;
 import com.feedbackgenerator.algorithms.knowledge.allround.ARDifficultyOrTopicKnowledge;
-import com.feedbackgenerator.algorithms.knowledge.allround.ARQuestionKnowledge;
-import com.feedbackgenerator.algorithms.knowledge.quizwise.QWDifficultyTopicKnowledge;
-import com.feedbackgenerator.algorithms.learningstyle.LearningStyle;
-import com.feedbackgenerator.algorithms.interactiondata.quizwise.QWInteractionData;
 import com.feedbackgenerator.algorithms.knowledge.allround.ARDifficultyTopicKnowledge;
+import com.feedbackgenerator.algorithms.knowledge.allround.ARQuestionKnowledge;
 import com.feedbackgenerator.algorithms.knowledge.quizwise.QWDifficultyOrTopicKnowledge;
+import com.feedbackgenerator.algorithms.knowledge.quizwise.QWDifficultyTopicKnowledge;
 import com.feedbackgenerator.algorithms.knowledge.quizwise.QWOverallQuizKnowledge;
-import com.feedbackgenerator.learningmaterial.LearningMaterialRecommender;
-import com.feedbackgenerator.enums.FSLSModels;
+import com.feedbackgenerator.algorithms.learningstyle.LearningStyle;
+import com.feedbackgenerator.learningmaterial.InitialLearningMaterialRecommender;
 import com.feedbackgenerator.models.Knowledge;
 import com.feedbackgenerator.models.QuizSlot;
-import com.feedbackgenerator.models.Title;
 
 import java.util.ArrayList;
 
@@ -21,64 +18,73 @@ import java.util.ArrayList;
  * Created by Ershadi Sayuri on 3/4/2016.
  */
 public class TotalKnowledge {
-    public ArrayList<Knowledge> calculateUserTotalKnowledge(int userId, int quizId) throws Exception {
-        LearningStyle learningStyle = new LearningStyle();
-        ArrayList<FSLSModels> learningStyleModels = learningStyle.findLearningStyleModel(userId);
+    /**
+     * remove duplicates
+     * @param titlesWithDuplicates
+     * @return titles
+     */
+    public static ArrayList<String> removeDuplicateNames(ArrayList<String> titlesWithDuplicates) {
+        ArrayList<String> titles = new ArrayList<String>();
 
-        ARQuestionKnowledge arQuestionKnowledge = new ARQuestionKnowledge();
-        double arQuizAttemptProgress = arQuestionKnowledge.findQuizAttemptProgress(userId);
-        double arQuizGrade = arQuestionKnowledge.findQuizGrade(userId);
+        for (String title : titlesWithDuplicates) {
+            String[] newTitle = title.split(",");
+            if (!titles.contains(newTitle[0])) {
+                titles.add(newTitle[0]);
+            }
+        }
 
-        QWOverallQuizKnowledge qwOverallQuizKnowledge = new QWOverallQuizKnowledge();
-        double qwQuizGrade = qwOverallQuizKnowledge.findAverageGrade(userId, quizId);
-        double qwQuizAttemptProgress = qwOverallQuizKnowledge.findQuizGradingProgress(userId, quizId);
+        return titles;
+    }
 
-        ARDifficultyOrTopicKnowledge arDifficultyOrTopicKnowledge = new ARDifficultyOrTopicKnowledge();
+    /**
+     * calculate total knowledge to recommend learning materials
+     * @param userId
+     * @param quizId
+     * @param setRec
+     * @return knowledges
+     * @throws Exception
+     */
+    public ArrayList<Knowledge> calculateUserTotalKnowledge(int userId, int quizId, boolean setRec) throws Exception {
+        //  find learning style models
+        ArrayList<Integer> learningStyleModels = LearningStyle.findLearningStyleModel(userId);
+        // end find learning style models
 
-        double arAdvancedQuestionGrade = arDifficultyOrTopicKnowledge.findTopicOrDifficultyGrade(userId, "advanced");
-        double arAdvancedQuestionProgress = arDifficultyOrTopicKnowledge.findTopicOrDifficultyProgress(userId,
+        // find user knowledge related data
+        double arQuizAttemptProgress = ARQuestionKnowledge.findQuizAttemptProgress(userId);
+        double arQuizGrade = ARQuestionKnowledge.findQuizGrade(userId);
+
+        double qwQuizGrade = QWOverallQuizKnowledge.findAverageGrade(userId, quizId);
+        double qwQuizAttemptProgress = QWOverallQuizKnowledge.findQuizGradingProgress(userId, quizId);
+
+        double arAdvancedQuestionGrade = ARDifficultyOrTopicKnowledge.findTopicOrDifficultyGrade(userId, "advanced");
+        double arAdvancedQuestionProgress = ARDifficultyOrTopicKnowledge.findTopicOrDifficultyProgress(userId,
                 "advanced");
         double arAdvancedGrade = (arAdvancedQuestionGrade + arAdvancedQuestionProgress) / 2;
 
-        double arEasyQuestionGrade = arDifficultyOrTopicKnowledge.findTopicOrDifficultyGrade(userId, "easy");
-        double arEasyQuestionProgress = arDifficultyOrTopicKnowledge.findTopicOrDifficultyProgress(userId, "easy");
+        double arEasyQuestionGrade = ARDifficultyOrTopicKnowledge.findTopicOrDifficultyGrade(userId, "easy");
+        double arEasyQuestionProgress = ARDifficultyOrTopicKnowledge.findTopicOrDifficultyProgress(userId, "easy");
         double arEasyGrade = (arEasyQuestionGrade + arEasyQuestionProgress) / 2;
 
-        QWDifficultyOrTopicKnowledge qwDifficultyOrTopicKnowledge = new QWDifficultyOrTopicKnowledge();
-
-        double qwAdvancedQuestionGrade = qwDifficultyOrTopicKnowledge.findTopicOrDifficultyGrade(userId, quizId,
+        double qwAdvancedQuestionGrade = QWDifficultyOrTopicKnowledge.findTopicOrDifficultyGrade(userId, quizId,
                 "advanced");
-        double qwAdvancedQuestionProgress = qwDifficultyOrTopicKnowledge.findTopicOrDifficultyProgress(userId, quizId,
+        double qwAdvancedQuestionProgress = QWDifficultyOrTopicKnowledge.findTopicOrDifficultyProgress(userId, quizId,
                 "advanced");
         double qwAdvancedGrade = (qwAdvancedQuestionGrade + qwAdvancedQuestionProgress) / 2;
 
-        double qwEasyQuestionGrade = qwDifficultyOrTopicKnowledge.findTopicOrDifficultyGrade(userId, quizId, "easy");
-        double qwEasyQuestionProgress = qwDifficultyOrTopicKnowledge.findTopicOrDifficultyProgress(userId, quizId,
+        double qwEasyQuestionGrade = QWDifficultyOrTopicKnowledge.findTopicOrDifficultyGrade(userId, quizId, "easy");
+        double qwEasyQuestionProgress = QWDifficultyOrTopicKnowledge.findTopicOrDifficultyProgress(userId, quizId,
                 "easy");
         double qwEasyGrade = (qwEasyQuestionGrade + qwEasyQuestionProgress) / 2;
 
-        QWInteractionData qwInteractionData = new QWInteractionData();
-        double qwInteractionTiming = qwInteractionData.findQuizTiming(userId, quizId);
-        double qwInteractionTimingProgress = qwInteractionData.findQuizTimingProgress(userId, quizId);
-        double qwInteraction = (qwInteractionTiming + qwInteractionTimingProgress) / 2;
-
-        ARInteractionData arInteractionData = new ARInteractionData();
-        double arInteractionTiming = arInteractionData.findQuizTiming(userId);
-        double arInteractionTimingProgress = arInteractionData.findQuizTimingProgress(userId);
-        double arInteraction = (arInteractionTiming + arInteractionTimingProgress) / 2;
-
         QuizSlot quizSlot = new QuizSlot();
-        ArrayList<Title> arDifferentNamesOfQuestions = quizSlot.getDifferentNamesOfQuestions();
-        ArrayList<String> qwDifferentNamesOfQuestions = quizSlot.getDifferentNamesOfQuestionsByQuiz(quizId);
+        ArrayList<String> arNamesOfQuestionsWithDuplicates = quizSlot.getDifferentNamesOfQuestions();
+        ArrayList<String> arDifferentNamesOfQuestions = removeDuplicateNames(arNamesOfQuestionsWithDuplicates);
 
-        // finding similar elements of 2 arrays of topics
-        for (int i = 0; i < arDifferentNamesOfQuestions.size(); i++) {
-            for (int j = 0; j < qwDifferentNamesOfQuestions.size(); j++) {
-                if (arDifferentNamesOfQuestions.get(i).getTitle().equals(qwDifferentNamesOfQuestions.get(j))) {
-                    arDifferentNamesOfQuestions.get(i).setDuplicability(true);
-                }
-            }
-        }
+        ArrayList<String> qwNamesOfQuestionsWithDuplicates = quizSlot.getDifferentNamesOfQuestionsByQuiz(quizId);
+        ArrayList<String> qwDifferentNamesOfQuestions = removeDuplicateNames(qwNamesOfQuestionsWithDuplicates);
+
+        double overAllAttemptAverage = Interaction.findARNumberOfAttempts(userId);
+        double quizWiseAttemptAverage = Interaction.findQWNumberOfAttempts(userId, quizId);
 
         double arAverageDifficultyOrTopicGrade = 0;
         double arDifficultyOrTopicProgress = 0;
@@ -102,7 +108,7 @@ public class TotalKnowledge {
         double qwEasyTopicKnowledge = 0;
         double qwKnowledge = 0;
 
-        LearningMaterialRecommender learningMaterialRecommender = new LearningMaterialRecommender();
+        long timeSpentViewingMaterial = 0;
 
         ArrayList<Knowledge> knowledges = new ArrayList<Knowledge>();
 
@@ -112,21 +118,20 @@ public class TotalKnowledge {
              */
 
             // topic
-            arAverageDifficultyOrTopicGrade += arDifficultyOrTopicKnowledge.findTopicOrDifficultyGrade(userId,
-                    arDifferentNamesOfQuestions.get(i).getTitle());
-            arDifficultyOrTopicProgress += arDifficultyOrTopicKnowledge.findTopicOrDifficultyProgress(userId,
-                    arDifferentNamesOfQuestions.get(i).getTitle());
+            arAverageDifficultyOrTopicGrade += ARDifficultyOrTopicKnowledge.findTopicOrDifficultyGrade(userId,
+                    arDifferentNamesOfQuestions.get(i));
+            arDifficultyOrTopicProgress += ARDifficultyOrTopicKnowledge.findTopicOrDifficultyProgress(userId,
+                    arDifferentNamesOfQuestions.get(i));
 
             //difficulty topic
-            ARDifficultyTopicKnowledge arDifficultyTopicKnowledge = new ARDifficultyTopicKnowledge();
-            arAdvancedTopicGrade = arDifficultyTopicKnowledge.findTopicDifficultyGrade(userId,
-                    arDifferentNamesOfQuestions.get(i).getTitle(), "advanced");
-            arAdvancedTopicProgress = arDifficultyTopicKnowledge.findTopicDifficultyProgress(userId,
-                    arDifferentNamesOfQuestions.get(i).getTitle(), "advanced");
-            arEasyTopicGrade = arDifficultyTopicKnowledge.findTopicDifficultyGrade(userId,
-                    arDifferentNamesOfQuestions.get(i).getTitle(), "easy");
-            arEasyTopicProgress = arDifficultyTopicKnowledge.findTopicDifficultyProgress(userId,
-                    arDifferentNamesOfQuestions.get(i).getTitle(), "easy");
+            arAdvancedTopicGrade = ARDifficultyTopicKnowledge.findTopicDifficultyGrade(userId,
+                    arDifferentNamesOfQuestions.get(i), "advanced");
+            arAdvancedTopicProgress = ARDifficultyTopicKnowledge.findTopicDifficultyProgress(userId,
+                    arDifferentNamesOfQuestions.get(i), "advanced");
+            arEasyTopicGrade = ARDifficultyTopicKnowledge.findTopicDifficultyGrade(userId,
+                    arDifferentNamesOfQuestions.get(i), "easy");
+            arEasyTopicProgress = ARDifficultyTopicKnowledge.findTopicDifficultyProgress(userId,
+                    arDifferentNamesOfQuestions.get(i), "easy");
 
             arTopicKnowledge = (arAdvancedTopicGrade + arAdvancedTopicProgress + arEasyTopicGrade + arEasyTopicProgress)
                     / 4;
@@ -136,27 +141,29 @@ public class TotalKnowledge {
 
             arKnowledge = (arQuizAttemptProgress + arQuizGrade + arAdvancedQuestionGrade + arAdvancedQuestionProgress +
                     arEasyQuestionGrade + arEasyQuestionProgress + arAverageDifficultyOrTopicGrade +
-                    arDifficultyOrTopicProgress + arTopicKnowledge + arInteraction) / 10;
+                    arDifficultyOrTopicProgress + arTopicKnowledge) / 9;
+
+            // time spent reading materials
+            timeSpentViewingMaterial = Interaction.calculateTimSpentViewingMaterial(arDifferentNamesOfQuestions.get(i));
 
             /**
              * quiz wise knowledge
              */
 
-            if (arDifferentNamesOfQuestions.get(i).isDuplicability()) {
-                qwAverageDifficultyOrTopicGrade += qwDifficultyOrTopicKnowledge.findTopicOrDifficultyGrade(userId,
-                        quizId, arDifferentNamesOfQuestions.get(i).getTitle());
-                qwDifficultyOrTopicProgress += qwDifficultyOrTopicKnowledge.findTopicOrDifficultyProgress(userId,
-                        quizId, arDifferentNamesOfQuestions.get(i).getTitle());
+            if (qwDifferentNamesOfQuestions.contains(arDifferentNamesOfQuestions.get(i))) {
+                qwAverageDifficultyOrTopicGrade += QWDifficultyOrTopicKnowledge.findTopicOrDifficultyGrade(userId,
+                        quizId, arDifferentNamesOfQuestions.get(i));
+                qwDifficultyOrTopicProgress += QWDifficultyOrTopicKnowledge.findTopicOrDifficultyProgress(userId,
+                        quizId, arDifferentNamesOfQuestions.get(i));
 
-                QWDifficultyTopicKnowledge qwDifficultyTopicKnowledge = new QWDifficultyTopicKnowledge();
-                qwAdvancedTopicGrade = qwDifficultyTopicKnowledge.findTopicDifficultyGrade(userId, quizId,
-                        arDifferentNamesOfQuestions.get(i).getTitle(), "advanced");
-                qwAdvancedTopicProgress = qwDifficultyTopicKnowledge.findTopicDifficultyProgress(userId, quizId,
-                        arDifferentNamesOfQuestions.get(i).getTitle(), "advanced");
-                qwEasyTopicGrade = qwDifficultyTopicKnowledge.findTopicDifficultyGrade(userId, quizId,
-                        arDifferentNamesOfQuestions.get(i).getTitle(), "easy");
-                qwEasyTopicProgress = qwDifficultyTopicKnowledge.findTopicDifficultyProgress(userId, quizId,
-                        arDifferentNamesOfQuestions.get(i).getTitle(), "easy");
+                qwAdvancedTopicGrade = QWDifficultyTopicKnowledge.findTopicDifficultyGrade(userId, quizId,
+                        arDifferentNamesOfQuestions.get(i), "advanced");
+                qwAdvancedTopicProgress = QWDifficultyTopicKnowledge.findTopicDifficultyProgress(userId, quizId,
+                        arDifferentNamesOfQuestions.get(i), "advanced");
+                qwEasyTopicGrade = QWDifficultyTopicKnowledge.findTopicDifficultyGrade(userId, quizId,
+                        arDifferentNamesOfQuestions.get(i), "easy");
+                qwEasyTopicProgress = QWDifficultyTopicKnowledge.findTopicDifficultyProgress(userId, quizId,
+                        arDifferentNamesOfQuestions.get(i), "easy");
 
                 qwTopicKnowledge = (qwAdvancedTopicGrade + qwAdvancedTopicProgress + qwEasyTopicGrade + qwEasyTopicProgress)
                         / 4;
@@ -166,12 +173,11 @@ public class TotalKnowledge {
 
                 qwKnowledge = (qwQuizAttemptProgress + qwQuizGrade + qwAdvancedQuestionGrade +
                         qwAdvancedQuestionProgress + qwEasyQuestionGrade + qwEasyQuestionProgress +
-                        qwAverageDifficultyOrTopicGrade + qwDifficultyOrTopicProgress + qwTopicKnowledge +
-                        qwInteraction) / 10;
+                        qwAverageDifficultyOrTopicGrade + qwDifficultyOrTopicProgress + qwTopicKnowledge) / 9;
             }
 
             Knowledge knowledge = new Knowledge();
-            knowledge.setTopic(arDifferentNamesOfQuestions.get(i).getTitle().replace(",", ""));
+            knowledge.setTopic(arDifferentNamesOfQuestions.get(i));
             knowledge.setTopicKnowledge((arTopicKnowledge + qwTopicKnowledge) / 2);
             knowledge.setOverAllTopicKnowledge(arTopicKnowledge);
             knowledge.setQuizWiseTopicKnowledge(qwTopicKnowledge);
@@ -190,36 +196,24 @@ public class TotalKnowledge {
             knowledge.setEasyKnowledge((arEasyGrade + qwEasyGrade) / 2);
             knowledge.setOverAllEasyKnowledge(arEasyGrade);
             knowledge.setQuizWiseEasyKnowledge(qwEasyGrade);
-            knowledge.setOverallInteractionData(arInteraction);
-            knowledge.setQuizWiseInteractionData(qwInteraction);
+
+            knowledge.setTimeSpentViewingMaterial(timeSpentViewingMaterial);
+            knowledge.setOverAllAttemptAverage(overAllAttemptAverage);
+            knowledge.setQuizWiseAttemptAverage(quizWiseAttemptAverage);
+
             knowledge.setActiveOrReflective(learningStyleModels.get(0));
             knowledge.setSensoryOrIntuitive(learningStyleModels.get(1));
             knowledge.setVisualOrVerbal(learningStyleModels.get(2));
             knowledge.setSequentialOrGlobal(learningStyleModels.get(3));
-            knowledge.setRecommendation(learningMaterialRecommender.filterRecommendationsByTopic(knowledge).getRecommendation());
+
+            if (setRec == true) {
+                knowledge.setRecommendation(InitialLearningMaterialRecommender.filterRecommendationsByTopic(knowledge).getRecommendation());
+            } else {
+                knowledge.setRecommendation("?");
+            }
+
 
             knowledges.add(knowledge);
-
-//            System.out.println("Topic " + arDifferentNamesOfQuestions.get(i).getTitle());
-//            System.out.println("Topic Knowledge " + (arTopicKnowledge + qwTopicKnowledge) / 2);
-//            System.out.println("Overall Topic Knowledge " + arTopicKnowledge);
-//            System.out.println("Quiz Topic Knowledge " + qwTopicKnowledge);
-//            System.out.println("Advance Topic Knowledge " + (arAdvanceTopicKnowledge + qwAdvanceTopicKnowledge) / 2);
-//            System.out.println("Overall Advance Topic Knowledge " + arAdvanceTopicKnowledge);
-//            System.out.println("Quiz Advance Topic Knowledge " + qwAdvanceTopicKnowledge);
-//            System.out.println("Easy Topic Knowledge " + (arEasyTopicKnowledge + qwEasyTopicKnowledge) / 2);
-//            System.out.println("Overall Easy Topic Knowledge " + arEasyTopicKnowledge);
-//            System.out.println("Quiz Easy Topic Knowledge " + qwEasyTopicKnowledge);
-//            System.out.println("Knowledge " + (arKnowledge + qwKnowledge) / 2);
-//            System.out.println("Overall knowledge " + arKnowledge);
-//            System.out.println("Quiz knowledge " + qwKnowledge);
-//            System.out.println("Advanced knowledge " + (arAdvancedGrade + qwAdvancedGrade) / 2);
-//            System.out.println("Overall advanced knowledge " + arAdvancedGrade);
-//            System.out.println("Quiz advanced knowledge " + qwAdvancedGrade);
-//            System.out.println("Easy knowledge " + (arEasyGrade + qwEasyGrade) / 2);
-//            System.out.println("Overall easy knowledge " + arEasyGrade);
-//            System.out.println("Quiz easy knowledge " + qwEasyGrade);
-
         }
 
         return knowledges;

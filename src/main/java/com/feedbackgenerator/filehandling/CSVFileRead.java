@@ -13,10 +13,9 @@ import java.util.ArrayList;
  * Created by Ershadi Sayuri on 3/11/2016.
  */
 public class CSVFileRead {
-    private static final String FILE_PATH = "material 11.csv";
 
     public ArrayList<LearningMaterial> readCSVFile() {
-        String csvFile = "material 11.csv";
+        String csvFile = "data/material 11.csv";
         BufferedReader br = null;
         String line = "";
         String cvsSplitBy = ",";
@@ -46,6 +45,7 @@ public class CSVFileRead {
                 learningMaterial.setStepsGiven(Boolean.parseBoolean(material[13]));
                 learningMaterial.setPractical(Boolean.parseBoolean(material[14]));
                 learningMaterial.setThinking(Boolean.parseBoolean(material[15]));
+//                learningMaterial.setKeywordRelevance(Double.parseDouble(material[16]));
 
                 learningMaterials.add(learningMaterial);
             }
@@ -63,8 +63,6 @@ public class CSVFileRead {
                 }
             }
         }
-
-        System.out.println("Done");
 
         return learningMaterials;
     }

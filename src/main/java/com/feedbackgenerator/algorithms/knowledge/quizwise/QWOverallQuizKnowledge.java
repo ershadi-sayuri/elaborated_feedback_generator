@@ -10,7 +10,15 @@ import java.util.ArrayList;
  * Created by Ershadi Sayuri on 2/13/2016.
  */
 public class QWOverallQuizKnowledge {
-    public double findQuizGradingProgress(int userId, int quizId) throws Exception {
+    /**
+     * find quiz wise progress of the grading
+     *
+     * @param userId
+     * @param quizId
+     * @return averageQuizGradingProgress
+     * @throws Exception
+     */
+    public static double findQuizGradingProgress(int userId, int quizId) throws Exception {
         QuizAttempt quizAttempt = new QuizAttempt();
         ArrayList<QuizAttempt> quizAttempts = quizAttempt.getAttemptDataOfAQuiz(userId, quizId);
 
@@ -73,13 +81,13 @@ public class QWOverallQuizKnowledge {
     }
 
     /**
-     * this is the average grade of a user per a particular quiz out of 10
+     * this is the average grade of a user per a particular quiz out of 1
      *
      * @param userId
      * @param quizId
-     * @return
+     * @return quizAverageGrade
      */
-    public double findAverageGrade(int userId, int quizId) throws Exception {
+    public static double findAverageGrade(int userId, int quizId) throws Exception {
         QuizGrade quizGrade = new QuizGrade();
         quizGrade = quizGrade.getQuizGradesData(userId, quizId);
 
