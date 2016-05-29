@@ -8,7 +8,7 @@ import com.feedbackgenerator.algorithms.knowledge.quizwise.QWDifficultyOrTopicKn
 import com.feedbackgenerator.algorithms.knowledge.quizwise.QWDifficultyTopicKnowledge;
 import com.feedbackgenerator.algorithms.knowledge.quizwise.QWOverallQuizKnowledge;
 import com.feedbackgenerator.algorithms.learningstyle.LearningStyle;
-import com.feedbackgenerator.learningmaterial.InitialLearningMaterialRecommender;
+import com.feedbackgenerator.other.InitialLearningMaterialRecommender;
 import com.feedbackgenerator.models.Knowledge;
 import com.feedbackgenerator.models.QuizSlot;
 
@@ -20,6 +20,7 @@ import java.util.ArrayList;
 public class TotalKnowledge {
     /**
      * remove duplicates
+     *
      * @param titlesWithDuplicates
      * @return titles
      */
@@ -38,6 +39,7 @@ public class TotalKnowledge {
 
     /**
      * calculate total knowledge to recommend learning materials
+     *
      * @param userId
      * @param quizId
      * @param setRec
@@ -111,6 +113,8 @@ public class TotalKnowledge {
         long timeSpentViewingMaterial = 0;
 
         ArrayList<Knowledge> knowledges = new ArrayList<Knowledge>();
+
+        InitialLearningMaterialRecommender ilmr = new InitialLearningMaterialRecommender();
 
         for (int i = 0; i < arDifferentNamesOfQuestions.size(); i++) {
             /**
@@ -207,7 +211,7 @@ public class TotalKnowledge {
             knowledge.setSequentialOrGlobal(learningStyleModels.get(3));
 
             if (setRec == true) {
-                knowledge.setRecommendation(InitialLearningMaterialRecommender.filterRecommendationsByTopic(knowledge).getRecommendation());
+                knowledge.setRecommendation(ilmr.filterRecommendationsByTopic(knowledge).getRecommendation());
             } else {
                 knowledge.setRecommendation("?");
             }

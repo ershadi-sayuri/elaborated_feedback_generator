@@ -1,7 +1,6 @@
 package comtest.feedbackgeneratortest.restservicetest;
 
 import com.feedbackgenerator.models.InputData;
-import com.feedbackgenerator.restservice.FeedbackService;
 import org.junit.Test;
 
 import javax.ws.rs.core.Response;

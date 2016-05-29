@@ -1,0 +1,496 @@
+user id,video,images,paragraph,bullets,examples,advanced,medium,easy,topic,facts and procedures,theories and meaning,steps given,practical,thinking
+4,false,true,false,true,true,true,true,true,flow control,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,exceptions,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,threads,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,core,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,declarations and access control,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,operators and assignments,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,inner classes,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,assertions,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,classes,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,garbage collection,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,objects and collections,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,flow control,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,exceptions,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,threads,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,core,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,declarations and access control,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,operators and assignments,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,inner classes,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,assertions,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,classes,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,garbage collection,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,objects and collections,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,flow control,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,exceptions,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,threads,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,core,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,declarations and access control,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,operators and assignments,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,inner classes,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,assertions,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,classes,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,garbage collection,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,objects and collections,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,flow control,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,exceptions,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,threads,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,core,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,declarations and access control,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,operators and assignments,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,inner classes,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,assertions,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,classes,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,garbage collection,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,objects and collections,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,flow control,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,exceptions,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,threads,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,core,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,declarations and access control,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,operators and assignments,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,inner classes,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,assertions,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,classes,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,garbage collection,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,objects and collections,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,flow control,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,exceptions,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,threads,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,core,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,declarations and access control,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,operators and assignments,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,inner classes,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,assertions,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,classes,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,garbage collection,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,objects and collections,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,flow control,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,exceptions,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,threads,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,core,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,declarations and access control,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,operators and assignments,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,inner classes,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,assertions,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,classes,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,garbage collection,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,objects and collections,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,flow control,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,exceptions,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,threads,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,core,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,declarations and access control,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,operators and assignments,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,inner classes,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,assertions,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,classes,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,garbage collection,true,false,true,true,false
+4,false,true,false,true,true,true,true,true,objects and collections,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,flow control,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,exceptions,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,threads,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,core,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,declarations and access control,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,operators and assignments,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,inner classes,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,assertions,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,classes,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,garbage collection,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,objects and collections,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,flow control,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,exceptions,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,threads,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,core,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,declarations and access control,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,operators and assignments,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,inner classes,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,assertions,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,classes,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,garbage collection,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,objects and collections,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,flow control,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,exceptions,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,threads,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,core,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,declarations and access control,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,operators and assignments,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,inner classes,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,assertions,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,classes,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,garbage collection,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,objects and collections,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,flow control,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,exceptions,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,threads,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,core,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,declarations and access control,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,operators and assignments,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,inner classes,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,assertions,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,classes,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,garbage collection,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,objects and collections,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,flow control,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,exceptions,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,threads,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,core,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,declarations and access control,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,operators and assignments,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,inner classes,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,assertions,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,classes,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,garbage collection,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,objects and collections,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,flow control,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,exceptions,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,threads,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,core,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,declarations and access control,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,operators and assignments,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,inner classes,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,assertions,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,classes,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,garbage collection,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,objects and collections,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,flow control,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,exceptions,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,threads,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,core,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,declarations and access control,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,operators and assignments,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,inner classes,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,assertions,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,classes,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,garbage collection,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,objects and collections,true,false,true,true,false
+3,true,false,true,false,false,true,true,true,flow control,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,exceptions,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,threads,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,core,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,declarations and access control,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,operators and assignments,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,inner classes,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,assertions,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,classes,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,garbage collection,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,objects and collections,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,flow control,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,exceptions,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,threads,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,core,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,declarations and access control,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,operators and assignments,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,inner classes,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,assertions,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,classes,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,garbage collection,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,objects and collections,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,flow control,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,exceptions,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,threads,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,core,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,declarations and access control,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,operators and assignments,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,inner classes,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,assertions,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,classes,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,garbage collection,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,objects and collections,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,flow control,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,exceptions,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,threads,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,core,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,declarations and access control,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,operators and assignments,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,inner classes,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,assertions,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,classes,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,garbage collection,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,objects and collections,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,flow control,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,exceptions,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,threads,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,core,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,declarations and access control,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,operators and assignments,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,inner classes,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,assertions,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,classes,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,garbage collection,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,objects and collections,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,flow control,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,exceptions,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,threads,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,core,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,declarations and access control,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,operators and assignments,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,inner classes,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,assertions,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,classes,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,garbage collection,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,objects and collections,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,flow control,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,exceptions,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,threads,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,core,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,declarations and access control,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,operators and assignments,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,inner classes,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,assertions,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,classes,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,garbage collection,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,objects and collections,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,flow control,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,exceptions,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,threads,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,core,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,declarations and access control,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,operators and assignments,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,inner classes,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,assertions,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,classes,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,garbage collection,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,objects and collections,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,flow control,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,exceptions,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,threads,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,core,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,declarations and access control,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,operators and assignments,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,inner classes,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,assertions,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,classes,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,garbage collection,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,objects and collections,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,flow control,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,exceptions,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,threads,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,core,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,declarations and access control,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,operators and assignments,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,inner classes,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,assertions,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,classes,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,garbage collection,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,objects and collections,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,flow control,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,exceptions,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,threads,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,core,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,declarations and access control,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,operators and assignments,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,inner classes,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,assertions,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,classes,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,garbage collection,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,objects and collections,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,flow control,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,exceptions,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,threads,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,core,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,declarations and access control,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,operators and assignments,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,inner classes,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,assertions,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,classes,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,garbage collection,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,objects and collections,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,flow control,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,exceptions,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,threads,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,core,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,declarations and access control,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,operators and assignments,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,inner classes,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,assertions,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,classes,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,garbage collection,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,objects and collections,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,flow control,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,exceptions,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,threads,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,core,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,declarations and access control,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,operators and assignments,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,inner classes,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,assertions,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,classes,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,garbage collection,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,objects and collections,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,flow control,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,exceptions,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,threads,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,core,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,declarations and access control,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,operators and assignments,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,inner classes,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,assertions,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,classes,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,garbage collection,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,objects and collections,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,flow control,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,exceptions,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,threads,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,core,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,declarations and access control,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,operators and assignments,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,inner classes,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,assertions,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,classes,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,garbage collection,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,objects and collections,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,flow control,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,exceptions,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,threads,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,core,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,declarations and access control,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,operators and assignments,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,inner classes,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,assertions,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,classes,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,garbage collection,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,objects and collections,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,flow control,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,exceptions,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,threads,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,core,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,declarations and access control,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,operators and assignments,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,inner classes,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,assertions,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,classes,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,garbage collection,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,objects and collections,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,flow control,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,exceptions,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,threads,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,core,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,declarations and access control,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,operators and assignments,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,inner classes,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,assertions,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,classes,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,garbage collection,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,objects and collections,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,flow control,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,exceptions,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,threads,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,core,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,declarations and access control,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,operators and assignments,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,inner classes,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,assertions,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,classes,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,garbage collection,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,objects and collections,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,flow control,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,exceptions,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,threads,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,core,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,declarations and access control,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,operators and assignments,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,inner classes,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,assertions,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,classes,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,garbage collection,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,objects and collections,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,flow control,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,exceptions,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,threads,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,core,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,declarations and access control,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,operators and assignments,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,inner classes,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,assertions,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,classes,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,garbage collection,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,objects and collections,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,flow control,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,exceptions,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,threads,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,core,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,declarations and access control,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,operators and assignments,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,inner classes,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,assertions,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,classes,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,garbage collection,false,true,false,false,true
+3,true,false,true,false,false,true,true,true,objects and collections,false,true,false,false,true
+27,false,true,false,true,true,true,true,true,flow control,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,exceptions,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,threads,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,core,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,declarations and access control,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,operators and assignments,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,inner classes,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,assertions,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,classes,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,garbage collection,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,objects and collections,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,flow control,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,exceptions,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,threads,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,core,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,declarations and access control,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,operators and assignments,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,inner classes,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,assertions,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,classes,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,garbage collection,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,objects and collections,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,flow control,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,exceptions,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,threads,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,core,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,declarations and access control,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,operators and assignments,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,inner classes,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,assertions,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,classes,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,garbage collection,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,objects and collections,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,flow control,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,exceptions,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,threads,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,core,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,declarations and access control,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,operators and assignments,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,inner classes,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,assertions,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,classes,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,garbage collection,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,objects and collections,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,flow control,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,exceptions,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,threads,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,core,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,declarations and access control,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,operators and assignments,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,inner classes,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,assertions,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,classes,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,garbage collection,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,objects and collections,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,flow control,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,exceptions,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,threads,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,core,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,declarations and access control,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,operators and assignments,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,inner classes,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,assertions,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,classes,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,garbage collection,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,objects and collections,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,flow control,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,exceptions,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,threads,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,core,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,declarations and access control,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,operators and assignments,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,inner classes,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,assertions,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,classes,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,garbage collection,true,false,true,true,false
+27,false,true,false,true,true,true,true,true,objects and collections,true,false,true,true,false

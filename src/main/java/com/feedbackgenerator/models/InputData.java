@@ -7,6 +7,10 @@ public class InputData {
     private int userId;
     private int quizId;
 
+    public InputData() {
+
+    }
+
     public InputData(int userId, int quizId) {
         this.userId = userId;
         this.quizId = quizId;

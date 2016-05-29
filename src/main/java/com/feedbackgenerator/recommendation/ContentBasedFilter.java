@@ -20,12 +20,13 @@ import java.io.File;
  */
 public class ContentBasedFilter {
     public void filterContentBased(String trainDataSetFile, String testDataSetFile, String trainClusteredDataSetFile,
-                                   String testClusteredDataSetFile) throws Exception {
+                                   String testClusteredDataSetFile, int userId) throws Exception {
 
         CSVFileReader fileReader = new CSVFileReader();
-        Instances trainData = fileReader.readDataFile(trainDataSetFile);
+        Instances trainData = fileReader.getInstancesForCBF(trainDataSetFile, userId);
 
         SimpleKMeans model = new SimpleKMeans(); //clustering using KMeans
+
         model.setNumClusters(8);
         model.setDistanceFunction(new weka.core.ManhattanDistance()); //set distance function
         model.buildClusterer(trainData);
@@ -40,7 +41,10 @@ public class ContentBasedFilter {
         contentBasedFilter.writeArff(trainClusteredDataSetFile, trainData, trainEval);
 
         String testDataSet = testDataSetFile; //load test data set
-        ConverterUtils.DataSource testSource = new ConverterUtils.DataSource(testDataSet);
+        ClassLoader classLoader = getClass().getClassLoader();
+
+        File file = new File(classLoader.getResource(testDataSet).getFile());
+        ConverterUtils.DataSource testSource = new ConverterUtils.DataSource(file.getAbsolutePath());
         Instances testData = testSource.getDataSet();
 
         // evaluates the cluster using the ClusterEvaluation class by using separate train and test data sets
@@ -54,7 +58,11 @@ public class ContentBasedFilter {
         PlotData2D plotData = ClustererPanel.setUpVisualizableInstances(data, eval);
         CSVSaver saver = new CSVSaver();
         saver.setInstances(plotData.getPlotInstances());
-        saver.setFile(new File(fileName));
+
+        ClassLoader classLoader = getClass().getClassLoader();
+        File file = new File(classLoader.getResource(fileName).getFile());
+
+        saver.setFile(file);
         saver.writeBatch();
     }
 }

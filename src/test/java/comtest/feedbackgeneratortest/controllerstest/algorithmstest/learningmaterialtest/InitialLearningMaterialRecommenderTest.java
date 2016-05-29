@@ -1,11 +1,8 @@
 package comtest.feedbackgeneratortest.controllerstest.algorithmstest.learningmaterialtest;
 
-import com.feedbackgenerator.learningmaterial.InitialLearningMaterialRecommender;
+import com.feedbackgenerator.other.InitialLearningMaterialRecommender;
 import com.feedbackgenerator.algorithms.total.TotalKnowledge;
-import com.feedbackgenerator.models.Knowledge;
 import org.junit.Test;
-
-import java.util.ArrayList;
 
 /**
  * Created by Ershadi Sayuri on 3/12/2016.

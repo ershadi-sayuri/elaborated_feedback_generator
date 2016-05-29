@@ -1,0 +1,135 @@
+http://www.tutorialspoint.com/java/java_inheritance.htm,Java_Inheritance,0,12,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE,inheritance,TRUE,FALSE,FALSE,TRUE,FALSE,0.004255319
+https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html,Inheritance (The Javaï¿½ Tutorials > Learning the Java Language > Interfaces and Inheritance),0,0,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,inheritance,FALSE,TRUE,TRUE,TRUE,TRUE,0.005581395
+https://docs.oracle.com/javase/tutorial/java/concepts/inheritance.html,What Is Inheritance?,0,1,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,inheritance,FALSE,TRUE,FALSE,TRUE,TRUE,0.002542373
+http://www.javatpoint.com/inheritance-in-java,Inheritance in Java - Javatpointï¿½,0,17,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,inheritance,TRUE,FALSE,FALSE,TRUE,FALSE,0.012987013
+http://beginnersbook.com/2013/03/inheritance-in-java/,What is Inheritance in Java Programming?,0,1,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,inheritance,FALSE,TRUE,FALSE,TRUE,TRUE,0.005777564
+http://www.javaworld.com/article/2987426/core-java/java-101-inheritance-in-java-part-1.html,Java 101: Inheritance in Java Part 1 | JavaWorld,0,35,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,inheritance,TRUE,FALSE,FALSE,TRUE,TRUE,0.003481894
+http://www3.ntu.edu.sg/home/ehchua/programming/java/j3b_oopinheritancepolymorphism.html,OOP Inheritance & Polymorphism - Java Programming Tutorial,0,13,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,inheritance,TRUE,FALSE,TRUE,TRUE,TRUE,0.002051923
+http://www.wideskills.com/java-tutorial/java-inheritance,Java Inheritance | Wideskills,0,1,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,inheritance,TRUE,FALSE,FALSE,TRUE,FALSE,0.00676819
+https://docs.oracle.com/javase/tutorial/java/javaOO/methods.html,Defining Methods (The Javaï¿½ Tutorials > Learning the Java Language > Classes and Objects),0,0,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,overloading,FALSE,TRUE,FALSE,FALSE,TRUE,0.001885607
+http://beginnersbook.com/2013/05/method-overloading/,Method Overloading in Java with examples,0,3,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,overloading,TRUE,FALSE,TRUE,TRUE,FALSE,0.010841507
+http://www.tutorialspoint.com/javaexamples/method_overloading.htm,Java Examples - Method Overloading,0,10,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,overloading,TRUE,FALSE,FALSE,TRUE,FALSE,0.005555556
+http://www.javatpoint.com/method-overloading-in-java,Method Overloading in Java - Javatpointï¿½,0,16,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,overloading,TRUE,FALSE,TRUE,TRUE,TRUE,0.013225569
+http://www.programmerinterview.com/index.php/java-questions/method-overriding-vs-overloading/,Java: Method Overloading versus Overridingï¿½,0,6,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,overloading,FALSE,TRUE,FALSE,TRUE,TRUE,0.009030003
+https://en.wikibooks.org/wiki/Java_Programming/Overloading_Methods_and_Constructors,verloading and Overriding - Wikibooks open books for an open world,0,35,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,overloading,TRUE,TRUE,FALSE,TRUE,TRUE,0.006122449
+http://stackoverflow.com/questions/11110631/java-overloading-and-inheritance-rules,http://stackoverflow.com/questions/11110631/java-overloading-and-inheritance-rules,0,0,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,overloading,TRUE,FALSE,FALSE,FALSE,TRUE,0.004846527
+http://www.studytonight.com/java/method-and-overloaded-method.php,Methods and Method overloading in Java | Core Java Tutorial | Studytonight,0,5,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE,overloading,TRUE,FALSE,FALSE,TRUE,FALSE,0.006578947
+http://www.programcreek.com/2009/02/overriding-and-overloading-in-java-with-examples/,Overriding vs. Overloading in Javaï¿½,0,1,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE,overloading,TRUE,TRUE,FALSE,TRUE,TRUE,0.009516257
+https://software.intel.com/en-us/forums/mobile-software-development/topic/563737,Difference between overloading and overriding in JAVA Programming,0,5,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,overloading,TRUE,FALSE,FALSE,FALSE,TRUE,0.002747672
+https://youtu.be/ouI9Qarbbik,#49 Java Method Overriding Example: Java Tutorial For Beginners,0,0,FALSE,TRUE,TRUE,FALSE,TRUE,TRUE,overriding,TRUE,FALSE,TRUE,TRUE,FALSE,0.001132996
+http://www.tutorialspoint.com/java/java_overriding.htm,Java - Overridingï¿½,0,0,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,overriding,TRUE,FALSE,TRUE,TRUE,FALSE,0.007268951
+https://docs.oracle.com/javase/tutorial/java/IandI/override.html,Overriding and Hiding Methods (The Javaï¿½ Tutorials > Learning the Java Language > Interfaces and Inheritance),0,0,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,overriding,FALSE,TRUE,FALSE,TRUE,TRUE,0.003381643
+http://beginnersbook.com/2014/01/method-overriding-in-java-with-example/,Method overriding in java with exampleï¿½,0,1,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,overriding,TRUE,FALSE,FALSE,TRUE,FALSE,0.011253197
+http://www.javatpoint.com/method-overriding-in-java,Method Overriding in Java - javatpointï¿½,0,15,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,overriding,TRUE,FALSE,FALSE,TRUE,TRUE,0.013170273
+http://crunchify.com/java-method-overriding-examples-and-concepts-overriding-rules/,ava Method Overriding Examples and Concepts: Overriding Rules,0,2,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,overriding,TRUE,FALSE,FALSE,TRUE,FALSE,0.012873025
+https://en.wikipedia.org/wiki/Method_overriding,Method overriding - Wikipedia the free encyclopediaï,0,3,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,overriding,FALSE,TRUE,FALSE,FALSE,TRUE,0.008285004
+http://java67.blogspot.com/2012/08/what-is-method-overriding-in-java-example-tutorial.html,What is method overriding in Java ï¿½ Example Tutorial,0,0,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,overriding,TRUE,TRUE,FALSE,FALSE,TRUE,0.005070843
+http://www.javatpoint.com/assertion-in-java,Java Assertion,0,0,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE,assertion,TRUE,FALSE,FALSE,TRUE,FALSE,0.019914651
+http://javarevisited.blogspot.com/2012/01/what-is-assertion-in-java-java.html,What is Assertion in Java,0,0,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,assertion,TRUE,FALSE,TRUE,FALSE,TRUE,0.008634223
+https://www.youtube.com/watch?v=FRYYtdiMLck,assertion in Java | Assert in Java | Java Tutorials by Java9s,1,0,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,assertion,TRUE,FALSE,TRUE,TRUE,FALSE,0
+http://www.codejava.net/java-core/the-java-language/java-keyword-assert,Java Classes and Objectsï¿½,0,0,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,class,TRUE,FALSE,TRUE,TRUE,FALSE,0.001489203
+http://www.javaworld.com/article/2979739/learn-java/java-101-classes-and-objects-in-java.html,Java 101: Classes and objects in Java,0,0,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,class,FALSE,TRUE,FALSE,TRUE,TRUE,0.00952381
+https://docs.oracle.com/javase/tutorial/java/javaOO/classdecl.html,Declaring Classes,0,0,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,class,FALSE,TRUE,FALSE,FALSE,TRUE,0.016768293
+https://docs.oracle.com/javase/tutorial/java/javaOO/classes.html,Classes,0,0,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,class,FALSE,TRUE,FALSE,FALSE,TRUE,0.010577705
+https://docs.oracle.com/javase/tutorial/java/javaOO/,Lesson: Classes and Objectsï¿½,0,0,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,class,TRUE,FALSE,FALSE,FALSE,TRUE,0.004135649
+https://docs.oracle.com/javase/tutorial/java/concepts/class.html,What Is a Class?,0,0,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,class,FALSE,TRUE,FALSE,TRUE,FALSE,0.009259259
+https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html,Classï¿½,0,0,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,class,TRUE,TRUE,FALSE,TRUE,TRUE,0.060956385
+http://www.tutorialspoint.com/java/java_object_classes.htm,Java - Object & Classesï¿½,0,0,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,class,TRUE,FALSE,TRUE,TRUE,FALSE,0.02699784
+http://www.jchq.net/certkey/0101certkey.htm,Declarations and access control,0,0,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,declarations and access control,FALSE,TRUE,FALSE,TRUE,FALSE,0.005791506
+http://rymden.nu/exceptions.html, Explanations to common Java exceptions ,0,0,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,exceptions,TRUE,FALSE,FALSE,FALSE,TRUE,7.89E-04
+http://beginnersbook.com/2013/04/java-exception-handling/,Exception handling in java with example programs,0,1,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,exceptions,TRUE,TRUE,FALSE,FALSE,TRUE,0.009937888
+http://www.javaworld.com/article/2076700/core-java/exceptions-in-java.html,Exceptions in Java,0,7,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,exceptions,FALSE,TRUE,FALSE,TRUE,TRUE,0.002862595
+https://docs.oracle.com/javase/tutorial/essential/exceptions/throwing.html,How to Throw Exceptionsï¿½,0,1,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,exceptions,FALSE,TRUE,FALSE,FALSE,TRUE,0.010745891
+https://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html,Exceptionï¿½,0,0,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,exceptions,TRUE,TRUE,FALSE,FALSE,TRUE,0.003690037
+https://docs.oracle.com/javase/tutorial/essential/exceptions/handling.html,Catching and Handling Exceptionsï¿½,0,0,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,exceptions,FALSE,TRUE,FALSE,TRUE,FALSE,0.006637168
+https://docs.oracle.com/javase/tutorial/essential/exceptions/definition.html,What Is an Exception?,0,2,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,exceptions,FALSE,TRUE,FALSE,FALSE,TRUE,0.00627451
+https://docs.oracle.com/javase/tutorial/essential/exceptions/,Lesson: Exceptionsï¿½,0,0,FALSE,TRUE,FALSE,TRUE,TRUE,TRUE,exceptions,FALSE,TRUE,FALSE,FALSE,TRUE,0.009725906
+http://www.tutorialspoint.com/java/java_exceptions.htm,Java - Exceptionsï¿½,0,1,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,exceptions,FALSE,TRUE,FALSE,TRUE,TRUE,0.011144131
+https://plumbr.eu/handbook/what-is-garbage-collection,What Is Garbage Collection?,0,3,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,garbage collection,FALSE,TRUE,FALSE,TRUE,TRUE,0.009682224
+http://javarevisited.blogspot.com/2011/04/garbage-collection-in-java.html,How Garbage Collection works in Java,0,0,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,garbage collection,FALSE,TRUE,TRUE,FALSE,TRUE,0.014894339
+http://beginnersbook.com/2013/04/java-garbage-collection/,What is Garbage Collection in Java?,0,0,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,garbage collection,TRUE,TRUE,TRUE,FALSE,TRUE,0.012885356
+http://www.javaworld.com/javaworld/jw-10-2012/121010-jvm-performance-optimization-garbage-collection.html,JVM performance optimization Part 3: Garbage collection | JavaWorld,0,5,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,garbage collection,FALSE,TRUE,FALSE,FALSE,TRUE,0.004750733
+http://stackoverflow.com/questions/3798424/what-is-the-garbage-collector-in-java,What is the garbage collector in Java?ï¿½,0,0,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,garbage collection,TRUE,FALSE,FALSE,FALSE,TRUE,0.010292524
+http://www.javatpoint.com/Garbage-Collection,Java Garbage Collection - javatpoint,0,0,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE,garbage collection,TRUE,FALSE,FALSE,TRUE,FALSE,0.014319809
+http://www.dynatrace.com/en/javabook/how-garbage-collection-works.html,How Garbage Collection Works - Java Enterprise Performance Book | Dynatraceï¿½,0,3,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,garbage collection,TRUE,TRUE,FALSE,FALSE,TRUE,0.004336684
+http://www.cubrid.org/blog/dev-platform/understanding-java-garbage-collection/,Understanding Java Garbage Collection,0,6,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,garbage collection,FALSE,TRUE,FALSE,FALSE,TRUE,0.004511059
+http://www.oracle.com/technetwork/java/javase/gc-tuning-6-140523.html,Java SE 6 HotSpot[tm] Virtual Machine Garbage Collection Tuning,0,5,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,garbage collection,FALSE,TRUE,FALSE,FALSE,TRUE,0.011756129
+http://www.oracle.com/webfolder/technetwork/tutorials/obe/java/gc01/index.html,Java Garbage Collection Basics,0,28,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,garbage collection,FALSE,TRUE,FALSE,FALSE,TRUE,0.013842746
+http://www.programmerinterview.com/index.php/java-questions/java-inner-class-example/,Java Inner Class Exampleï¿½,0,0,TRUE,FALSE,TRUE,FALSE,TRUE,TRUE,nested class,TRUE,FALSE,FALSE,TRUE,FALSE,0.016853933
+https://en.wikipedia.org/wiki/Inner_class,Inner class,0,0,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,nested class,FALSE,TRUE,FALSE,FALSE,TRUE,0.017445688
+http://javabeginnerstutorial.com/core-java-tutorial/inner-class/,Inner Class tutorial for Java beginners,0,0,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE,nested class,TRUE,FALSE,TRUE,TRUE,FALSE,0.014576677
+http://stackoverflow.com/questions/70324/java-inner-class-and-static-nested-class,Java inner class and static nested class,0,0,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,nested class,FALSE,TRUE,FALSE,TRUE,TRUE,0.028691238
+http://www.javaworld.com/article/2077411/core-java/inner-classes.html,Inner classes | JavaWorld,0,0,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,nested class,TRUE,FALSE,FALSE,TRUE,TRUE,0.003954363
+http://www.tutorialspoint.com/java/java_innerclasses.htm,Java - Inner classesï¿½,0,1,TRUE,FALSE,TRUE,FALSE,TRUE,TRUE,nested class,TRUE,FALSE,TRUE,TRUE,FALSE,0.044820717
+https://docs.oracle.com/javase/tutorial/java/javaOO/nested.html,Nested Classes,0,0,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,nested class,FALSE,TRUE,FALSE,TRUE,TRUE,0.020130851
+https://docs.oracle.com/javase/tutorial/java/javaOO/innerclasses.html,Inner Class Example,0,0,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE,nested class,FALSE,TRUE,FALSE,FALSE,TRUE,0.006346025
+http://beginnersbook.com/2013/03/multithreading-in-java/,Multithreading in java with examples,0,0,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,threads,TRUE,FALSE,TRUE,TRUE,FALSE,0.007419355
+http://beginnersbook.com/2013/03/java-threads/,Basics: All about Java threadsï¿½,0,0,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,threads,TRUE,FALSE,TRUE,TRUE,TRUE,0.011303693
+http://www.javatpoint.com/creating-thread,Creating a thread in Java - javatpoint,0,0,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,threads,TRUE,FALSE,TRUE,TRUE,FALSE,9.26E-04
+http://www.wideskills.com/java-tutorial/java-threads-tutorial,ava Threads Tutorial | Wideskills,0,0,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,threads,TRUE,FALSE,TRUE,TRUE,TRUE,0.009630819
+http://www.javaworld.com/article/2077138/java-concurrency/introduction-to-java-threads.html,Introduction to Java threads | JavaWorldï¿½,0,0,TRUE,FALSE,TRUE,FALSE,TRUE,TRUE,threads,FALSE,TRUE,FALSE,FALSE,TRUE,0.002693438
+http://www.tutorialspoint.com/java/java_multithreading.htm,Java - Multithreading,0,1,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,threads,TRUE,FALSE,TRUE,TRUE,FALSE,0.00464636
+https://docs.oracle.com/javase/tutorial/essential/concurrency/runthread.html,Defining and Starting a Thread,0,0,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,threads,FALSE,TRUE,FALSE,TRUE,FALSE,7.92E-04
+https://docs.oracle.com/javase/tutorial/essential/concurrency/,Lesson: Concurrency,0,0,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,threads,FALSE,TRUE,FALSE,FALSE,TRUE,8.93E-04
+https://youtu.be/_6-U44god3w,Java Tutorial 12 - Introduction to Java Threads,1,0,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,threads,TRUE,FALSE,TRUE,TRUE,FALSE,0.002294296
+http://cs.usfca.edu/~parrt/course/601/lectures/threads.html,Java Threads,0,4,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,threads,TRUE,FALSE,TRUE,TRUE,TRUE,0.00817757
+http://www.vogella.com/tutorials/JavaConcurrency/article.html,Java concurrency (multi-threading) - Tutorialï¿½,0,1,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,threads,TRUE,TRUE,TRUE,TRUE,TRUE,0.010556622
+http://www.journaldev.com/1079/java-thread-tutorial,ava Thread and Multithreading Tutorial | JournalDevï¿½,0,0,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,threads,TRUE,FALSE,FALSE,FALSE,TRUE,0.007457847
+http://winterbe.com/posts/2015/04/07/java8-concurrency-tutorial-thread-executor-examples/,Java 8 Concurrency Tutorial: Threads and Executors - Benjamin Winterbergï¿½,0,0,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,threads,FALSE,TRUE,FALSE,TRUE,TRUE,0.005764796
+https://en.wikipedia.org/wiki/Serialization,Serialization - Wikipedia the free encyclopediaï,0,0,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,serialization,FALSE,TRUE,FALSE,FALSE,TRUE,0.01571754
+http://www.javaworld.com/article/2072752/the-java-serialization-algorithm-revealed.html,The Java serialization algorithm revealed | JavaWorld,0,2,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,serialization,TRUE,FALSE,TRUE,TRUE,TRUE,0.004513064
+http://www.javatpoint.com/serialization-in-java,Serialization in Java - javatpoint,0,0,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,serialization,TRUE,FALSE,TRUE,TRUE,FALSE,0.007003891
+http://www.ibm.com/developerworks/library/j-5things1/,Java Serialization,0,0,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,serialization,FALSE,TRUE,FALSE,TRUE,TRUE,0.007597685
+http://www.oracle.com/technetwork/articles/java/javaserial-1536170.html,Discover the secrets of the Java Serialization APIï¿½,0,0,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,serialization,FALSE,TRUE,FALSE,TRUE,TRUE,0.006961903
+https://docs.oracle.com/javase/tutorial/jndi/objects/serial.html,Serializable Objects,0,0,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,serialization,FALSE,TRUE,FALSE,TRUE,FALSE,0.00177305
+http://www.tutorialspoint.com/java/java_serialization.htm,Java - Serializationï¿½,0,0,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,serialization,TRUE,FALSE,TRUE,TRUE,FALSE,0.002938296
+https://www.youtube.com/watch?v=2i4t-SL1VsU,Java JDBC Tutorial - Part 1: Connect to MySQL database with Javaï¿½,1,0, false,TRUE,TRUE,TRUE,TRUE,TRUE,JDBC,TRUE,FALSE,TRUE,TRUE,FALSE,0.002770083
+https://www.youtube.com/watch?v=8-iQDUl10vM,Java JDBC Tutorial - Part 0: Overview - YouTube,1,0,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,JDBC,FALSE,TRUE,FALSE,FALSE,TRUE,0.005793851
+http://www.vogella.com/tutorials/MySQLJava/article.html,MySQL and Java JDBC - Tutorial,0,0,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE,JDBC,TRUE,FALSE,TRUE,TRUE,FALSE,0.012919897
+http://www.javatpoint.com/java-jdbc,Java JDBC Tutorial - javatpoint,0,1,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,JDBC,TRUE,FALSE,FALSE,FALSE,TRUE,0.03250478
+http://www.tutorialspoint.com/jdbc/,JDBC Tutorial,0,0,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,JDBC,TRUE,FALSE,TRUE,TRUE,FALSE,0.01497006
+http://www3.ntu.edu.sg/home/ehchua/programming/java/j4a_gui.html,GUI Programming - Java Programming Tutorialï¿½,0,20,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,Swing,FALSE,TRUE,TRUE,TRUE,FALSE,0.00512335
+http://cs.nyu.edu/~yap/classes/visual/03s/lect/l7/,JAVA SWING GUI TUTORIAL,0,0,TRUE,FALSE,TRUE,FALSE,TRUE,TRUE,Swing,FALSE,TRUE,TRUE,TRUE,FALSE,0.00295858
+http://joel-costigliola.github.io/assertj/assertj-swing-advanced.html,Advanced features - AssertJ / Fluent assertion for java,0,0,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,assertions,TRUE,FALSE,TRUE,TRUE,FALSE,0.00232423
+http://www.javatpoint.com/object-and-class-in-java,Title: Object in Java | Class in Java - javatpoint,0,1,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,class,TRUE,FALSE,TRUE,TRUE,TRUE,0.018422992
+http://www.homeandlearn.co.uk/java/write_your_own_java_classes.html,Java For Complete Beginners - classes - Home and Learn,0,0,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,class,FALSE,TRUE,FALSE,FALSE,TRUE,0.02919708
+http://beginnersbook.com/2013/05/java-access-modifiers/,Java Access Modifiers - Public Private Protected - BeginnersBook,0,0,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,declarations and access control,TRUE,FALSE,TRUE,TRUE,FALSE,0.004157428
+https://docs.oracle.com/javase/specs/jls/se7/html/jls-6.html,Chapter 6. Names - Oracle Help Center,0,0,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,declarations and access control,FALSE,TRUE,FALSE,TRUE,TRUE,0.005297991
+http://www.tutorialspoint.com/java/java_packages.htm,Java - Packages - TutorialsPoint,0,1,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,declarations and access control,TRUE,FALSE,TRUE,TRUE,FALSE,0.005649718
+http://journals.ecs.soton.ac.uk/java/tutorial/java/javaOO/methoddecl.html,The Method Declaration,0,0,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,declarations and access control,FALSE,TRUE,FALSE,TRUE,FALSE,0.006625442
+http://www.javacodehelp.com/java-tutorial/ExceptionHandling.html,Java Tutorial for Beginners: Exception Handling,0,0,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,exceptions,FALSE,TRUE,FALSE,TRUE,TRUE,0.003350084
+https://docs.oracle.com/javaee/6/tutorial/doc/bnbpj.html,Handling Exceptions - The Java EE 6 Tutorial,0,0,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,exceptions,FALSE,TRUE,FALSE,FALSE,TRUE,0.004524887
+http://www.oracle.com/technetwork/articles/java/java7exceptions-486908.html,Working with Java SE 7 Exception Changes - Oracle,0,0,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,exceptions,FALSE,TRUE,TRUE,TRUE,FALSE,0.001818843
+https://docs.oracle.com/javase/tutorial/essential/exceptions/tryResourceClose.html,The try-with-resources Statement (The Javaï¿½ Tutorials &gt; Essential ,0,0,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,exceptions,FALSE,TRUE,FALSE,TRUE,TRUE,0.008312958
+https://javatutorial.net/java-control-flow-statements,Java Control Flow Statements - Java Tutorials for Beginners,0,0,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,flow control,TRUE,FALSE,FALSE,TRUE,TRUE,0.002739726
+http://www.dickbaldwin.com/java/Java026.htm,Flow control in Java - ZetCode,0,0,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,flow control,FALSE,TRUE,TRUE,TRUE,TRUE,0.003891908
+https://newcircle.com/bookshelf/java_fundamentals_tutorial/flow_control,Java Fundamentals Tutorial: Statements and Flow Control - NewCircle,0,0,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,flow control,TRUE,FALSE,FALSE,TRUE,FALSE,0.00154202
+http://www.wideskills.com/java-tutorial/java-control-flow-statements,Java Control Flow Statements | Wideskills,0,0,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,flow control,TRUE,FALSE,FALSE,TRUE,FALSE,0.004440497
+http://www.ibm.com/developerworks/library/l-advflow/,Continuations and advanced flow control - IBM,0,0,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,flow control,FALSE,TRUE,TRUE,TRUE,TRUE,0.004555232
+http://www.tutorialspoint.com/java/java_loop_control.htm,Java - Loop Control - TutorialsPoint,0,1,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,flow control,TRUE,FALSE,FALSE,TRUE,FALSE,0.004279601
+http://stackoverflow.com/questions/17009961/understanding-the-java-memory-model-and-garbage-collection,Understanding the Java Memory Model and Garbage Collection,0,0,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,garbage collection,FALSE,TRUE,FALSE,FALSE,TRUE,0.004901961
+http://beginnersbook.com/2013/05/inner-class/,Inner classes in java: Afalsenymous inner and static ... - BeginnersBook,0,0,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,nested class,TRUE,FALSE,TRUE,TRUE,FALSE,0.031798246
+http://www.javatpoint.com/java-inner-class,Java Inner Class - javatpoint,0,0,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,nested class,TRUE,FALSE,FALSE,FALSE,TRUE,0.030510585
+http://viralpatel.net/blogs/inner-classes-in-java/,Inner classes in Java the mystery within. - ViralPatel.net,0,0,TRUE,FALSE,TRUE,FALSE,TRUE,TRUE,nested class,TRUE,FALSE,FALSE,TRUE,FALSE,0.017674419
+http://www.programcreek.com/2009/02/4-inner-classes-tutorial-examples/,4 types of Java inner classes - ProgramCreek.com,0,0,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,nested class,TRUE,FALSE,TRUE,TRUE,FALSE,0.007531381
+http://beginnersbook.com/java-collections-tutorials/,Java Collections Framework Tutorials - BeginnersBook,0,1,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,objects and collections,FALSE,TRUE,FALSE,FALSE,TRUE,0.007398903
+http://www.wideskills.com/java-tutorial/java-collections-framework,Java Collections Framework | Wideskills,0,2,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,objects and collections,TRUE,FALSE,FALSE,TRUE,FALSE,0.008574491
+http://www.javatpoint.com/collections-in-java,Collections in Java - javatpoint,0,1,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,objects and collections,TRUE,FALSE,FALSE,FALSE,TRUE,0.007789679
+http://www.javaworld.com/javaworld/jw-11-1998/jw-11-collections.html,Get started with the Java Collections Framework | JavaWorld,0,0,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,objects and collections,FALSE,TRUE,FALSE,TRUE,TRUE,0.005440871
+https://docs.oracle.com/javase/tutorial/collections/intro/,Lesson: Introduction to Collections (The Javaï¿½ Tutorials ...,0,0,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,objects and collections,FALSE,TRUE,FALSE,FALSE,TRUE,0.010686676
+http://www.wideskills.com/java-tutorial/java-operators-tutorial,Java Operators Tutorial | Wideskills,0,0,TRUE,FALSE,TRUE,FALSE,TRUE,TRUE,operators and assignments,TRUE,FALSE,TRUE,TRUE,FALSE,0.008685015
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Assignment_Operators,Assignment operators - JavaScript | MDN,0,0,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,operators and assignments,TRUE,FALSE,TRUE,TRUE,FALSE,0.008039878
+http://www.freejavaguide.com/assignment_operators.htm,Assignment Operators - Java tutorial | freejavaguide.com,0,0,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,operators and assignments,FALSE,TRUE,TRUE,TRUE,FALSE,0.017241379
+http://www.dummies.com/how-to/content/assignment-statements-in-java.html,Assignment Statements in Java - For Dummies,0,0,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,operators and assignments,TRUE,FALSE,FALSE,FALSE,TRUE,0.002091175
+http://www.java2s.com/Tutorial/Java/0160__Thread/CreatingaThread.htm,Creating a Thread : Create Thread ï¿½ Thread ï¿½ Java Tutorial - Java2s,0,0,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,threads,TRUE,FALSE,TRUE,TRUE,FALSE,0.002604167
+https://www.youtube.com/watch?v=z61PqpmtSfalse,assertion in Java,1,0,FALSE,FALSE,TRUE,FALSE,TRUE,TRUE,assertion,TRUE,FALSE,TRUE,TRUE,FALSE,0
+https://www.youtube.com/watch?v=BCRcO1DZFqQ,Learn Java Programming - assertion Part 1 Tutorial (assert keyword),1,0,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,assertion,FALSE,TRUE,TRUE,TRUE,TRUE,3.21E-04
+https://www.youtube.com/watch?v=OHw2t8BaIUg,Learn Java Tutorial for Beginners Part 13: Classes and Objects,1,0,FALSE,FALSE,TRUE,FALSE,TRUE,TRUE,class,TRUE,FALSE,TRUE,TRUE,FALSE,0.001471734
+https://www.youtube.com/watch?v=XqTg2buXS5o,Java Classes and Objects,1,0,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,class,TRUE,FALSE,TRUE,TRUE,FALSE,0.001843586
+https://www.youtube.com/watch?v=ZpBtDTCgalw,Java Programming: 9 - Classes and Objects,1,0,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,class,TRUE,FALSE,TRUE,TRUE,TRUE,0.001477909
+https://www.youtube.com/watch?v=4XRy-TdfU0I,Classes and Objects,1,0,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,class,TRUE,TRUE,TRUE,TRUE,FALSE,0.001867607
+https://www.youtube.com/watch?v=l8u3iMQ85C0,Tutorial 1 (OCJP) declarations and access control Part1,1,0,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,declarations and access control,TRUE,TRUE,FALSE,TRUE,TRUE,0.001452599
+https://www.youtube.com/watch?v=K_-3OLkXkzY,Java Programming Tutorial - 82 - Exception Handling,1,0,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,exceptions,TRUE,FALSE,TRUE,TRUE,FALSE,0.001228501
+https://www.youtube.com/watch?v=4my7mKFaNQs,Java Tutorial # 14 | Exception Handling in Java - Checked and Unchecked Exceptions,1,3,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,exceptions,TRUE,FALSE,TRUE,TRUE,FALSE,0.001748082
+https://www.youtube.com/watch?v=4y2iDb4xCBg,Java: Flow Control,1,0,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,flow control,TRUE,FALSE,TRUE,TRUE,FALSE,0.002141008
+https://www.youtube.com/watch?v=Hw0RM1OFwBU,Java Tutorial 05 - Java Flow Control,1,0,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,flow control,TRUE,FALSE,TRUE,TRUE,FALSE,0.001478484

@@ -1,11 +1,13 @@
 package com.feedbackgenerator.models;
 
+import java.util.ArrayList;
+
 /**
  * Created by Ershadi Sayuri on 4/16/2016.
  */
 public class Feedback {
     private String description;
-    private LearningMaterial[] learningMaterials;
+    private ArrayList<LearningMaterial> learningMaterials;
 
     public String getDescription() {
         return description;
@@ -16,11 +18,11 @@ public class Feedback {
     }
 
 
-    public LearningMaterial[] getLearningMaterials() {
+    public ArrayList<LearningMaterial> getLearningMaterials() {
         return learningMaterials;
     }
 
-    public void setLearningMaterials(LearningMaterial[] learningMaterials) {
+    public void setLearningMaterials(ArrayList<LearningMaterial> learningMaterials) {
         this.learningMaterials = learningMaterials;
     }
 }

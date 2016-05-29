@@ -18,58 +18,50 @@ import weka.classifiers.lazy.IBk;
 import weka.core.Instance;
 import weka.core.Instances;
 
+import java.io.File;
+import java.util.ArrayList;
+
 public class CollaborativeFilter {
-    public void filterCollaborative(String trainDataSetFile, String testDataSetFile, int attribute) throws Exception {
+    public ArrayList<String> filterCollaborative(String trainDataSetFile, String testDataSetFile, int attribute) throws Exception {
 
         CSVFileReader fileReader = new CSVFileReader();
 
-        Instances trainDataSet = fileReader.readDataFile(trainDataSetFile);
+        ClassLoader classLoader = getClass().getClassLoader();
+        File file1 = new File(classLoader.getResource(trainDataSetFile).getFile());
+
+        Instances trainDataSet = fileReader.readDataFile(file1.getAbsolutePath());
         trainDataSet.setClassIndex(trainDataSet.numAttributes() - attribute);
 
         int numClasses = trainDataSet.numClasses();
-        for(int i = 0; i < numClasses; i++){
-            String classValue = trainDataSet.classAttribute().value(i);
-            System.out.println("Class Value "+i+" is " + classValue);
+        for (int i = 0; i < numClasses; i++) {
+            trainDataSet.classAttribute().value(i);
         }
 
         IBk nb = new IBk(); //create and build the classifier
         nb.buildClassifier(trainDataSet);
 
-        Instances testDataSet = fileReader.readDataFile(testDataSetFile);
+        File file2 = new File(classLoader.getResource(testDataSetFile).getFile());
+
+        Instances testDataSet = fileReader.readDataFile(file2.getAbsolutePath());
         testDataSet.setClassIndex(trainDataSet.numAttributes() - attribute);
 
-        //loop through the new data set and make predictions
-        System.out.println("Actual Class, NB Predicted");
-//        for (int i = 0; i < testDataSet.numInstances(); i++) {
-//            double actualClass = testDataSet.instance(i).classValue(); //get class double value for current instance
-//            //get class string value using the class index using the class's int value
-//            String actual = testDataSet.classAttribute().value(( int ) actualClass);
-//            Instance newInst = testDataSet.instance(i); //get Instance object of current instance
-//            //call classifyInstance, which returns a double value for the class
-//            double predNB = nb.classifyInstance(newInst);
-//            //use this value to get string value of the predicted class
-//            String predString = testDataSet.classAttribute().value(( int ) predNB);
-//
-//            System.out.println(actual + ", " + actualClass + ", " + predString + ", " + predNB);
-//
-//        }
+        ArrayList<String> recommendations = new ArrayList<String>();
 
-
-
-
-
-
-
-
-//        System.out.println("Actual Class, NB Predicted");
         for (int i = 0; i < testDataSet.numInstances(); i++) {
             double actualClass = testDataSet.instance(i).classValue();
-            String actual = testDataSet.classAttribute().value((int) actualClass);
+            String actual = testDataSet.classAttribute().value(( int ) actualClass);
             Instance newInst = testDataSet.instance(i);
-            double predNB = nb.classifyInstance(newInst);
-            String predString = testDataSet.classAttribute().value((int) predNB);
-            System.out.println(actual+", "+predString);
+            try {
+                double predNB = nb.classifyInstance(newInst);
+                String predString = testDataSet.classAttribute().value(( int ) predNB);
+
+                System.out.println(actual + ", " + predString);
+                recommendations.add(predString);
+            } catch (Exception e) {
+
+            }
         }
 
+        return recommendations;
     }
 }

@@ -1,0 +1,496 @@
+Instance_number,'user id',video,images,paragraph,bullets,examples,advanced,medium,easy,topic,'facts and procedures','theories and meaning','steps given',practical,thinking,Cluster
+0,4,false,true,false,true,true,true,true,true,'flow control',true,false,true,true,false,cluster0
+1,4,false,true,false,true,true,true,true,true,exceptions,true,false,true,true,false,cluster0
+2,4,false,true,false,true,true,true,true,true,threads,true,false,true,true,false,cluster0
+3,4,false,true,false,true,true,true,true,true,core,true,false,true,true,false,cluster0
+4,4,false,true,false,true,true,true,true,true,'declarations and access control',true,false,true,true,false,cluster0
+5,4,false,true,false,true,true,true,true,true,'operators and assignments',true,false,true,true,false,cluster0
+6,4,false,true,false,true,true,true,true,true,'inner classes',true,false,true,true,false,cluster6
+7,4,false,true,false,true,true,true,true,true,assertions,true,false,true,true,false,cluster7
+8,4,false,true,false,true,true,true,true,true,classes,true,false,true,true,false,cluster0
+9,4,false,true,false,true,true,true,true,true,'garbage collection',true,false,true,true,false,cluster0
+10,4,false,true,false,true,true,true,true,true,'objects and collections',true,false,true,true,false,cluster0
+11,4,false,true,false,true,true,true,true,true,'flow control',true,false,true,true,false,cluster0
+12,4,false,true,false,true,true,true,true,true,exceptions,true,false,true,true,false,cluster0
+13,4,false,true,false,true,true,true,true,true,threads,true,false,true,true,false,cluster0
+14,4,false,true,false,true,true,true,true,true,core,true,false,true,true,false,cluster0
+15,4,false,true,false,true,true,true,true,true,'declarations and access control',true,false,true,true,false,cluster0
+16,4,false,true,false,true,true,true,true,true,'operators and assignments',true,false,true,true,false,cluster0
+17,4,false,true,false,true,true,true,true,true,'inner classes',true,false,true,true,false,cluster6
+18,4,false,true,false,true,true,true,true,true,assertions,true,false,true,true,false,cluster7
+19,4,false,true,false,true,true,true,true,true,classes,true,false,true,true,false,cluster0
+20,4,false,true,false,true,true,true,true,true,'garbage collection',true,false,true,true,false,cluster0
+21,4,false,true,false,true,true,true,true,true,'objects and collections',true,false,true,true,false,cluster0
+22,4,false,true,false,true,true,true,true,true,'flow control',true,false,true,true,false,cluster0
+23,4,false,true,false,true,true,true,true,true,exceptions,true,false,true,true,false,cluster0
+24,4,false,true,false,true,true,true,true,true,threads,true,false,true,true,false,cluster0
+25,4,false,true,false,true,true,true,true,true,core,true,false,true,true,false,cluster0
+26,4,false,true,false,true,true,true,true,true,'declarations and access control',true,false,true,true,false,cluster0
+27,4,false,true,false,true,true,true,true,true,'operators and assignments',true,false,true,true,false,cluster0
+28,4,false,true,false,true,true,true,true,true,'inner classes',true,false,true,true,false,cluster6
+29,4,false,true,false,true,true,true,true,true,assertions,true,false,true,true,false,cluster7
+30,4,false,true,false,true,true,true,true,true,classes,true,false,true,true,false,cluster0
+31,4,false,true,false,true,true,true,true,true,'garbage collection',true,false,true,true,false,cluster0
+32,4,false,true,false,true,true,true,true,true,'objects and collections',true,false,true,true,false,cluster0
+33,4,false,true,false,true,true,true,true,true,'flow control',true,false,true,true,false,cluster0
+34,4,false,true,false,true,true,true,true,true,exceptions,true,false,true,true,false,cluster0
+35,4,false,true,false,true,true,true,true,true,threads,true,false,true,true,false,cluster0
+36,4,false,true,false,true,true,true,true,true,core,true,false,true,true,false,cluster0
+37,4,false,true,false,true,true,true,true,true,'declarations and access control',true,false,true,true,false,cluster0
+38,4,false,true,false,true,true,true,true,true,'operators and assignments',true,false,true,true,false,cluster0
+39,4,false,true,false,true,true,true,true,true,'inner classes',true,false,true,true,false,cluster6
+40,4,false,true,false,true,true,true,true,true,assertions,true,false,true,true,false,cluster7
+41,4,false,true,false,true,true,true,true,true,classes,true,false,true,true,false,cluster0
+42,4,false,true,false,true,true,true,true,true,'garbage collection',true,false,true,true,false,cluster0
+43,4,false,true,false,true,true,true,true,true,'objects and collections',true,false,true,true,false,cluster0
+44,4,false,true,false,true,true,true,true,true,'flow control',true,false,true,true,false,cluster0
+45,4,false,true,false,true,true,true,true,true,exceptions,true,false,true,true,false,cluster0
+46,4,false,true,false,true,true,true,true,true,threads,true,false,true,true,false,cluster0
+47,4,false,true,false,true,true,true,true,true,core,true,false,true,true,false,cluster0
+48,4,false,true,false,true,true,true,true,true,'declarations and access control',true,false,true,true,false,cluster0
+49,4,false,true,false,true,true,true,true,true,'operators and assignments',true,false,true,true,false,cluster0
+50,4,false,true,false,true,true,true,true,true,'inner classes',true,false,true,true,false,cluster6
+51,4,false,true,false,true,true,true,true,true,assertions,true,false,true,true,false,cluster7
+52,4,false,true,false,true,true,true,true,true,classes,true,false,true,true,false,cluster0
+53,4,false,true,false,true,true,true,true,true,'garbage collection',true,false,true,true,false,cluster0
+54,4,false,true,false,true,true,true,true,true,'objects and collections',true,false,true,true,false,cluster0
+55,4,false,true,false,true,true,true,true,true,'flow control',true,false,true,true,false,cluster0
+56,4,false,true,false,true,true,true,true,true,exceptions,true,false,true,true,false,cluster0
+57,4,false,true,false,true,true,true,true,true,threads,true,false,true,true,false,cluster0
+58,4,false,true,false,true,true,true,true,true,core,true,false,true,true,false,cluster0
+59,4,false,true,false,true,true,true,true,true,'declarations and access control',true,false,true,true,false,cluster0
+60,4,false,true,false,true,true,true,true,true,'operators and assignments',true,false,true,true,false,cluster0
+61,4,false,true,false,true,true,true,true,true,'inner classes',true,false,true,true,false,cluster6
+62,4,false,true,false,true,true,true,true,true,assertions,true,false,true,true,false,cluster7
+63,4,false,true,false,true,true,true,true,true,classes,true,false,true,true,false,cluster0
+64,4,false,true,false,true,true,true,true,true,'garbage collection',true,false,true,true,false,cluster0
+65,4,false,true,false,true,true,true,true,true,'objects and collections',true,false,true,true,false,cluster0
+66,4,false,true,false,true,true,true,true,true,'flow control',true,false,true,true,false,cluster0
+67,4,false,true,false,true,true,true,true,true,exceptions,true,false,true,true,false,cluster0
+68,4,false,true,false,true,true,true,true,true,threads,true,false,true,true,false,cluster0
+69,4,false,true,false,true,true,true,true,true,core,true,false,true,true,false,cluster0
+70,4,false,true,false,true,true,true,true,true,'declarations and access control',true,false,true,true,false,cluster0
+71,4,false,true,false,true,true,true,true,true,'operators and assignments',true,false,true,true,false,cluster0
+72,4,false,true,false,true,true,true,true,true,'inner classes',true,false,true,true,false,cluster6
+73,4,false,true,false,true,true,true,true,true,assertions,true,false,true,true,false,cluster7
+74,4,false,true,false,true,true,true,true,true,classes,true,false,true,true,false,cluster0
+75,4,false,true,false,true,true,true,true,true,'garbage collection',true,false,true,true,false,cluster0
+76,4,false,true,false,true,true,true,true,true,'objects and collections',true,false,true,true,false,cluster0
+77,4,false,true,false,true,true,true,true,true,'flow control',true,false,true,true,false,cluster0
+78,4,false,true,false,true,true,true,true,true,exceptions,true,false,true,true,false,cluster0
+79,4,false,true,false,true,true,true,true,true,threads,true,false,true,true,false,cluster0
+80,4,false,true,false,true,true,true,true,true,core,true,false,true,true,false,cluster0
+81,4,false,true,false,true,true,true,true,true,'declarations and access control',true,false,true,true,false,cluster0
+82,4,false,true,false,true,true,true,true,true,'operators and assignments',true,false,true,true,false,cluster0
+83,4,false,true,false,true,true,true,true,true,'inner classes',true,false,true,true,false,cluster6
+84,4,false,true,false,true,true,true,true,true,assertions,true,false,true,true,false,cluster7
+85,4,false,true,false,true,true,true,true,true,classes,true,false,true,true,false,cluster0
+86,4,false,true,false,true,true,true,true,true,'garbage collection',true,false,true,true,false,cluster0
+87,4,false,true,false,true,true,true,true,true,'objects and collections',true,false,true,true,false,cluster0
+88,27,false,true,false,true,true,true,true,true,'flow control',true,false,true,true,false,cluster0
+89,27,false,true,false,true,true,true,true,true,exceptions,true,false,true,true,false,cluster0
+90,27,false,true,false,true,true,true,true,true,threads,true,false,true,true,false,cluster0
+91,27,false,true,false,true,true,true,true,true,core,true,false,true,true,false,cluster0
+92,27,false,true,false,true,true,true,true,true,'declarations and access control',true,false,true,true,false,cluster0
+93,27,false,true,false,true,true,true,true,true,'operators and assignments',true,false,true,true,false,cluster0
+94,27,false,true,false,true,true,true,true,true,'inner classes',true,false,true,true,false,cluster6
+95,27,false,true,false,true,true,true,true,true,assertions,true,false,true,true,false,cluster7
+96,27,false,true,false,true,true,true,true,true,classes,true,false,true,true,false,cluster0
+97,27,false,true,false,true,true,true,true,true,'garbage collection',true,false,true,true,false,cluster0
+98,27,false,true,false,true,true,true,true,true,'objects and collections',true,false,true,true,false,cluster0
+99,27,false,true,false,true,true,true,true,true,'flow control',true,false,true,true,false,cluster0
+100,27,false,true,false,true,true,true,true,true,exceptions,true,false,true,true,false,cluster0
+101,27,false,true,false,true,true,true,true,true,threads,true,false,true,true,false,cluster0
+102,27,false,true,false,true,true,true,true,true,core,true,false,true,true,false,cluster0
+103,27,false,true,false,true,true,true,true,true,'declarations and access control',true,false,true,true,false,cluster0
+104,27,false,true,false,true,true,true,true,true,'operators and assignments',true,false,true,true,false,cluster0
+105,27,false,true,false,true,true,true,true,true,'inner classes',true,false,true,true,false,cluster6
+106,27,false,true,false,true,true,true,true,true,assertions,true,false,true,true,false,cluster7
+107,27,false,true,false,true,true,true,true,true,classes,true,false,true,true,false,cluster0
+108,27,false,true,false,true,true,true,true,true,'garbage collection',true,false,true,true,false,cluster0
+109,27,false,true,false,true,true,true,true,true,'objects and collections',true,false,true,true,false,cluster0
+110,27,false,true,false,true,true,true,true,true,'flow control',true,false,true,true,false,cluster0
+111,27,false,true,false,true,true,true,true,true,exceptions,true,false,true,true,false,cluster0
+112,27,false,true,false,true,true,true,true,true,threads,true,false,true,true,false,cluster0
+113,27,false,true,false,true,true,true,true,true,core,true,false,true,true,false,cluster0
+114,27,false,true,false,true,true,true,true,true,'declarations and access control',true,false,true,true,false,cluster0
+115,27,false,true,false,true,true,true,true,true,'operators and assignments',true,false,true,true,false,cluster0
+116,27,false,true,false,true,true,true,true,true,'inner classes',true,false,true,true,false,cluster6
+117,27,false,true,false,true,true,true,true,true,assertions,true,false,true,true,false,cluster7
+118,27,false,true,false,true,true,true,true,true,classes,true,false,true,true,false,cluster0
+119,27,false,true,false,true,true,true,true,true,'garbage collection',true,false,true,true,false,cluster0
+120,27,false,true,false,true,true,true,true,true,'objects and collections',true,false,true,true,false,cluster0
+121,27,false,true,false,true,true,true,true,true,'flow control',true,false,true,true,false,cluster0
+122,27,false,true,false,true,true,true,true,true,exceptions,true,false,true,true,false,cluster0
+123,27,false,true,false,true,true,true,true,true,threads,true,false,true,true,false,cluster0
+124,27,false,true,false,true,true,true,true,true,core,true,false,true,true,false,cluster0
+125,27,false,true,false,true,true,true,true,true,'declarations and access control',true,false,true,true,false,cluster0
+126,27,false,true,false,true,true,true,true,true,'operators and assignments',true,false,true,true,false,cluster0
+127,27,false,true,false,true,true,true,true,true,'inner classes',true,false,true,true,false,cluster6
+128,27,false,true,false,true,true,true,true,true,assertions,true,false,true,true,false,cluster7
+129,27,false,true,false,true,true,true,true,true,classes,true,false,true,true,false,cluster0
+130,27,false,true,false,true,true,true,true,true,'garbage collection',true,false,true,true,false,cluster0
+131,27,false,true,false,true,true,true,true,true,'objects and collections',true,false,true,true,false,cluster0
+132,27,false,true,false,true,true,true,true,true,'flow control',true,false,true,true,false,cluster0
+133,27,false,true,false,true,true,true,true,true,exceptions,true,false,true,true,false,cluster0
+134,27,false,true,false,true,true,true,true,true,threads,true,false,true,true,false,cluster0
+135,27,false,true,false,true,true,true,true,true,core,true,false,true,true,false,cluster0
+136,27,false,true,false,true,true,true,true,true,'declarations and access control',true,false,true,true,false,cluster0
+137,27,false,true,false,true,true,true,true,true,'operators and assignments',true,false,true,true,false,cluster0
+138,27,false,true,false,true,true,true,true,true,'inner classes',true,false,true,true,false,cluster6
+139,27,false,true,false,true,true,true,true,true,assertions,true,false,true,true,false,cluster7
+140,27,false,true,false,true,true,true,true,true,classes,true,false,true,true,false,cluster0
+141,27,false,true,false,true,true,true,true,true,'garbage collection',true,false,true,true,false,cluster0
+142,27,false,true,false,true,true,true,true,true,'objects and collections',true,false,true,true,false,cluster0
+143,27,false,true,false,true,true,true,true,true,'flow control',true,false,true,true,false,cluster0
+144,27,false,true,false,true,true,true,true,true,exceptions,true,false,true,true,false,cluster0
+145,27,false,true,false,true,true,true,true,true,threads,true,false,true,true,false,cluster0
+146,27,false,true,false,true,true,true,true,true,core,true,false,true,true,false,cluster0
+147,27,false,true,false,true,true,true,true,true,'declarations and access control',true,false,true,true,false,cluster0
+148,27,false,true,false,true,true,true,true,true,'operators and assignments',true,false,true,true,false,cluster0
+149,27,false,true,false,true,true,true,true,true,'inner classes',true,false,true,true,false,cluster6
+150,27,false,true,false,true,true,true,true,true,assertions,true,false,true,true,false,cluster7
+151,27,false,true,false,true,true,true,true,true,classes,true,false,true,true,false,cluster0
+152,27,false,true,false,true,true,true,true,true,'garbage collection',true,false,true,true,false,cluster0
+153,27,false,true,false,true,true,true,true,true,'objects and collections',true,false,true,true,false,cluster0
+154,27,false,true,false,true,true,true,true,true,'flow control',true,false,true,true,false,cluster0
+155,27,false,true,false,true,true,true,true,true,exceptions,true,false,true,true,false,cluster0
+156,27,false,true,false,true,true,true,true,true,threads,true,false,true,true,false,cluster0
+157,27,false,true,false,true,true,true,true,true,core,true,false,true,true,false,cluster0
+158,27,false,true,false,true,true,true,true,true,'declarations and access control',true,false,true,true,false,cluster0
+159,27,false,true,false,true,true,true,true,true,'operators and assignments',true,false,true,true,false,cluster0
+160,27,false,true,false,true,true,true,true,true,'inner classes',true,false,true,true,false,cluster6
+161,27,false,true,false,true,true,true,true,true,assertions,true,false,true,true,false,cluster7
+162,27,false,true,false,true,true,true,true,true,classes,true,false,true,true,false,cluster0
+163,27,false,true,false,true,true,true,true,true,'garbage collection',true,false,true,true,false,cluster0
+164,27,false,true,false,true,true,true,true,true,'objects and collections',true,false,true,true,false,cluster0
+165,3,true,false,true,false,false,true,true,true,'flow control',false,true,false,false,true,cluster4
+166,3,true,false,true,false,false,true,true,true,exceptions,false,true,false,false,true,cluster3
+167,3,true,false,true,false,false,true,true,true,threads,false,true,false,false,true,cluster1
+168,3,true,false,true,false,false,true,true,true,core,false,true,false,false,true,cluster3
+169,3,true,false,true,false,false,true,true,true,'declarations and access control',false,true,false,false,true,cluster2
+170,3,true,false,true,false,false,true,true,true,'operators and assignments',false,true,false,false,true,cluster3
+171,3,true,false,true,false,false,true,true,true,'inner classes',false,true,false,false,true,cluster3
+172,3,true,false,true,false,false,true,true,true,assertions,false,true,false,false,true,cluster3
+173,3,true,false,true,false,false,true,true,true,classes,false,true,false,false,true,cluster5
+174,3,true,false,true,false,false,true,true,true,'garbage collection',false,true,false,false,true,cluster3
+175,3,true,false,true,false,false,true,true,true,'objects and collections',false,true,false,false,true,cluster3
+176,3,true,false,true,false,false,true,true,true,'flow control',false,true,false,false,true,cluster4
+177,3,true,false,true,false,false,true,true,true,exceptions,false,true,false,false,true,cluster3
+178,3,true,false,true,false,false,true,true,true,threads,false,true,false,false,true,cluster1
+179,3,true,false,true,false,false,true,true,true,core,false,true,false,false,true,cluster3
+180,3,true,false,true,false,false,true,true,true,'declarations and access control',false,true,false,false,true,cluster2
+181,3,true,false,true,false,false,true,true,true,'operators and assignments',false,true,false,false,true,cluster3
+182,3,true,false,true,false,false,true,true,true,'inner classes',false,true,false,false,true,cluster3
+183,3,true,false,true,false,false,true,true,true,assertions,false,true,false,false,true,cluster3
+184,3,true,false,true,false,false,true,true,true,classes,false,true,false,false,true,cluster5
+185,3,true,false,true,false,false,true,true,true,'garbage collection',false,true,false,false,true,cluster3
+186,3,true,false,true,false,false,true,true,true,'objects and collections',false,true,false,false,true,cluster3
+187,3,true,false,true,false,false,true,true,true,'flow control',false,true,false,false,true,cluster4
+188,3,true,false,true,false,false,true,true,true,exceptions,false,true,false,false,true,cluster3
+189,3,true,false,true,false,false,true,true,true,threads,false,true,false,false,true,cluster1
+190,3,true,false,true,false,false,true,true,true,core,false,true,false,false,true,cluster3
+191,3,true,false,true,false,false,true,true,true,'declarations and access control',false,true,false,false,true,cluster2
+192,3,true,false,true,false,false,true,true,true,'operators and assignments',false,true,false,false,true,cluster3
+193,3,true,false,true,false,false,true,true,true,'inner classes',false,true,false,false,true,cluster3
+194,3,true,false,true,false,false,true,true,true,assertions,false,true,false,false,true,cluster3
+195,3,true,false,true,false,false,true,true,true,classes,false,true,false,false,true,cluster5
+196,3,true,false,true,false,false,true,true,true,'garbage collection',false,true,false,false,true,cluster3
+197,3,true,false,true,false,false,true,true,true,'objects and collections',false,true,false,false,true,cluster3
+198,3,true,false,true,false,false,true,true,true,'flow control',false,true,false,false,true,cluster4
+199,3,true,false,true,false,false,true,true,true,exceptions,false,true,false,false,true,cluster3
+200,3,true,false,true,false,false,true,true,true,threads,false,true,false,false,true,cluster1
+201,3,true,false,true,false,false,true,true,true,core,false,true,false,false,true,cluster3
+202,3,true,false,true,false,false,true,true,true,'declarations and access control',false,true,false,false,true,cluster2
+203,3,true,false,true,false,false,true,true,true,'operators and assignments',false,true,false,false,true,cluster3
+204,3,true,false,true,false,false,true,true,true,'inner classes',false,true,false,false,true,cluster3
+205,3,true,false,true,false,false,true,true,true,assertions,false,true,false,false,true,cluster3
+206,3,true,false,true,false,false,true,true,true,classes,false,true,false,false,true,cluster5
+207,3,true,false,true,false,false,true,true,true,'garbage collection',false,true,false,false,true,cluster3
+208,3,true,false,true,false,false,true,true,true,'objects and collections',false,true,false,false,true,cluster3
+209,3,true,false,true,false,false,true,true,true,'flow control',false,true,false,false,true,cluster4
+210,3,true,false,true,false,false,true,true,true,exceptions,false,true,false,false,true,cluster3
+211,3,true,false,true,false,false,true,true,true,threads,false,true,false,false,true,cluster1
+212,3,true,false,true,false,false,true,true,true,core,false,true,false,false,true,cluster3
+213,3,true,false,true,false,false,true,true,true,'declarations and access control',false,true,false,false,true,cluster2
+214,3,true,false,true,false,false,true,true,true,'operators and assignments',false,true,false,false,true,cluster3
+215,3,true,false,true,false,false,true,true,true,'inner classes',false,true,false,false,true,cluster3
+216,3,true,false,true,false,false,true,true,true,assertions,false,true,false,false,true,cluster3
+217,3,true,false,true,false,false,true,true,true,classes,false,true,false,false,true,cluster5
+218,3,true,false,true,false,false,true,true,true,'garbage collection',false,true,false,false,true,cluster3
+219,3,true,false,true,false,false,true,true,true,'objects and collections',false,true,false,false,true,cluster3
+220,3,true,false,true,false,false,true,true,true,'flow control',false,true,false,false,true,cluster4
+221,3,true,false,true,false,false,true,true,true,exceptions,false,true,false,false,true,cluster3
+222,3,true,false,true,false,false,true,true,true,threads,false,true,false,false,true,cluster1
+223,3,true,false,true,false,false,true,true,true,core,false,true,false,false,true,cluster3
+224,3,true,false,true,false,false,true,true,true,'declarations and access control',false,true,false,false,true,cluster2
+225,3,true,false,true,false,false,true,true,true,'operators and assignments',false,true,false,false,true,cluster3
+226,3,true,false,true,false,false,true,true,true,'inner classes',false,true,false,false,true,cluster3
+227,3,true,false,true,false,false,true,true,true,assertions,false,true,false,false,true,cluster3
+228,3,true,false,true,false,false,true,true,true,classes,false,true,false,false,true,cluster5
+229,3,true,false,true,false,false,true,true,true,'garbage collection',false,true,false,false,true,cluster3
+230,3,true,false,true,false,false,true,true,true,'objects and collections',false,true,false,false,true,cluster3
+231,3,true,false,true,false,false,true,true,true,'flow control',false,true,false,false,true,cluster4
+232,3,true,false,true,false,false,true,true,true,exceptions,false,true,false,false,true,cluster3
+233,3,true,false,true,false,false,true,true,true,threads,false,true,false,false,true,cluster1
+234,3,true,false,true,false,false,true,true,true,core,false,true,false,false,true,cluster3
+235,3,true,false,true,false,false,true,true,true,'declarations and access control',false,true,false,false,true,cluster2
+236,3,true,false,true,false,false,true,true,true,'operators and assignments',false,true,false,false,true,cluster3
+237,3,true,false,true,false,false,true,true,true,'inner classes',false,true,false,false,true,cluster3
+238,3,true,false,true,false,false,true,true,true,assertions,false,true,false,false,true,cluster3
+239,3,true,false,true,false,false,true,true,true,classes,false,true,false,false,true,cluster5
+240,3,true,false,true,false,false,true,true,true,'garbage collection',false,true,false,false,true,cluster3
+241,3,true,false,true,false,false,true,true,true,'objects and collections',false,true,false,false,true,cluster3
+242,3,true,false,true,false,false,true,true,true,'flow control',false,true,false,false,true,cluster4
+243,3,true,false,true,false,false,true,true,true,exceptions,false,true,false,false,true,cluster3
+244,3,true,false,true,false,false,true,true,true,threads,false,true,false,false,true,cluster1
+245,3,true,false,true,false,false,true,true,true,core,false,true,false,false,true,cluster3
+246,3,true,false,true,false,false,true,true,true,'declarations and access control',false,true,false,false,true,cluster2
+247,3,true,false,true,false,false,true,true,true,'operators and assignments',false,true,false,false,true,cluster3
+248,3,true,false,true,false,false,true,true,true,'inner classes',false,true,false,false,true,cluster3
+249,3,true,false,true,false,false,true,true,true,assertions,false,true,false,false,true,cluster3
+250,3,true,false,true,false,false,true,true,true,classes,false,true,false,false,true,cluster5
+251,3,true,false,true,false,false,true,true,true,'garbage collection',false,true,false,false,true,cluster3
+252,3,true,false,true,false,false,true,true,true,'objects and collections',false,true,false,false,true,cluster3
+253,3,true,false,true,false,false,true,true,true,'flow control',false,true,false,false,true,cluster4
+254,3,true,false,true,false,false,true,true,true,exceptions,false,true,false,false,true,cluster3
+255,3,true,false,true,false,false,true,true,true,threads,false,true,false,false,true,cluster1
+256,3,true,false,true,false,false,true,true,true,core,false,true,false,false,true,cluster3
+257,3,true,false,true,false,false,true,true,true,'declarations and access control',false,true,false,false,true,cluster2
+258,3,true,false,true,false,false,true,true,true,'operators and assignments',false,true,false,false,true,cluster3
+259,3,true,false,true,false,false,true,true,true,'inner classes',false,true,false,false,true,cluster3
+260,3,true,false,true,false,false,true,true,true,assertions,false,true,false,false,true,cluster3
+261,3,true,false,true,false,false,true,true,true,classes,false,true,false,false,true,cluster5
+262,3,true,false,true,false,false,true,true,true,'garbage collection',false,true,false,false,true,cluster3
+263,3,true,false,true,false,false,true,true,true,'objects and collections',false,true,false,false,true,cluster3
+264,3,true,false,true,false,false,true,true,true,'flow control',false,true,false,false,true,cluster4
+265,3,true,false,true,false,false,true,true,true,exceptions,false,true,false,false,true,cluster3
+266,3,true,false,true,false,false,true,true,true,threads,false,true,false,false,true,cluster1
+267,3,true,false,true,false,false,true,true,true,core,false,true,false,false,true,cluster3
+268,3,true,false,true,false,false,true,true,true,'declarations and access control',false,true,false,false,true,cluster2
+269,3,true,false,true,false,false,true,true,true,'operators and assignments',false,true,false,false,true,cluster3
+270,3,true,false,true,false,false,true,true,true,'inner classes',false,true,false,false,true,cluster3
+271,3,true,false,true,false,false,true,true,true,assertions,false,true,false,false,true,cluster3
+272,3,true,false,true,false,false,true,true,true,classes,false,true,false,false,true,cluster5
+273,3,true,false,true,false,false,true,true,true,'garbage collection',false,true,false,false,true,cluster3
+274,3,true,false,true,false,false,true,true,true,'objects and collections',false,true,false,false,true,cluster3
+275,3,true,false,true,false,false,true,true,true,'flow control',false,true,false,false,true,cluster4
+276,3,true,false,true,false,false,true,true,true,exceptions,false,true,false,false,true,cluster3
+277,3,true,false,true,false,false,true,true,true,threads,false,true,false,false,true,cluster1
+278,3,true,false,true,false,false,true,true,true,core,false,true,false,false,true,cluster3
+279,3,true,false,true,false,false,true,true,true,'declarations and access control',false,true,false,false,true,cluster2
+280,3,true,false,true,false,false,true,true,true,'operators and assignments',false,true,false,false,true,cluster3
+281,3,true,false,true,false,false,true,true,true,'inner classes',false,true,false,false,true,cluster3
+282,3,true,false,true,false,false,true,true,true,assertions,false,true,false,false,true,cluster3
+283,3,true,false,true,false,false,true,true,true,classes,false,true,false,false,true,cluster5
+284,3,true,false,true,false,false,true,true,true,'garbage collection',false,true,false,false,true,cluster3
+285,3,true,false,true,false,false,true,true,true,'objects and collections',false,true,false,false,true,cluster3
+286,3,true,false,true,false,false,true,true,true,'flow control',false,true,false,false,true,cluster4
+287,3,true,false,true,false,false,true,true,true,exceptions,false,true,false,false,true,cluster3
+288,3,true,false,true,false,false,true,true,true,threads,false,true,false,false,true,cluster1
+289,3,true,false,true,false,false,true,true,true,core,false,true,false,false,true,cluster3
+290,3,true,false,true,false,false,true,true,true,'declarations and access control',false,true,false,false,true,cluster2
+291,3,true,false,true,false,false,true,true,true,'operators and assignments',false,true,false,false,true,cluster3
+292,3,true,false,true,false,false,true,true,true,'inner classes',false,true,false,false,true,cluster3
+293,3,true,false,true,false,false,true,true,true,assertions,false,true,false,false,true,cluster3
+294,3,true,false,true,false,false,true,true,true,classes,false,true,false,false,true,cluster5
+295,3,true,false,true,false,false,true,true,true,'garbage collection',false,true,false,false,true,cluster3
+296,3,true,false,true,false,false,true,true,true,'objects and collections',false,true,false,false,true,cluster3
+297,3,true,false,true,false,false,true,true,true,'flow control',false,true,false,false,true,cluster4
+298,3,true,false,true,false,false,true,true,true,exceptions,false,true,false,false,true,cluster3
+299,3,true,false,true,false,false,true,true,true,threads,false,true,false,false,true,cluster1
+300,3,true,false,true,false,false,true,true,true,core,false,true,false,false,true,cluster3
+301,3,true,false,true,false,false,true,true,true,'declarations and access control',false,true,false,false,true,cluster2
+302,3,true,false,true,false,false,true,true,true,'operators and assignments',false,true,false,false,true,cluster3
+303,3,true,false,true,false,false,true,true,true,'inner classes',false,true,false,false,true,cluster3
+304,3,true,false,true,false,false,true,true,true,assertions,false,true,false,false,true,cluster3
+305,3,true,false,true,false,false,true,true,true,classes,false,true,false,false,true,cluster5
+306,3,true,false,true,false,false,true,true,true,'garbage collection',false,true,false,false,true,cluster3
+307,3,true,false,true,false,false,true,true,true,'objects and collections',false,true,false,false,true,cluster3
+308,3,true,false,true,false,false,true,true,true,'flow control',false,true,false,false,true,cluster4
+309,3,true,false,true,false,false,true,true,true,exceptions,false,true,false,false,true,cluster3
+310,3,true,false,true,false,false,true,true,true,threads,false,true,false,false,true,cluster1
+311,3,true,false,true,false,false,true,true,true,core,false,true,false,false,true,cluster3
+312,3,true,false,true,false,false,true,true,true,'declarations and access control',false,true,false,false,true,cluster2
+313,3,true,false,true,false,false,true,true,true,'operators and assignments',false,true,false,false,true,cluster3
+314,3,true,false,true,false,false,true,true,true,'inner classes',false,true,false,false,true,cluster3
+315,3,true,false,true,false,false,true,true,true,assertions,false,true,false,false,true,cluster3
+316,3,true,false,true,false,false,true,true,true,classes,false,true,false,false,true,cluster5
+317,3,true,false,true,false,false,true,true,true,'garbage collection',false,true,false,false,true,cluster3
+318,3,true,false,true,false,false,true,true,true,'objects and collections',false,true,false,false,true,cluster3
+319,3,true,false,true,false,false,true,true,true,'flow control',false,true,false,false,true,cluster4
+320,3,true,false,true,false,false,true,true,true,exceptions,false,true,false,false,true,cluster3
+321,3,true,false,true,false,false,true,true,true,threads,false,true,false,false,true,cluster1
+322,3,true,false,true,false,false,true,true,true,core,false,true,false,false,true,cluster3
+323,3,true,false,true,false,false,true,true,true,'declarations and access control',false,true,false,false,true,cluster2
+324,3,true,false,true,false,false,true,true,true,'operators and assignments',false,true,false,false,true,cluster3
+325,3,true,false,true,false,false,true,true,true,'inner classes',false,true,false,false,true,cluster3
+326,3,true,false,true,false,false,true,true,true,assertions,false,true,false,false,true,cluster3
+327,3,true,false,true,false,false,true,true,true,classes,false,true,false,false,true,cluster5
+328,3,true,false,true,false,false,true,true,true,'garbage collection',false,true,false,false,true,cluster3
+329,3,true,false,true,false,false,true,true,true,'objects and collections',false,true,false,false,true,cluster3
+330,3,true,false,true,false,false,true,true,true,'flow control',false,true,false,false,true,cluster4
+331,3,true,false,true,false,false,true,true,true,exceptions,false,true,false,false,true,cluster3
+332,3,true,false,true,false,false,true,true,true,threads,false,true,false,false,true,cluster1
+333,3,true,false,true,false,false,true,true,true,core,false,true,false,false,true,cluster3
+334,3,true,false,true,false,false,true,true,true,'declarations and access control',false,true,false,false,true,cluster2
+335,3,true,false,true,false,false,true,true,true,'operators and assignments',false,true,false,false,true,cluster3
+336,3,true,false,true,false,false,true,true,true,'inner classes',false,true,false,false,true,cluster3
+337,3,true,false,true,false,false,true,true,true,assertions,false,true,false,false,true,cluster3
+338,3,true,false,true,false,false,true,true,true,classes,false,true,false,false,true,cluster5
+339,3,true,false,true,false,false,true,true,true,'garbage collection',false,true,false,false,true,cluster3
+340,3,true,false,true,false,false,true,true,true,'objects and collections',false,true,false,false,true,cluster3
+341,3,true,false,true,false,false,true,true,true,'flow control',false,true,false,false,true,cluster4
+342,3,true,false,true,false,false,true,true,true,exceptions,false,true,false,false,true,cluster3
+343,3,true,false,true,false,false,true,true,true,threads,false,true,false,false,true,cluster1
+344,3,true,false,true,false,false,true,true,true,core,false,true,false,false,true,cluster3
+345,3,true,false,true,false,false,true,true,true,'declarations and access control',false,true,false,false,true,cluster2
+346,3,true,false,true,false,false,true,true,true,'operators and assignments',false,true,false,false,true,cluster3
+347,3,true,false,true,false,false,true,true,true,'inner classes',false,true,false,false,true,cluster3
+348,3,true,false,true,false,false,true,true,true,assertions,false,true,false,false,true,cluster3
+349,3,true,false,true,false,false,true,true,true,classes,false,true,false,false,true,cluster5
+350,3,true,false,true,false,false,true,true,true,'garbage collection',false,true,false,false,true,cluster3
+351,3,true,false,true,false,false,true,true,true,'objects and collections',false,true,false,false,true,cluster3
+352,3,true,false,true,false,false,true,true,true,'flow control',false,true,false,false,true,cluster4
+353,3,true,false,true,false,false,true,true,true,exceptions,false,true,false,false,true,cluster3
+354,3,true,false,true,false,false,true,true,true,threads,false,true,false,false,true,cluster1
+355,3,true,false,true,false,false,true,true,true,core,false,true,false,false,true,cluster3
+356,3,true,false,true,false,false,true,true,true,'declarations and access control',false,true,false,false,true,cluster2
+357,3,true,false,true,false,false,true,true,true,'operators and assignments',false,true,false,false,true,cluster3
+358,3,true,false,true,false,false,true,true,true,'inner classes',false,true,false,false,true,cluster3
+359,3,true,false,true,false,false,true,true,true,assertions,false,true,false,false,true,cluster3
+360,3,true,false,true,false,false,true,true,true,classes,false,true,false,false,true,cluster5
+361,3,true,false,true,false,false,true,true,true,'garbage collection',false,true,false,false,true,cluster3
+362,3,true,false,true,false,false,true,true,true,'objects and collections',false,true,false,false,true,cluster3
+363,3,true,false,true,false,false,true,true,true,'flow control',false,true,false,false,true,cluster4
+364,3,true,false,true,false,false,true,true,true,exceptions,false,true,false,false,true,cluster3
+365,3,true,false,true,false,false,true,true,true,threads,false,true,false,false,true,cluster1
+366,3,true,false,true,false,false,true,true,true,core,false,true,false,false,true,cluster3
+367,3,true,false,true,false,false,true,true,true,'declarations and access control',false,true,false,false,true,cluster2
+368,3,true,false,true,false,false,true,true,true,'operators and assignments',false,true,false,false,true,cluster3
+369,3,true,false,true,false,false,true,true,true,'inner classes',false,true,false,false,true,cluster3
+370,3,true,false,true,false,false,true,true,true,assertions,false,true,false,false,true,cluster3
+371,3,true,false,true,false,false,true,true,true,classes,false,true,false,false,true,cluster5
+372,3,true,false,true,false,false,true,true,true,'garbage collection',false,true,false,false,true,cluster3
+373,3,true,false,true,false,false,true,true,true,'objects and collections',false,true,false,false,true,cluster3
+374,3,true,false,true,false,false,true,true,true,'flow control',false,true,false,false,true,cluster4
+375,3,true,false,true,false,false,true,true,true,exceptions,false,true,false,false,true,cluster3
+376,3,true,false,true,false,false,true,true,true,threads,false,true,false,false,true,cluster1
+377,3,true,false,true,false,false,true,true,true,core,false,true,false,false,true,cluster3
+378,3,true,false,true,false,false,true,true,true,'declarations and access control',false,true,false,false,true,cluster2
+379,3,true,false,true,false,false,true,true,true,'operators and assignments',false,true,false,false,true,cluster3
+380,3,true,false,true,false,false,true,true,true,'inner classes',false,true,false,false,true,cluster3
+381,3,true,false,true,false,false,true,true,true,assertions,false,true,false,false,true,cluster3
+382,3,true,false,true,false,false,true,true,true,classes,false,true,false,false,true,cluster5
+383,3,true,false,true,false,false,true,true,true,'garbage collection',false,true,false,false,true,cluster3
+384,3,true,false,true,false,false,true,true,true,'objects and collections',false,true,false,false,true,cluster3
+385,3,true,false,true,false,false,true,true,true,'flow control',false,true,false,false,true,cluster4
+386,3,true,false,true,false,false,true,true,true,exceptions,false,true,false,false,true,cluster3
+387,3,true,false,true,false,false,true,true,true,threads,false,true,false,false,true,cluster1
+388,3,true,false,true,false,false,true,true,true,core,false,true,false,false,true,cluster3
+389,3,true,false,true,false,false,true,true,true,'declarations and access control',false,true,false,false,true,cluster2
+390,3,true,false,true,false,false,true,true,true,'operators and assignments',false,true,false,false,true,cluster3
+391,3,true,false,true,false,false,true,true,true,'inner classes',false,true,false,false,true,cluster3
+392,3,true,false,true,false,false,true,true,true,assertions,false,true,false,false,true,cluster3
+393,3,true,false,true,false,false,true,true,true,classes,false,true,false,false,true,cluster5
+394,3,true,false,true,false,false,true,true,true,'garbage collection',false,true,false,false,true,cluster3
+395,3,true,false,true,false,false,true,true,true,'objects and collections',false,true,false,false,true,cluster3
+396,3,true,false,true,false,false,true,true,true,'flow control',false,true,false,false,true,cluster4
+397,3,true,false,true,false,false,true,true,true,exceptions,false,true,false,false,true,cluster3
+398,3,true,false,true,false,false,true,true,true,threads,false,true,false,false,true,cluster1
+399,3,true,false,true,false,false,true,true,true,core,false,true,false,false,true,cluster3
+400,3,true,false,true,false,false,true,true,true,'declarations and access control',false,true,false,false,true,cluster2
+401,3,true,false,true,false,false,true,true,true,'operators and assignments',false,true,false,false,true,cluster3
+402,3,true,false,true,false,false,true,true,true,'inner classes',false,true,false,false,true,cluster3
+403,3,true,false,true,false,false,true,true,true,assertions,false,true,false,false,true,cluster3
+404,3,true,false,true,false,false,true,true,true,classes,false,true,false,false,true,cluster5
+405,3,true,false,true,false,false,true,true,true,'garbage collection',false,true,false,false,true,cluster3
+406,3,true,false,true,false,false,true,true,true,'objects and collections',false,true,false,false,true,cluster3
+407,3,true,false,true,false,false,true,true,true,'flow control',false,true,false,false,true,cluster4
+408,3,true,false,true,false,false,true,true,true,exceptions,false,true,false,false,true,cluster3
+409,3,true,false,true,false,false,true,true,true,threads,false,true,false,false,true,cluster1
+410,3,true,false,true,false,false,true,true,true,core,false,true,false,false,true,cluster3
+411,3,true,false,true,false,false,true,true,true,'declarations and access control',false,true,false,false,true,cluster2
+412,3,true,false,true,false,false,true,true,true,'operators and assignments',false,true,false,false,true,cluster3
+413,3,true,false,true,false,false,true,true,true,'inner classes',false,true,false,false,true,cluster3
+414,3,true,false,true,false,false,true,true,true,assertions,false,true,false,false,true,cluster3
+415,3,true,false,true,false,false,true,true,true,classes,false,true,false,false,true,cluster5
+416,3,true,false,true,false,false,true,true,true,'garbage collection',false,true,false,false,true,cluster3
+417,3,true,false,true,false,false,true,true,true,'objects and collections',false,true,false,false,true,cluster3
+418,27,false,true,false,true,true,true,true,true,'flow control',true,false,true,true,false,cluster0
+419,27,false,true,false,true,true,true,true,true,exceptions,true,false,true,true,false,cluster0
+420,27,false,true,false,true,true,true,true,true,threads,true,false,true,true,false,cluster0
+421,27,false,true,false,true,true,true,true,true,core,true,false,true,true,false,cluster0
+422,27,false,true,false,true,true,true,true,true,'declarations and access control',true,false,true,true,false,cluster0
+423,27,false,true,false,true,true,true,true,true,'operators and assignments',true,false,true,true,false,cluster0
+424,27,false,true,false,true,true,true,true,true,'inner classes',true,false,true,true,false,cluster6
+425,27,false,true,false,true,true,true,true,true,assertions,true,false,true,true,false,cluster7
+426,27,false,true,false,true,true,true,true,true,classes,true,false,true,true,false,cluster0
+427,27,false,true,false,true,true,true,true,true,'garbage collection',true,false,true,true,false,cluster0
+428,27,false,true,false,true,true,true,true,true,'objects and collections',true,false,true,true,false,cluster0
+429,27,false,true,false,true,true,true,true,true,'flow control',true,false,true,true,false,cluster0
+430,27,false,true,false,true,true,true,true,true,exceptions,true,false,true,true,false,cluster0
+431,27,false,true,false,true,true,true,true,true,threads,true,false,true,true,false,cluster0
+432,27,false,true,false,true,true,true,true,true,core,true,false,true,true,false,cluster0
+433,27,false,true,false,true,true,true,true,true,'declarations and access control',true,false,true,true,false,cluster0
+434,27,false,true,false,true,true,true,true,true,'operators and assignments',true,false,true,true,false,cluster0
+435,27,false,true,false,true,true,true,true,true,'inner classes',true,false,true,true,false,cluster6
+436,27,false,true,false,true,true,true,true,true,assertions,true,false,true,true,false,cluster7
+437,27,false,true,false,true,true,true,true,true,classes,true,false,true,true,false,cluster0
+438,27,false,true,false,true,true,true,true,true,'garbage collection',true,false,true,true,false,cluster0
+439,27,false,true,false,true,true,true,true,true,'objects and collections',true,false,true,true,false,cluster0
+440,27,false,true,false,true,true,true,true,true,'flow control',true,false,true,true,false,cluster0
+441,27,false,true,false,true,true,true,true,true,exceptions,true,false,true,true,false,cluster0
+442,27,false,true,false,true,true,true,true,true,threads,true,false,true,true,false,cluster0
+443,27,false,true,false,true,true,true,true,true,core,true,false,true,true,false,cluster0
+444,27,false,true,false,true,true,true,true,true,'declarations and access control',true,false,true,true,false,cluster0
+445,27,false,true,false,true,true,true,true,true,'operators and assignments',true,false,true,true,false,cluster0
+446,27,false,true,false,true,true,true,true,true,'inner classes',true,false,true,true,false,cluster6
+447,27,false,true,false,true,true,true,true,true,assertions,true,false,true,true,false,cluster7
+448,27,false,true,false,true,true,true,true,true,classes,true,false,true,true,false,cluster0
+449,27,false,true,false,true,true,true,true,true,'garbage collection',true,false,true,true,false,cluster0
+450,27,false,true,false,true,true,true,true,true,'objects and collections',true,false,true,true,false,cluster0
+451,27,false,true,false,true,true,true,true,true,'flow control',true,false,true,true,false,cluster0
+452,27,false,true,false,true,true,true,true,true,exceptions,true,false,true,true,false,cluster0
+453,27,false,true,false,true,true,true,true,true,threads,true,false,true,true,false,cluster0
+454,27,false,true,false,true,true,true,true,true,core,true,false,true,true,false,cluster0
+455,27,false,true,false,true,true,true,true,true,'declarations and access control',true,false,true,true,false,cluster0
+456,27,false,true,false,true,true,true,true,true,'operators and assignments',true,false,true,true,false,cluster0
+457,27,false,true,false,true,true,true,true,true,'inner classes',true,false,true,true,false,cluster6
+458,27,false,true,false,true,true,true,true,true,assertions,true,false,true,true,false,cluster7
+459,27,false,true,false,true,true,true,true,true,classes,true,false,true,true,false,cluster0
+460,27,false,true,false,true,true,true,true,true,'garbage collection',true,false,true,true,false,cluster0
+461,27,false,true,false,true,true,true,true,true,'objects and collections',true,false,true,true,false,cluster0
+462,27,false,true,false,true,true,true,true,true,'flow control',true,false,true,true,false,cluster0
+463,27,false,true,false,true,true,true,true,true,exceptions,true,false,true,true,false,cluster0
+464,27,false,true,false,true,true,true,true,true,threads,true,false,true,true,false,cluster0
+465,27,false,true,false,true,true,true,true,true,core,true,false,true,true,false,cluster0
+466,27,false,true,false,true,true,true,true,true,'declarations and access control',true,false,true,true,false,cluster0
+467,27,false,true,false,true,true,true,true,true,'operators and assignments',true,false,true,true,false,cluster0
+468,27,false,true,false,true,true,true,true,true,'inner classes',true,false,true,true,false,cluster6
+469,27,false,true,false,true,true,true,true,true,assertions,true,false,true,true,false,cluster7
+470,27,false,true,false,true,true,true,true,true,classes,true,false,true,true,false,cluster0
+471,27,false,true,false,true,true,true,true,true,'garbage collection',true,false,true,true,false,cluster0
+472,27,false,true,false,true,true,true,true,true,'objects and collections',true,false,true,true,false,cluster0
+473,27,false,true,false,true,true,true,true,true,'flow control',true,false,true,true,false,cluster0
+474,27,false,true,false,true,true,true,true,true,exceptions,true,false,true,true,false,cluster0
+475,27,false,true,false,true,true,true,true,true,threads,true,false,true,true,false,cluster0
+476,27,false,true,false,true,true,true,true,true,core,true,false,true,true,false,cluster0
+477,27,false,true,false,true,true,true,true,true,'declarations and access control',true,false,true,true,false,cluster0
+478,27,false,true,false,true,true,true,true,true,'operators and assignments',true,false,true,true,false,cluster0
+479,27,false,true,false,true,true,true,true,true,'inner classes',true,false,true,true,false,cluster6
+480,27,false,true,false,true,true,true,true,true,assertions,true,false,true,true,false,cluster7
+481,27,false,true,false,true,true,true,true,true,classes,true,false,true,true,false,cluster0
+482,27,false,true,false,true,true,true,true,true,'garbage collection',true,false,true,true,false,cluster0
+483,27,false,true,false,true,true,true,true,true,'objects and collections',true,false,true,true,false,cluster0
+484,27,false,true,false,true,true,true,true,true,'flow control',true,false,true,true,false,cluster0
+485,27,false,true,false,true,true,true,true,true,exceptions,true,false,true,true,false,cluster0
+486,27,false,true,false,true,true,true,true,true,threads,true,false,true,true,false,cluster0
+487,27,false,true,false,true,true,true,true,true,core,true,false,true,true,false,cluster0
+488,27,false,true,false,true,true,true,true,true,'declarations and access control',true,false,true,true,false,cluster0
+489,27,false,true,false,true,true,true,true,true,'operators and assignments',true,false,true,true,false,cluster0
+490,27,false,true,false,true,true,true,true,true,'inner classes',true,false,true,true,false,cluster6
+491,27,false,true,false,true,true,true,true,true,assertions,true,false,true,true,false,cluster7
+492,27,false,true,false,true,true,true,true,true,classes,true,false,true,true,false,cluster0
+493,27,false,true,false,true,true,true,true,true,'garbage collection',true,false,true,true,false,cluster0
+494,27,false,true,false,true,true,true,true,true,'objects and collections',true,false,true,true,false,cluster0

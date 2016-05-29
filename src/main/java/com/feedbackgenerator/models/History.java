@@ -1,5 +1,6 @@
 package com.feedbackgenerator.models;
 
+import java.io.File;
 import java.sql.*;
 
 /**
@@ -8,7 +9,10 @@ import java.sql.*;
 public class History {
     public long getTopicViewingDuration(String topic) throws ClassNotFoundException, SQLException {
         Class.forName("org.sqlite.JDBC");
-        Connection conn = DriverManager.getConnection("jdbc:sqlite:./History");
+        ClassLoader classLoader = getClass().getClassLoader();
+        File file = new File(classLoader.getResource("History").getFile());
+
+        Connection conn = DriverManager.getConnection("jdbc:sqlite:"+file.getAbsolutePath());
         Statement stat = conn.createStatement();
 
         String[] topicArea = topic.split(",");
@@ -26,7 +30,10 @@ public class History {
 
     public long getTotalBrowsingDuration() throws ClassNotFoundException, SQLException {
         Class.forName("org.sqlite.JDBC");
-        Connection conn = DriverManager.getConnection("jdbc:sqlite:./History");
+        ClassLoader classLoader = getClass().getClassLoader();
+        File file = new File(classLoader.getResource("History").getFile());
+
+        Connection conn = DriverManager.getConnection("jdbc:sqlite:"+file.getAbsolutePath());
         Statement stat = conn.createStatement();
 
         ResultSet totalTimeRS = stat.executeQuery("select SUM(visit_duration) from  visits");
